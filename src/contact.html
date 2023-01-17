@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+  'title': 'Контакты'
+})
+<script src="./js/pageLoader.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=33f2166c-eb26-4457-9412-d63d3ef62f28&lang=ru_RU"
+type="text/javascript"></script>
+<body>
+
+<div  id="child" class="preloader__child">
+
+    <div class="load-3">
+
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+
+
+  <div class="wrapper">
+    <header class="header header__no-anim">
+      <div class="header__wrapper">
+        <div class="header__burger">
+          <a href="./index.html" class="logo">
+            <img src="./img/logo-header.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="header__navigation">
+          <ul class="navigation__wrap">
+            <li class="navigation-li">
+              <a href="service.html"> Услуги </a>
+            </li>
+            <li class="navigation-li">
+              <a href="company.html"> Клиника </a>
+            </li>
+            <li class="navigation-li">
+              <a href="news.html"> Акции </a>
+            </li>
+            <li class="navigation-li">
+              <a href="result.html"> Результаты <br />до и после </a>
+            </li>
+            <li class="navigation-li">
+              <a href="contact.html"> Контакты </a>
+            </li>
+          </ul>
+          <div class="header__contact">
+            <div class="phone">
+              <object class="header-svg" type="image/svg+xml" data="./img/phone-icon.svg">
+                <img src="./img/phone-icon.svg" />
+              </object>
+              <a href="tel:+7 (495) 477-58-09">+7 (495) 477-58-09</a>
+            </div>
+            <div class="address">
+              <object class="header-svg" type="image/svg+xml" data="./img/metro-icon.svg">
+                <img src="./img/metro-icon.svg" />
+              </object>
+              <p>Менделеевская</p>
+            </div>
+            <div class="phone-mob">
+              <a href="tel:+7 (495) 477-58-09">
+                <img src="./img/phone-icon-mob.svg" alt="phone" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header__payment">
+          <a href="#" onclick="showByClick()" class="payment"> Оплата онлайн </a>
+          <a href="#">
+            <div class="email">
+              <img src="./img/email.svg" alt="email" />
+            </div>
+          </a>
+          <div class="burger__menu">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="head-page contacts">
+        <div class="container">
+          <ul class="breadcrumbs">
+            <li>
+              <a href="./index.html">Главная</a>
+            </li>
+            <li>Контакты</li>
+          </ul>
+          <div class="head-page__content news__content contact__content">
+            <h1 class="page__hedtext news__headtext">Контакты</h1>
+            <div class="date">
+              <div class="date__wrap">
+                <img src="./img/clock-icon-contact.svg" alt="date-icon" />
+                <div class="date__content">
+                  <p class="date__year">ВРЕМЯ РАБОТЫ</p>
+                  <p class="date__week">с 9-00 до 21-00 пн-вс.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-contact__adress">
+        <div class="container">
+          <div class="contact__wrap">
+            <div class="contact__adress">
+              <h3 class="contact__adress__headtext">НАШ АДРЕС</h3>
+              <p class="contact__adress-data">
+                г. Москва, ул. Палиха, 10, стр. 9
+              </p>
+              <div class="contact__metro-wrap">
+                <p class="contact__metro-one">
+                  <img src="./img/icon/icon-metro.svg" alt="">
+                  Менделеевская
+                </p>
+                <p class="contact__metro-two">
+                  <img src="./img/icon/icon-metro_color.svg" alt="">
+                  Новослободская
+                </p>
+              </div>
+            </div>
+
+            <div class="contact__adress">
+              <h3 class="contact__adress__headtext">КОНТАКТНЫЙ ТЕЛЕФОН</h3>
+              <a class="contact__adress-data" href="tel:+7 (495) 477-58-09">
+                +7 (495) 477-58-09
+              </a>
+            </div>
+
+            <div class="contact__adress">
+              <h3 class="contact__adress__headtext">Электронная почта</h3>
+              <a class="contact__adress-data data__link" href="mailto:info@eurokappa.ru">
+                info@eurokappa.ru
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="map__wrap">
+          <div id="map"></div>
+          <div id="mapsec" class="show-map"></div>
+          <div class="map-control">
+            <div id="metro" class="map-control-metro route_active">
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="15.138" height="10.605" viewBox="0 0 15.138 10.605">
+                <path
+                  d="M153.55,179.146l-3.562-9.067-3,5.343-2.914-5.343-3.562,9.067h-1.052v1.376h5.343v-1.376H144l.81-2.267,2.186,3.8,2.267-3.8.81,2.267h-.81v1.376H154.6v-1.376Z"
+                  transform="translate(-139.465 -170.079)" fill="#fff" fill-rule="evenodd" opacity="0.5" />
+              </svg>
+              <a href="#">На метро</a>
+            </div>
+            <div id="car" class="map-control-car">
+
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.911"
+                height="14.872" viewBox="0 0 21.911 14.872">
+                <defs>
+                  <clipPath id="a">
+                    <rect width="21.911" height="14.872" fill="#3a68b9" />
+                  </clipPath>
+                </defs>
+                <g clip-path="url(#a)">
+                  <path
+                    d="M17.654,1.09a2.6,2.6,0,0,0-1.57-.7,33.706,33.706,0,0,0-10.258,0,2.5,2.5,0,0,0-1.535.7C3.908,2.346,3.559,3.6,3.21,4.893a.974.974,0,0,0-.628-.209h-1.5A1.065,1.065,0,0,0,0,5.765,1.08,1.08,0,0,0,1.082,6.812h.7A4.7,4.7,0,0,0,1.4,8.836c-.035,1.814-.035,3.628-.035,5.443a.588.588,0,0,0,.593.593H4.675a.588.588,0,0,0,.593-.593v-.733H16.643v.733a.6.6,0,0,0,.628.593h2.687a.6.6,0,0,0,.628-.593c0-1.814-.035-3.628-.035-5.443a4.7,4.7,0,0,0-.384-2.024h.7a1.073,1.073,0,0,0,1.047-1.047,1.058,1.058,0,0,0-1.047-1.082H19.329a.948.948,0,0,0-.593.209c-.349-1.291-.7-2.547-1.082-3.8Zm-4.222,9.525H8.478a.558.558,0,1,0,0,1.117h4.954a.558.558,0,0,0,0-1.117m3.21-9.037c.279,1.047.558,2.128.872,3.21a63.069,63.069,0,0,0-13.084,0c.279-1.082.593-2.163.872-3.21a32.574,32.574,0,0,1,11.339,0Zm-12,5.9A1.206,1.206,0,0,1,5.862,8.661,1.236,1.236,0,0,1,4.641,9.882,1.206,1.206,0,0,1,3.454,8.661,1.176,1.176,0,0,1,4.641,7.475m12.63,0a1.176,1.176,0,0,0-1.186,1.186,1.187,1.187,0,1,0,2.372,0,1.176,1.176,0,0,0-1.186-1.186"
+                    transform="translate(0 0)" fill="#3a68b9" fill-rule="evenodd" />
+                </g>
+              </svg>
+              <a href="#">На машине</a>
+            </div>
+          </div>
+        </div>
+        <img src="./img/ contact-rot.svg" class="contact-rot" />
+      </section>
+
+      <section class="path">
+        <div class="container">
+          <div class="path__content">
+            <h2 class="path__headtext">
+              Как дойти <br />
+              от м. Менделеевская
+            </h2>
+            <p class="path__subtext">
+              Из метро выход № 4 сразу повернуть направо и пройти через
+              ресторанные дворики. Пройти две арки, далее прямо до конца дома
+              (в нем клиника KDL, салон красоты ColorTown, магазин HollyShop)
+              и направо, выйдете во дворик, повернете налево, снова через
+              арку, направо и чуть вперед. Вам нужно стеклянное здание с
+              надписью RECEPTION EUROKAPPA.
+            </p>
+            <div class="path__btn">
+              <div class="path__btn-icon">
+                <a href="#" class="button"> ПОСМОТРЕТЬ ВИДЕО </a>
+              </div>
+            </div>
+            <div class="wawe__icon">
+              <div class="third__circle"></div>
+
+              <img src="./img/m-wawe.svg">
+            </div>
+          </div>
+
+          <div class="parking">
+            <div class="parking__wrap">
+              <div class="parking__content">
+                <h3 class="parking__headtext">ПАРКИНГ</h3>
+                <p class="parking__warning">
+                  Парковка доступна только на городских паркингах!
+                </p>
+                <p class="parking__subtext">
+                  Рядом с клиникой парковки нет и работает эвакуатор, будьте
+                  внимательны и следите за знаками!
+                </p>
+              </div>
+
+              <div class="parking__content parking__price">
+                <h4 class="parking__price-headtext">Стоимость парковки</h4>
+                <p class="parking__price-subtext">
+                  с 8:00 до 21:00 - <span>380 руб./час</span>
+                </p>
+                <p class="parking__price-subtext">
+                  с 21:00 до 20:00 - <span>200 руб./час</span>
+                </p>
+                <p class="parking__price-subtext">Включая воскресенье</p>
+              </div>
+              <div class="parking__img">
+                <img src="./img/parking.svg" />
+              </div>
+              <img src="./img/bg/circle.svg" class="circle__parking" />
+            </div>
+
+            <div class="parking__map">
+              <img src="./img/parking__map.png " class="map-dec" />
+              <img src="./img/parking-map_mob.png " class="map-mob" />
+              <img src="./img/parking-map_mob2.png " class="map-mob2" />
+              <div class="parking__map-content">
+                <p class="parking__map-text">
+                  Рекомендуем Вам добираться на такси или общественном
+                  транспорте в связи с отсутствием парковочных мест
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="parking__table">
+            <div class="container parking__table-container">
+              <h2 class="parking__table-name">Наши реквизиты</h2>
+
+              <div class="parking__table-wrap">
+                <div class="parking__table-line">
+                  <div class="parking__table-col-one">Наименование</div>
+                  <div class="parking__table-col-two">«Сан Смайл»</div>
+                  <div class="parking__table-col-three">Р/С</div>
+                  <div class="parking__table-col-four">
+                    40702810038000003238
+                  </div>
+                </div>
+
+                <div class="parking__table-line">
+                  <div class="parking__table-col-one">ОГРН</div>
+                  <div class="parking__table-col-two">1147746843837</div>
+                  <div class="parking__table-col-three">К/С</div>
+                  <div class="parking__table-col-four">
+                    30101810400000000225
+                  </div>
+                </div>
+
+                <div class="parking__table-line">
+                  <div class="parking__table-col-one">ИНН</div>
+                  <div class="parking__table-col-two">7707839805</div>
+                  <div class="parking__table-col-three">Банк</div>
+                  <div class="parking__table-col-four">
+                    ПАО Сбербанк г. Москва,
+                  </div>
+                </div>
+
+                <div class="parking__table-line">
+                  <div class="parking__table-col-one">КПП</div>
+                  <div class="parking__table-col-two">770701001</div>
+                  <div class="parking__table-col-three">БИК</div>
+                  <div class="parking__table-col-four">БИК 044525225</div>
+                </div>
+
+                <div class="parking__table-line">
+                  <div class="parking__table-col-one">Юр.адрес</div>
+                  <div class="parking__table-col-two">
+                    127055, г. Москва, ул. Палиха, д. 10, стр. 9
+                  </div>
+                  <div class="parking__table-col-three"></div>
+                  <div class="parking__table-col-four"></div>
+                </div>
+              </div>
+
+              <div class="parking__table-mob">
+                <div class="line_table-mob _anim-items _no-anim">
+                  <div class="col-one_table-mob">Наименование</div>
+                  <div class="col-two_table-mob">
+                    <h4 class="col-one_table-mobile">Наименование</h4>
+                    «Сан Смайл»
+                  </div>
+                </div>
+
+                <div class="line_table-mob _anim-items _no-anim">
+                  <div class="col-one_table-mob">ОГРН</div>
+                  <div class="col-two_table-mob">
+                    <h4 class="col-one_table-mobile">ОГРН</h4>
+                    1147746843837
+                  </div>
+                </div>
+
+                <div class="line_table-mob _anim-items _no-anim">
+                  <div class="col-one_table-mob">ИНН</div>
+                  <div class="col-two_table-mob">
+                    <h4 class="col-one_table-mobile">ИНН</h4>
+                    7707839805
+                  </div>
+                </div>
+
+                <div class="line_table-mob _anim-items _no-anim">
+                  <div class="col-one_table-mob">КПП</div>
+                  <div class="col-two_table-mob">
+                    <h4 class="col-one_table-mobile">КПП</h4>
+                    770701001
+                  </div>
+                </div>
+
+                <div class="line_table-mob _anim-items _no-anim">
+                  <div class="col-one_table-mob">Юр.адрес</div>
+                  <div class="col-two_table-mob">
+                    <h4 class="col-one_table-mobile">Юр.адрес</h4>
+                    127055, г. Москва, ул. Палиха, д. 10, стр. 9
+                  </div>
+                </div>
+
+                <div class="line_table-mob _anim-items _no-anim">
+                  <div class="col-one_table-mob">Р/С</div>
+                  <div class="col-two_table-mob">
+                    <h4 class="col-one_table-mobile">Р/С</h4>
+                    40702810038000003238
+                  </div>
+                </div>
+
+                <div class="line_table-mob _anim-items _no-anim">
+                  <div class="col-one_table-mob">К/С</div>
+                  <div class="col-two_table-mob">
+                    <h4 class="col-one_table-mobile">К/С</h4>
+                    30101810400000000225
+                  </div>
+                </div>
+
+                <div class="line_table-mob _anim-items _no-anim">
+                  <div class="col-one_table-mob">Банк</div>
+                  <div class="col-two_table-mob">
+                    <h4 class="col-one_table-mobile">Банк</h4>
+                    ПАО Сбербанк г. Москва,
+                  </div>
+                </div>
+
+                <div class="line_table-mob _anim-items _no-anim">
+                  <div class="col-one_table-mob">БИК</div>
+                  <div class="col-two_table-mob">
+                    <h4 class="col-one_table-mobile">БИК</h4>
+                    БИК 044525225
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html')
+
+
+
+
+  </div>
+  <div class="wrapper forms">
+
+    <div class="form">
+        <img src="./img/bg/burger_corcle.svg" class="popUp__contact-circle form_circle">
+        <img src="./img/bg/article__bg-corcle.png" class="article__bg-corcle form__fake">
+        <img class="circle-three form_circle-round" src="./img/bg/circle_big.svg" style="transform: rotate(91deg);">
+        <div class="form__body">
+            <h1>Записаться на прием</h1>
+            <p>Будем рады видеть вас в нашей клинике</p>
+          <div class="input__box">
+
+            <input name="fio" id="fio" type="text" class="big__input first_inp" value="" />
+            <label class="animated first__label" for="fio">Введите ФИО</label>
+
+        </div>
+            <div class="inputfields">
+                <div class="input__box">
+
+                    <input name="tel" id="tel" type="text" class="big__input sec_inp" value="" />
+                    <label class="animated second__label" for="tel">Телефон</label>
+
+                </div>
+                <div class="input__box">
+
+                    <input name="email" id="email" type="text" class="big__input th_inp" value="" />
+                    <label class="animated third__label" for="email">E-mail</label>
+
+                </div>
+            </div>
+            <div class="send__box">
+                <div class="checkbox">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" value="value-1">
+                        <span>Нажимая на кнопку, даю согласие на обработку
+                            <a href="">персональных данных</a></span>
+                      </label>
+
+                </div>
+                <a class="send__button" onclick="sendMail()">Записаться</a>
+            </div>
+        </div>
+       <div class="close_form" onclick="addClassByClick()">
+
+       </div>
+    </div>
+</div>
+
+
+<div class="success_send">
+
+    <div class="send__body">
+        <div class="close_form second_popup" onclick="closeForm()">
+
+        </div>
+    <h2>Собщение отправлено</h2>
+    <p>Спасибо, ваше сообщение отправлено, в ближайшее
+        время с вами свяжутся наши менеджеры для уточнения
+        всех деталей</p>
+        <div class="form__footer">
+            <a class="close_btn" href="" onclick="closeForm()">ЗАКРЫТЬ ОКНО</a>
+            <a href="#" class="logo">
+                <img src="./img/logo.svg" alt="logo">
+              </a>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+  function showByClick(){
+$(".forms").toggleClass("form__open")
+}
+var input = $(".first_inp");
+input.focusin(function() {
+    $('.first__label').addClass("motion");
+});
+var input_sec = $(".sec_inp");
+input_sec.focusin(function() {
+    $('.second__label').addClass("motion");
+});
+var input_th = $(".th_inp");
+input_th.focusin(function() {
+    $('.third__label').addClass("motion");
+});
+function addClassByClick(){
+$(".forms").removeClass("form__open")
+}
+function sendMail(){
+$(".forms").addClass("hide_form");
+$(".success_send").addClass("show");
+
+}
+function closeForm(){
+$(".forms").addClass("hide_form");
+$(".success_send").removeClass("show");
+
+}
+</script>
+  <script>
+
+    var viewport = {
+    width : $(window).width(),
+    height : $(window).height()
+};
+var width = viewport.width;
+var height = viewport.height;
+
+if (width < 560) {
+var zoomval = 55.783334;
+var iconmap = -85;
+var mapicon = 118;
+var mapline = -45
+} else {
+var zoomval = 55.782334;
+var iconmap = -165;
+var mapicon = 30;
+var mapline = -125
+}
+    ymaps.ready(function () {
+      const mediaQuery = window.matchMedia('(min-width: 560px)');
+      var myMap = new ymaps.Map(
+        'map',
+
+        {
+
+          center: [zoomval, 37.599310],
+          zoom: 16,
+          scroll: false,
+        },
+        {
+          searchControlProvider: 'yandex#search',
+        }
+      ),
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+        myPlacemark = new ymaps.Placemark(
+          myMap.getCenter(),
+          {
+            hintContent: 'EuroKappa',
+          },
+          {
+            iconLayout: 'default#image',
+            iconImageHref: './img/icon/icon-map.svg',
+            iconimgize: [50, 50],
+            iconImageOffset: [40, iconmap],
+          }
+        ),
+        myPlacemarkMetro = new ymaps.Placemark(
+          myMap.getCenter(),
+          {
+            hintContent: 'Менделеевская',
+          },
+          {
+            iconLayout: 'default#image',
+            iconImageHref: './img/icon/icon_map-metro.svg',
+            iconimgize: [26, 26],
+            iconImageOffset: [-40, mapicon],
+          }
+        );
+
+      myPlacemarkLine = new ymaps.Placemark(
+        myMap.getCenter(),
+        {
+          hintContent: 'Менделеевская',
+        },
+        {
+          iconLayout: 'default#image',
+          iconImageHref: './img/icon/map-line.svg',
+          iconimgize: [90, 165],
+          iconImageOffset: [-30, mapline],
+        }
+      );
+      myMap.geoObjects
+        .add(myPlacemarkLine)
+        .add(myPlacemark)
+        .add(myPlacemarkMetro);
+    });
+  </script>
+  <script>
+  ymaps.ready(function () {
+      var myMap = new ymaps.Map('mapsec', {
+        center: [55.782334, 37.599310],
+        zoom: 16,
+        scroll: false,
+        // Добавим кнопку для построения маршрутов на карту.
+        controls: ['routeButtonControl']
+      });
+      myMap.controls.add('zoomControl');
+      var control = myMap.controls.get('routeButtonControl');
+
+      // Зададим координаты пункта отправления с помощью геолокации.
+      control.routePanel.state.set('to', '55.784055, 37.600522');
+      myPlacemark = new ymaps.Placemark(
+        myMap.getCenter(),
+        {
+          hintContent: 'EuroKappa',
+        },
+        {
+          iconLayout: 'default#image',
+          iconImageHref: './img/icon/icon-map.svg',
+          iconimgize: [50, 50],
+          iconImageOffset: [40, -165],
+        }
+      ),
+        // Откроем панель для построения маршрутов.
+        control.state.set('expanded', true);
+    });</script>
+  <script>
+    var elements = document.getElementsByClassName("map-control-metro");
+
+    var myFunction = function () {
+      document.getElementById("map").classList.remove('show-map');
+      document.getElementById("mapsec").classList.add('show-map');
+      document.getElementById("car").classList.remove('route_active');
+      document.getElementById("metro").classList.add('route_active');
+
+
+    };
+
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].addEventListener('click', myFunction, false);
+    }
+    var elements = document.getElementsByClassName("map-control-car");
+
+    var myFunctions = function () {
+      document.getElementById("mapsec").classList.remove('show-map');
+      document.getElementById("map").classList.add('show-map');
+      document.getElementById("car").classList.add('route_active');
+      document.getElementById("metro").classList.remove('route_active');
+    };
+
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].addEventListener('click', myFunctions, false);
+    }
+  </script>
+
+  <script src="js/animate.js"></script>
+  <script src="js/contacrCircleAnim.js"></script>
+</body>
+
+</html>

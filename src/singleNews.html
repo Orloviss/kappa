@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+  'title': 'Новость'
+})
+<script src="./js/pageLoader.js"></script>
+
+<body>
+
+  <div  id="child" class="preloader__child">
+
+    <div class="load-3">
+
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+    <div class="wrapper">
+        <header class="header header__no-anim">
+            <div class="header__wrapper">
+              <div class="header__burger">
+                <a href="./index.html" class="logo">
+                  <img src="./img/logo-header.svg" alt="logo" />
+                </a>
+              </div>
+              <div class="header__navigation">
+                <ul class="navigation__wrap">
+                  <li class="navigation-li">
+                    <a href="service.html"> Услуги </a>
+                  </li>
+                  <li class="navigation-li">
+                    <a href="company.html"> Клиника </a>
+                  </li>
+                  <li class="navigation-li">
+                    <a href="news.html">Акции</a>
+                  </li>
+                  <li class="navigation-li">
+                    <a href="result.html"> Результаты <br />до и после </a>
+                  </li>
+                  <li class="navigation-li">
+                    <a href="contact.html"> Контакты </a>
+                  </li>
+                </ul>
+                <div class="header__contact">
+                  <div class="phone">
+                    <object
+                      class="header-svg"
+                      type="image/svg+xml"
+                      data="./img/phone-icon.svg"
+                    >
+                      <img src="./img/phone-icon.svg" />
+                    </object>
+                    <a href="tel:+7 (495) 477-58-09">+7 (495) 477-58-09</a>
+                  </div>
+                  <div class="address">
+                    <object
+                      class="header-svg"
+                      type="image/svg+xml"
+                      data="./img/metro-icon.svg"
+                    >
+                      <img src="./img/metro-icon.svg" />
+                    </object>
+                    <p>Менделеевская</p>
+                  </div>
+                  <div class="phone-mob">
+                    <a href="tel:+7 (495) 477-58-09">
+                      <img src="./img/phone-icon-mob.svg" alt="phone" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="header__payment">
+                <a href="#" class="payment"> Оплата онлайн </a>
+                <a href="#">
+                  <div class="email">
+                    <img src="./img/email.svg" alt="email" />
+                  </div>
+                </a>
+                <div class="burger__menu">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="head-page single__head-page">
+                <div class="container">
+                  <ul class="breadcrumbs">
+                    <li>
+                      <a href="#">Главная</a>
+                    </li>
+                    <li>
+                      <a href="./service.html">Услуги</a>
+                    </li>
+                    <li>Название очередной новости на сайте</li>
+                  </ul>
+                </div>
+            </section>
+
+            <section class="single__news">
+                <div class="container">
+                    <h1 class="single__news-headtext">Название очередной
+                        новости на сайте</h1>
+                    <div class="article__news">
+                        <div class="news__panel">
+                            <div class="panel__content">
+                                <p class="panel__data">
+                                    09 октября, 2022 г.
+                                </p>
+                                <p class="panel-text">НОВОСТИ</p>
+                            </div>
+                            <div class="panel__arrow-wrap">
+                                <div class="arrow-back__wrap">
+                                    <img src="./img/aboutUs/prev.svg">
+                                    <img class="hover__arrow" src="./img/aboutUs/arrow-back_hover.svg">
+                                </div>
+                                <div class="arrow-next__wrap">
+                                    <img src="./img/aboutUs/next.svg">
+                                    <img class="hover__arrow" src="./img/aboutUs/arrow-next_hover.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article__news-content">
+                            <img src="./img/singlePage/single_news.png">
+                            <p class="news__text">
+                                Элайнеры - относительно новая ортодонтическая конструкция. Некоторые пациенты сомневаются
+в их эффективности - не все понимают, как работают элайнеры. Элайнеры - это прозрачные
+ортодонтические капы для исправления прикуса, невидимая альтернатива привычным брекетам.
+Полностью заменить брекет-системы на элайнеры пока невозможно, несмотря на то, что производитель
+заявляет об этом. Легкие и средние случаи нарушений поддаются элайнерам. Но встречаются и сильные
+патологии, с которыми иногда и брекеты не справляются. Тогда нужно делать операцию, и подкреплять
+результат брекетами.
+                            </p>
+                            <p class="news__text"><span>Самый очевидный плюс - эстетика.</span> Элайнеры практически незаметны. При лечении на брекетах зубы
+                                нужно сначала выровнять, и только потом перемещать. Чего не скажешь об элайнерах - на них этот этап
+                                можно пропустить. Это, несомненно, преимущество.
+                            </p>
+                            <p class="news__text">
+                                И зубы, и элайнеры чистят щеткой с пастой. Дополнительно можно купить <a href="#">средство для протезов</a>,
+и ненадолго опускать капу в него. Но важно помнить, что в элайнерах нужно находиться не менее
+22 часов в сутки. Загружать капу в стаканчик на всю ночь, как делают бабушки с протезами, точно
+не стоит. 15-20 минут будет вполне достаточно
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="photography">
+                <div class="photography__wrap">
+                    <div class="photography-block">
+                        <div class="container">
+
+                            <h2 class="photography__text _anim-items _no-anim">Фотографии</h2>
+
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="photography-slaider swiper-container">
+                        <div class="swiper-wrapper about-us__wrapper">
+                          <div class="swiper-slide photography__slide">
+                            <div class="slide-img" data-fancybox="gallery"  data-src="./img/news/slaid-one.png">
+                              <img src="./img/news/slaid-one.png" />
+                            </div>
+                          </div>
+                          <div class="swiper-slide photography__slide" >
+                            <div class="slide-img" data-fancybox="gallery"  data-src="./img/news/slaid-two.png">
+                              <img src="./img/news/slaid-two.png" class="img__big" />
+                            </div>
+                          </div>
+                          <div class="swiper-slide photography__slide">
+                            <div class="slide-img" data-fancybox="gallery"  data-src="./img/news/slaid-three.png.png">
+                              <img src="./img/news/slaid-three.png" />
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide photography__slide">
+                            <div class="slide-img" data-fancybox="gallery"  data-src="./img/news/slaid-four.png.png">
+                              <img src="./img/news/slaid-four.png" />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="swiper-scrollbar"></div>
+                        <div class="swiper-arrow-wrap">
+                          <div class="photography-arrow-prev">
+                            <img src="./img/aboutUs/prev.svg" />
+                          </div>
+                          <div class="photography-arrow-next">
+                            <img src="./img/aboutUs/next.svg" />
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-us__video _anim-items _no-anim ">
+                    <div class="video-wrap">
+                      <video muted poster="./img/news/photography_video.png" >
+                        <source src="./bg.mp4" type="video/mp4" />
+                      </video>
+                      <div class="video-icon">
+                        <div class="icon-wrap">
+                          <img class="icon-play" src="./img/play.svg" >
+                          <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                      </div>
+                    </div>
+                    <h2 class="video-text _anim-items _no-anim">ВИДЕО</h2>
+                </div>
+                </div>
+                <div class="container">
+                    <div class="list__service photography-back">
+                        <a href="#">
+                          к списку новостей
+                        </a>
+                      </div>
+                </div>
+            </section>
+
+            <section class="news-actual">
+              <div class="container">
+                <h2 class="actual__text _anim-items _no-anim">
+                  АКТУАЛЬНЫЕ НОВОСТИ
+                </h2>
+
+                <div class="news__row row-two">
+                  <div class="news__card">
+                      <div class="card__col">
+                        <div class="card__wrap">
+                          <img src="./img/news/news-one.png" />
+                          <div class="news__data">
+                            <p class="news__data-year">09 октября, 2022 г.</p>
+                            <p class="news__data-chapter">НОВОСТИ</p>
+                          </div>
+                          <h2 class="news__card-headtext">
+                            Еще один заголовок для новости в несколько строк
+                          </h2>
+                          <div class="heanews__btn news__card-btn button__card">
+                              <a href="#"> Подробнее </a>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="news__card">
+                      <div class="card__col">
+                        <div class="card__wrap">
+                          <img src="./img/news/news-two.png" />
+                          <div class="news__data">
+                            <p class="news__data-year">09 октября, 2022 г.</p>
+                            <p class="news__data-chapter">НОВОСТИ</p>
+                          </div>
+                          <h2 class="news__card-headtext">
+                            Еще один заголовок для новости в несколько строк
+                          </h2>
+                          <div class="heanews__btn news__card-btn button__card">
+                              <a href="#"> Подробнее </a>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="news__card">
+                      <div class="card__col">
+                        <div class="card__wrap">
+                          <img src="./img/news/news-three.png" />
+                          <div class="news__data">
+                            <p class="news__data-year">09 октября, 2022 г.</p>
+                            <p class="news__data-chapter">НОВОСТИ</p>
+                          </div>
+                          <h2 class="news__card-headtext">
+                              Новость на сайт в одну строку
+                          </h2>
+                          <div class="heanews__btn news__card-btn button__card">
+                              <a href="#"> Подробнее </a>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <a href="#" class="button">
+                  посмотреть все
+                </a>
+              </div>
+            </section>
+        </main>
+
+        @include('partials/footer.html')
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/slaider.js"></script>
+    <script src="js/videoPlay.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

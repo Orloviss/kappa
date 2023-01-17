@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="FAV.svg">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/twentytwenty.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <title>Форма</title>
+</head>
+
+<body>
+ 
+    <div class="wrapper forms">
+
+        <div class="form">
+            <img src="./images/bg/burger_corcle.svg" class="popUp__contact-circle form_circle">
+            <img src="./images/bg/article__bg-corcle.png" class="article__bg-corcle form__fake">
+            <img class="circle-three form_circle-round" src="./images/bg/circle_big.svg" style="transform: rotate(91deg);">
+            <div class="form__body">
+                <h1>Записаться на прием</h1>
+                <p>Будем рады видеть вас в нашей клинике</p>
+              <div class="input__box">
+             
+                <input name="fio" id="fio" type="text" class="big__input first_inp" value="" />
+                <label class="animated first__label" for="fio">Введите ФИО</label>
+          
+            </div>
+                <div class="inputfields">
+                    <div class="input__box">
+             
+                        <input name="tel" id="tel" type="text" class="big__input sec_inp" value="" />
+                        <label class="animated second__label" for="tel">Телефон</label>
+                  
+                    </div>
+                    <div class="input__box">
+             
+                        <input name="email" id="email" type="text" class="big__input th_inp" value="" />
+                        <label class="animated third__label" for="email">E-mail</label>
+                  
+                    </div>
+                </div>
+                <div class="send__box">
+                    <div class="checkbox">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" value="value-1">
+                            <span>Нажимая на кнопку, даю согласие на обработку
+                                <a href="">персональных данных</a></span>
+                          </label>
+                        
+                    </div>
+                    <a class="send__button">Записаться</a>
+                </div>
+            </div>
+           <div class="close_form" onclick="addClassByClick()">
+
+           </div>
+        </div>
+    </div>
+</body>
+<script>
+ var input = $(".first_inp");
+    input.focusin(function() {
+        $('.first__label').addClass("motion");
+    });
+    var input_sec = $(".sec_inp");
+    input_sec.focusin(function() {
+        $('.second__label').addClass("motion");
+    });
+    var input_th = $(".th_inp");
+    input_th.focusin(function() {
+        $('.third__label').addClass("motion");
+    });
+ function addClassByClick(){
+  $(".form").addClass("form__closed")
+}
+</script>
+</html>

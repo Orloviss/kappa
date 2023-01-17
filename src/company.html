@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+  'title': 'О компании'
+})
+<script src="./js/pageLoader.js"></script>
+
+<body>
+
+  <div  id="child" class="preloader__child">
+
+    <div class="load-3">
+
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+    <div class="wrapper">
+        <header class="header header__no-anim">
+            <div class="header__wrapper">
+              <div class="header__burger">
+
+                <a href="./index.html" class="logo">
+                  <img src="./img/logo-header.svg" alt="logo" />
+                </a>
+              </div>
+              <div class="header__navigation">
+                <ul class="navigation__wrap">
+                  <li class="navigation-li">
+                    <a href="service.html"> Услуги </a>
+                  </li>
+                  <li class="navigation-li">
+                    <a href="company.html"> Клиника </a>
+                  </li>
+                  <li class="navigation-li">
+                    <a href="news.html">Акции </a>
+                  </li>
+                  <li class="navigation-li">
+                    <a href="result.html"> Результаты <br />до и после </a>
+                  </li>
+                  <li class="navigation-li">
+                    <a href="contact.html"> Контакты </a>
+                  </li>
+                </ul>
+                <div class="header__contact">
+                  <div class="phone">
+                    <object
+                      class="header-svg"
+                      type="image/svg+xml"
+                      data="./img/phone-icon.svg"
+                    >
+                      <img src="./img/phone-icon.svg" />
+                    </object>
+                    <a href="tel:+7 (495) 477-58-09">+7 (495) 477-58-09</a>
+                  </div>
+                  <div class="address">
+                    <object
+                      class="header-svg"
+                      type="image/svg+xml"
+                      data="./img/metro-icon.svg"
+                    >
+                      <img src="./img/metro-icon.svg" />
+                    </object>
+                    <p>Менделеевская</p>
+                  </div>
+                  <div class="phone-mob">
+                    <a href="tel:+7 (495) 477-58-09">
+                      <img src="./img/phone-icon-mob.svg" alt="phone" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="header__payment">
+                <a href="#" class="payment"> Оплата онлайн </a>
+                <a href="#">
+                  <div class="email">
+                    <img src="./img/email.svg" alt="email" />
+                  </div>
+                </a>
+                <div class="burger__menu">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+        </header>
+
+        <main class="main">
+          <section class="head-page">
+            <div class="container">
+              <ul class="breadcrumbs">
+                <li>
+                  <a href="./index.html">Главная</a>
+                </li>
+                <li>О компании</li>
+              </ul>
+              <h1 class="page__hedtext">О компании</h1>
+            </div>
+          </section>
+          <section class="company">
+            <div class="container">
+              <div class="company__wrap">
+                <div class="company__content">
+                  <h3 class="company__headtext">
+                    История нашей компании началась в 2016 году,
+когда мы открыли в Москве научно-клинический
+центр и собственное производство элайнеров.
+                  </h3>
+                  <div class=" content-right-mob" id="company__img">
+                    <img src="./img/company/company-mob.png" class="content-right-img-mob" >
+                    <img src="./img/company/company-rot-mob.svg" class="company-rot-mob">
+            </div>
+                  <p class="company__subtext"><span>Что было нашей главной задачей?</span><br>
+                    С одной стороны, сделать прозрачную ортодонтию доступной каждому,  а с другой ‒ обеспечить
+                    пациентам премиальное качество услуг. Высококвалифицированные врачи, забота и внимание
+                    персонального менеджера – это помогает чувствовать себя комфортно всем нашим  пациентам.
+                  </p>
+                  <p class="company__subtext">
+                    Мы работаем для того, чтобы ортодонтическое лечение было  действительно доступным,
+                    эстетичным, комфортным и незаметным  для окружающих!</p>
+                  <p class="company__subtext">
+                    У нас Вы сможете получить комплексное лечение: клиника предоставляет  услуги врачей
+                    ортодонтов, ортопедов, имплантологов, терапевтов и хирургов. Мы предоставим Вам
+                    индивидуальный план лечения  и ответим на все Ваши вопросы.</p>
+                  <a href="#" class="company_btn">ЗАПИСАТЬСЯ НА ПРИЕМ</a>
+                </div>
+                  <div class="target__content-right content-right-dec" id="company__img_sec">
+                          <img src="./img/company/company__target.png" class="target-foto-dec" >
+                          <img src="./img/company/company-foto_mob.png" class="target-foto-mob" >
+                  </div>
+              </div>
+            </div>
+            <img src="./img/company/company-rot.svg" class="company-rot-dec">
+            <img src="./img/company/company-circle-dec.svg" class="company-circle-dec">
+            </section>
+
+            <section class="tour">
+              <div class="container">
+                <h2 class="tour-headtext _anim-items _no-anim">
+                  Виртуальная прогулка <br>
+                  <span>по клинике</span>
+                </h2>
+
+
+                  <div class="tour-map-content" >
+                    <iframe class="tour-map" src="https://www.google.com/maps/embed?pb=!4v1671491287701!6m8!1m7!1sCAoSLEFGMVFpcE5tZzVxWGFYcTFnVmFwbERQRWpmdmM0ZlNkUERmOTJaTGUtUGNq!2m2!1d55.7840365994044!2d37.60038124276503!3f12.94!4f2.739999999999995!5f1.8777968278907604" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+              </div>
+              <img src="./img/tour-ellipse.png" class="tour-ellipse">
+              <img src="./img/tour-ellipse-small.png"
+              class="tour-ellipse-small">
+              <img src="./img/bg/circle.svg" class="tour-circle">
+            </section>
+
+            <section class="about-us licence ">
+              <div class="container">
+                <div class="licence__headtext-wrap">
+                    <h2 class="licence__headtext  _anim-items _no-anim licence__headtext-line">Лицензии</h2>
+
+                    <h2 class="licence__headtext  _anim-items _no-anim licence__headtext-line-two">и документы</h2>
+
+                </div>
+
+                <div class="licence__slaider swiper-container">
+                  <div class="swiper-wrapper about-us__wrapper ">
+                    <div class="swiper-slide about-us__slide">
+                      <div class="slide-img licence-img " data-fancybox="gallery"  data-src="./img/company/diploma-one.png">
+                        <img src="./img/company/diploma-one.png" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide about-us__slide" >
+                      <div class="slide-img licence-img" data-fancybox="gallery"  data-src="./img/company/diploma-two.png">
+                        <img src="./img/company/diploma-two.png" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide about-us__slide">
+                      <div class="slide-img licence-img" data-fancybox="gallery"  data-src="./img/company/diploma-three.png">
+                        <img src="./img/company/diploma-three.png" />
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide about-us__slide">
+                      <div class="slide-img licence-img" data-fancybox="gallery"  data-src="./img/company/diploma-four.png">
+                        <img src="./img/company/diploma-four.png" />
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide about-us__slide">
+                      <div class="slide-img licence-img" data-fancybox="gallery"  data-src="./img/company/diploma-five.png">
+                        <img src="./img/company/diploma-five.png" />
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide about-us__slide">
+                      <div class="slide-img licence-img" data-fancybox="gallery"  data-src="./img/company/diploma-five.png">
+                        <img src="./img/company/diploma-five.png" />
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide about-us__slide">
+                      <div class="slide-img licence-img" data-fancybox="gallery"  data-src="./img/company/diploma-five.png">
+                        <img src="./img/company/diploma-five.png" />
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide about-us__slide">
+                      <div class="slide-img licence-img" data-fancybox="gallery"  data-src="./img/company/diploma-five.png">
+                        <img src="./img/company/diploma-five.png" />
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide about-us__slide">
+                      <div class="slide-img licence-img" data-fancybox="gallery"  data-src="./img/company/diploma-five.png">
+                        <img src="./img/company/diploma-five.png" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-scrollbar"></div>
+                  <div class="swiper-arrow-wrap">
+                    <div class="swiper-arrow-prev licence-prev">
+                      <img src="./img/aboutUs/prev.svg" />
+                    </div>
+                    <div class="swiper-arrow-next licence-next">
+                      <img src="./img/aboutUs/next.svg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="./img/aboutUs/about-bg.png" class="about-us_bg _mob-company-bg-dec" >
+              <img src="./img/company/eliips-tablet.svg" class="_tablet">
+              <img src="./img/company/ellips-mob.svg" class=" _mob-company-bg" >
+            </section>
+
+
+        </main>
+
+        @include('partials/footer.html')
+
+
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/companyCircleAnim.js"></script>
+    <script src="js/slaider.js"></script>
+</body>
+
+</html>

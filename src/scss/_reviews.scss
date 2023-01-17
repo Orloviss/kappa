@@ -1,0 +1,93 @@
+.section-reviews{
+    position: relative;
+}
+.reviews {
+    position: relative;
+    overflow: hidden;
+    background: #3a68b9 url(../images/bg/reviews-bg.png) no-repeat;
+    background-size: contain;
+    padding: 130px 0px 100px;
+    @media (max-width:1920px) {
+        padding: calc(50px + (130 - 50) * (100vw - 375px) / (1920 - 375)) 0px calc(55px + (100 - 55) * (100vw - 375px) / (1920 - 375));
+    }
+    .services__headtext {
+        color: #fff;
+        font-size: 116px;
+        @media (max-width:1920px) {
+        font-size:  calc(57px + (116 - 57) * (100vw - 375px) / (1920 - 375));
+        }
+    }
+}
+.services__headtext-bg {
+    position: relative;
+    &::before {
+        content: '';
+        background: url(../images/bg/circle-reviews.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 47%;
+        transform: translateX(-47%);
+        top: -250px;
+        width: 800px;
+        height: 635px;
+    }
+}
+.reviews__slaider {
+    position: relative;
+    padding-bottom: 80px;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all 0.5s ease 1ms;
+    &._anim {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    @media (max-width:769px) {
+        padding-bottom: 50px;
+    }
+    @media (max-width:520px) {
+        padding-bottom: 0px;
+    }
+    .swiper-scrollbar-drag {
+        background: #68d1ff;
+    }
+}
+.reviews__slaider .swiper-arrow-next img,
+.reviews__slaider .swiper-arrow-prev img {
+    width: 50px;
+    height: 50px;
+}
+.swiper-arrow-next {
+    position: relative;
+    cursor: pointer;
+}
+.swiper-arrow-prev {
+    position: relative;
+    cursor: pointer;
+}
+.reviews .swiper-scrollbar {
+    max-width: 87%;
+    @media (max-width:1050px) {
+        max-width: 73%;
+    }
+    @media (max-width:520px) {
+        display: none;
+    }
+}
+.slide-video {
+    width: 100%;
+    // transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.5s ease 1ms;
+    // &._anim {
+    //     transform: translateY(0%);
+    //     opacity: 1;
+    // }
+}
+.reviews-video {
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+}
+
+

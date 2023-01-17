@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+  'title': 'До-после'
+})
+<script src="./js/pageLoader.js"></script>
+
+<body>
+  <div  id="child" class="preloader__child">
+
+    <div class="load-3">
+
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+    <div class="wrapper">
+        <header class="header header__no-anim">
+            <div class="header__wrapper">
+              <div class="header__burger">
+
+                <a href="./index.html" class="logo">
+                  <img src="./img/logo-header.svg" alt="logo" />
+                </a>
+              </div>
+              <div class="header__navigation">
+                <ul class="navigation__wrap">
+                  <li class="navigation-li">
+                    <a href="./service.html"> Услуги </a>
+                  </li>
+                  <li class="navigation-li">
+                    <a href="company.html"> Клиника </a>
+                  </li>
+                  <li class="navigation-li">
+                    <a href="news.html"> Акции </a>
+                  </li>
+                  <li class="navigation-li">
+                    <a href="result.html"> Результаты <br />до и после </a>
+                  </li>
+                  <li class="navigation-li">
+                    <a href="contact.html"> Контакты </a>
+                  </li>
+                </ul>
+                <div class="header__contact">
+                  <div class="phone">
+                    <object class="header-svg" type="image/svg+xml" data="./img/phone-icon.svg">
+                      <img src="./img/phone-icon.svg" />
+                    </object>
+                    <a href="tel:+7 (495) 477-58-09">+7 (495) 477-58-09</a>
+                  </div>
+                  <div class="address">
+                    <object  class="header-svg" type="image/svg+xml" data="./img/metro-icon.svg">
+                      <img src="./img/metro-icon.svg" />
+                    </object>
+                    <p>Менделеевская</p>
+                  </div>
+                  <div class="phone-mob">
+                    <a href="tel:+7 (495) 477-58-09">
+                      <img src="./img/phone-icon-mob.svg" alt="phone" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="header__payment">
+                <a href="#" class="payment"> Оплата онлайн </a>
+                <a href="#">
+                <div class="email">
+                    <img src="./img/email.svg" alt="email" />
+                </div>
+              </a>
+              <div class="burger__menu">
+                <span></span>
+              </div>
+              </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="head-page">
+                <div class="container">
+                  <ul class="breadcrumbs">
+                    <li>
+                      <a href="./index.html">Главная</a>
+                    </li>
+                    <li>Примеры работ  </li>
+                  </ul>
+                  <h1 class="page__hedtext">Результаты до и после</h1>
+                </div>
+            </section>
+
+            <section class="result">
+                <div class="container result-container">
+                    <div class="result__wrap">
+                        <div class="result__text">
+                            <h2 class="result__headtext">Результаты лечения наших пациентов</h2>
+                            <div class="filter">
+                                <img src="./img/filter-icon.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="result__tab-wrap">
+                          <div class="tab__wrapper">
+                            <div class="tabs__wrap-result">
+                              <div class="result__tab">
+                                  Все результаты
+                              </div>
+                              <div class="result__tab active">
+                                  Мезиальный прикус
+                              </div>
+                              <div class="result__tab">
+                                  Дистальный прикус
+                              </div>
+                              <div class="result__tab active">
+                                  Открытый прикус
+                              </div>
+                              <div class="result__tab">
+                                  Закрытый прикус
+                              </div>
+                              <div class="result__tab active">
+                                  Перекрестный прикус
+                              </div>
+                              <div class="result__tab">
+                                  Лечение взрослых
+                              </div>
+                              <div class="result__tab tab__more tab__dec">
+                                  Показать еще
+                              </div>
+                            </div>
+
+                            <div class="tabs__hide">
+                              <div class="result__tab">
+                                Мезиальный прикус
+                            </div>
+                            <div class="result__tab">
+                              Мезиальный прикус
+                          </div>
+                          <div class="result__tab">
+                            Мезиальный прикус
+                        </div>
+                        <div class="hide__tap">Скрыть</div>
+                            </div>
+                          </div>
+
+
+                            <div class="result__tab tab__more tab__mob">
+                                Показать еще
+                            </div>
+                        </div>
+
+                        <div class="filter__popUp">
+                          <div class="filter__wrap">
+                            <div class="filter__head">
+                              <h4 class="filter__text">
+                                Фильтр
+                              </h4>
+                              <div class="close__wrapper">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                            </div>
+                            </div>
+                            <div class="checkbox__wrap">
+                              <label class="filter__all check option">
+                                <input type="checkbox" class="check__input">
+                                <span class="check__box"></span>
+                                Все результаты
+                              </label>
+                              <label class="check option">
+                                <input type="checkbox" class="check__input">
+                                <span class="check__box"></span>
+                                Мезиальный прикус
+                              </label>
+                              <label class=" check option">
+                                <input type="checkbox" class="check__input">
+                                <span class="check__box"></span>
+                                Дистального прикус
+                              </label>
+                              <label class=" check option">
+                                <input type="checkbox" class="check__input">
+                                <span class="check__box"></span>
+                                Открытый прикус
+                              </label>
+                              <label class="check option">
+                                <input type="checkbox" class="check__input">
+                                <span class="check__box"></span>
+                                Закрытого прикус
+                              </label>
+                              <label class="check option">
+                                <input type="checkbox" class="check__input">
+                                <span class="check__box"></span>
+                                Перекрестный прикуса
+                              </label>
+                              <label class="check option">
+                                <input type="checkbox" class="check__input">
+                                <span class="check__box"></span>
+                                Исправление скученности зубов
+                              </label>
+
+                              <label class="check option">
+                                <input type="checkbox" class="check__input">
+                                <span class="check__box"></span>
+                                Формирование места под коронку
+                              </label>
+
+                              <label class="check option">
+                                <input type="checkbox" class="check__input">
+                                <span class="check__box"></span>
+                                Лечение детей
+                              </label>
+
+                              <label class="check option">
+                                <input type="checkbox" class="check__input">
+                                <span class="check__box"></span>
+                                Лечение взрослых
+                              </label>
+
+                              <label class="check option">
+                                <input type="checkbox" class="check__input">
+                                <span class="check__box"></span>
+                                Лечение подростков
+                              </label>
+                              <label class="check option">
+                                <input type="checkbox" class="check__input">
+                                <span class="check__box"></span>
+                                Простые случаи
+                              </label>
+                              <label class="check option">
+                                <input type="checkbox" class="check__input">
+                                <span class="check__box"></span>
+                                Сложные случаи
+                              </label>
+                              <label class="check option">
+                                <input type="checkbox" class="check__input">
+                                <span class="check__box"></span>
+                                Лечение взрослых
+                              </label>
+                              <label class="check option">
+                                <input type="checkbox" class="check__input">
+                                <span class="check__box"></span>
+                                Лечение взрослых
+                              </label>
+                            </div>
+
+
+                          </div>
+                          <div class="filter__controls">
+                            <a href="#" class="button">
+                              ПРИМЕНИТЬ
+                            </a>
+                            <a href="#" class="reset">
+                              ОЧИСТИТЬ
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="result__wrap-card">
+                        <div class="result__card _anim-items _no-anim">
+                            <div id="box" class="result__card-img">
+                                <img src="./img/singlePage/before-three.png" alt="До">
+                                <img src="./img/singlePage/after-three.png" alt="После">
+                            </div>
+
+                            <div class="result__card-wrap">
+                                <div class="result__card-content">
+                                    <h2 class="result__card-name">Мезиальный прикус</h2>
+                                    <p class="result__card-time">Полный срок лечения: 12,5 месяцев</p>
+                                </div>
+                                <a href="#" class="button">
+                                  Записаться на прием
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="result__card _anim-items _no-anim">
+                            <div id="box-one" class="result__card-img">
+                                <img src="./img/singlePage/before-three.png" alt="До">
+                                <img src="./img/singlePage/after-three.png" alt="После">
+                            </div>
+
+                            <div class="result__card-wrap">
+                                <div class="result__card-content">
+                                    <h2 class="result__card-name">Открытый прикус</h2>
+                                    <p class="result__card-time">Полный срок лечения: 10,5 месяцев</p>
+                                </div>
+                                <a href="#" class="button">
+                                  Записаться на прием
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="result__card _anim-items _no-anim">
+                            <div id="box-three" class="result__card-img">
+                                <img src="./img/singlePage/before-three.png" alt="До">
+                                <img src="./img/singlePage/after-three.png" alt="После">
+                            </div>
+
+                            <div class="result__card-wrap">
+                                <div class="result__card-content">
+                                    <h2 class="result__card-name">Перекрестный прикус</h2>
+                                    <p class="result__card-time">Полный срок лечения: 10,5 месяцев</p>
+                                </div>
+                                <a href="#" class="button">
+                                  Записаться на прием
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="result__card _anim-items _no-anim">
+                            <div id="box-three" class="result__card-img">
+                                <img src="./img/singlePage/before-three.png" alt="До">
+                                <img src="./img/singlePage/after-three.png" alt="После">
+                            </div>
+
+                            <div class="result__card-wrap">
+                                <div class="result__card-content">
+                                    <h2 class="result__card-name">Закрытый прикус</h2>
+                                    <p class="result__card-time">Полный срок лечения: 12,5 месяцев</p>
+                                </div>
+                                <a href="#" class="button">
+                                  Записаться на прием
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="result__card _anim-items _no-anim">
+                            <div id="box-three" class="result__card-img">
+                                <img src="./img/singlePage/before-three.png" alt="До">
+                                <img src="./img/singlePage/after-three.png" alt="После">
+                            </div>
+
+                            <div class="result__card-wrap">
+                                <div class="result__card-content">
+                                    <h2 class="result__card-name">Мезиальный прикус</h2>
+                                    <p class="result__card-time">Полный срок лечения: 10,5 месяцев</p>
+                                </div>
+                                <a href="#" class="button">
+                                  Записаться на прием
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="result__card _anim-items _no-anim">
+                            <div id="box-three" class="result__card-img">
+                                <img src="./img/singlePage/before-three.png" alt="До">
+                                <img src="./img/singlePage/after-three.png" alt="После">
+                            </div>
+
+                            <div class="result__card-wrap">
+                                <div class="result__card-content">
+                                    <h2 class="result__card-name">Лечение взрослых</h2>
+                                    <p class="result__card-time">Полный срок лечения: 10,5 месяцев</p>
+                                </div>
+                                <a href="#" class="button">
+                                  Записаться на прием
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="result__card _anim-items _no-anim">
+                          <div id="box" class="result__card-img">
+                              <img src="./img/singlePage/before-three.png" alt="До">
+                              <img src="./img/singlePage/after-three.png" alt="После">
+                          </div>
+
+                          <div class="result__card-wrap">
+                              <div class="result__card-content">
+                                  <h2 class="result__card-name">Мезиальный прикус</h2>
+                                  <p class="result__card-time">Полный срок лечения: 12,5 месяцев</p>
+                              </div>
+                              <a href="#" class="button">
+                                Записаться на прием
+                              </a>
+                          </div>
+                      </div>
+
+                      <div class="result__card _anim-items _no-anim">
+                        <div id="box" class="result__card-img">
+                            <img src="./img/singlePage/before-three.png" alt="До">
+                            <img src="./img/singlePage/after-three.png" alt="После">
+                        </div>
+
+                        <div class="result__card-wrap">
+                            <div class="result__card-content">
+                                <h2 class="result__card-name">Мезиальный прикус</h2>
+                                <p class="result__card-time">Полный срок лечения: 12,5 месяцев</p>
+                            </div>
+                            <a href="#" class="button">
+                              Записаться на прием
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="result__card _anim-items _no-anim">
+                      <div id="box" class="result__card-img">
+                          <img src="./img/singlePage/before-three.png" alt="До">
+                          <img src="./img/singlePage/after-three.png" alt="После">
+                      </div>
+
+                      <div class="result__card-wrap">
+                          <div class="result__card-content">
+                              <h2 class="result__card-name">Мезиальный прикус</h2>
+                              <p class="result__card-time">Полный срок лечения: 12,5 месяцев</p>
+                          </div>
+                          <a href="#" class="button">
+                            Записаться на прием
+                          </a>
+                      </div>
+                  </div>
+
+                  <div class="result__card _anim-items _no-anim">
+                    <div id="box" class="result__card-img">
+                        <img src="./img/singlePage/before-three.png" alt="До">
+                        <img src="./img/singlePage/after-three.png" alt="После">
+                    </div>
+
+                    <div class="result__card-wrap">
+                        <div class="result__card-content">
+                            <h2 class="result__card-name">Мезиальный прикус</h2>
+                            <p class="result__card-time">Полный срок лечения: 12,5 месяцев</p>
+                        </div>
+                        <a href="#" class="button">
+                          Записаться на прием
+                        </a>
+                    </div>
+                </div>
+
+                <div class="result__card _anim-items _no-anim">
+                  <div id="box" class="result__card-img">
+                      <img src="./img/singlePage/before-three.png" alt="До">
+                      <img src="./img/singlePage/after-three.png" alt="После">
+                  </div>
+
+                  <div class="result__card-wrap">
+                      <div class="result__card-content">
+                          <h2 class="result__card-name">Мезиальный прикус</h2>
+                          <p class="result__card-time">Полный срок лечения: 12,5 месяцев</p>
+                      </div>
+                      <a href="#" class="button">
+                        Записаться на прием
+                      </a>
+                  </div>
+              </div>
+
+                        <div class="result__card _anim-items _no-anim">
+                          <div id="box" class="result__card-img">
+                              <img src="./img/singlePage/before-three.png" alt="До">
+                              <img src="./img/singlePage/after-three.png" alt="После">
+                          </div>
+
+                          <div class="result__card-wrap">
+                              <div class="result__card-content">
+                                  <h2 class="result__card-name">Мезиальный прикус</h2>
+                                  <p class="result__card-time">Полный срок лечения: 12,5 месяцев</p>
+                              </div>
+                              <a href="#" class="button">
+                                Записаться на прием
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+
+                    <p class="result__license">Все права на изображения защищены и являются собственностью НКЦ EUROKAPPA</p>
+                </div>
+
+
+                <img src="./img/bg/circle.svg" class="result-circle">
+                <img src="./img/bg/circle.svg" class="result-circle-two">
+                <img src="./img/singlePage/singele_circle-rot.png" class="result-circle-rotate">
+            </section>
+
+            <section class="section-reviews">
+              <section class="reviews">
+                <div class="container">
+                  <div class="services__headtext-bg">
+
+                      <h2 class="services__headtext  _anim-items _no-anim ">Отзывы</h2>
+
+                  </div>
+                    <div class="reviews__slaider swiper-container _anim-items _no-anim ">
+                    <div class="swiper-wrapper about-us__wrapper">
+                      <div class="swiper-slide about-us__slide ">
+
+                        <div class="video-wrap">
+                         <video class="reviews-video video-one" >
+                          <source src="one.mp4" type="video/mp4" />
+                        </video>
+                          <div class="video-icon play-one">
+                            <div class="icon-wrap">
+                              <img class="icon-play" src="./img/play.svg" >
+                              <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide about-us__slide ">
+                        <div class="video-wrap ">
+                          <video class="reviews-video video-two">
+                            <source src="two.mov" type="video/mp4" />
+                          </video>
+                          <div class="video-icon">
+                            <div class="icon-wrap play-two">
+                              <img class="icon-play" src="./img/play.svg" >
+                              <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide about-us__slide ">
+
+                        <div class="video-wrap">
+                          <video class="reviews-video video-three">
+                            <source src="three.mov" type="video/mp4" />
+                          </video>
+                          <div class="video-icon">
+                            <div class="icon-wrap play-three">
+                              <img class="icon-play" src="./img/play.svg" >
+                              <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide about-us__slide ">
+
+                        <div class="video-wrap">
+                          <video class="reviews-video video-four" >
+                            <source src="four.mov" type="video/mp4" />
+                          </video>
+                          <div class="video-icon">
+                            <div class="icon-wrap play-four">
+                              <img class="icon-play" src="./img/play.svg" >
+                              <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide about-us__slide ">
+
+                        <div class="video-wrap">
+                          <video class="reviews-video video-five" >
+                            <source src="five.mp4" type="video/mp4" />
+                          </video>
+                          <div class="video-icon">
+                            <div class="icon-wrap play-five">
+                              <img class="icon-play" src="./img/play.svg" >
+                              <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide about-us__slide ">
+                        <div class="video-wrap">
+                          <video class="reviews-video video-six" >
+                            <source src="six.mp4" type="video/mp4" />
+                          </video>
+                          <div class="video-icon play-six">
+                            <div class="icon-wrap">
+                              <img class="icon-play" src="./img/play.svg" >
+                              <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide about-us__slide ">
+                        <div class="video-wrap">
+                          <video class="reviews-video video-seven" >
+                            <source src="seven.mp4" type="video/mp4" />
+                          </video>
+                          <div class="video-icon">
+                            <div class="icon-wrap play-seven">
+                              <img class="icon-play" src="./img/play.svg" >
+                              <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide about-us__slide ">
+                        <div class="video-wrap">
+                          <video class=" reviews-video video-eight" >
+                            <source src="eight.mov" type="video/mp4" />
+                          </video>
+                          <div class="video-icon">
+                            <div class="icon-wrap play-eight">
+                              <img class="icon-play" src="./img/play.svg" >
+                              <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide about-us__slide ">
+                        <div class="video-wrap">
+                          <video class="reviews-video video-nine" >
+                            <source src="nine.mov" type="video/mp4" />
+                          </video>
+                          <div class="video-icon">
+                            <div class="icon-wrap play-nine">
+                              <img class="icon-play" src="./img/play.svg" >
+                              <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide about-us__slide ">
+                        <div class="video-wrap">
+                          <video class="reviews-video video-ten" >
+                            <source src="ten.mov" type="video/mp4" />
+                          </video>
+                          <div class="video-icon">
+                            <div class="icon-wrap play-ten">
+                              <img class="icon-play" src="./img/play.svg" >
+                              <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-scrollbar"></div>
+                    <div class="swiper-arrow-wrap">
+                      <div class="swiper-arrow-prev">
+                        <img src="./img/aboutUs/prev.svg" />
+                      </div>
+                      <div class="swiper-arrow-next">
+                        <img src="./img/aboutUs/next.svg" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            </section>
+
+        </main>
+
+        @include('partials/footer.html')
+
+
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.event.move.js"></script>
+    <script src="./js/jquery.twentytwenty.js"></script>
+    <script src="./js/SladeAfterBedore.js"></script>
+    <script src="./js/filter.js"></script>
+    <script src="./js/slaider.js"></script>
+    <script src="./js/animate.js"></script>
+    <script src="./js/resultCircleAnim.js"></script>
+    <script src="./js/videoRev.js"></script>
+<script src="./js/videoPlay.js"></script>
+</body>
+</html>

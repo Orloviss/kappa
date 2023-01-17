@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+  'title': 'Услуги'
+})
+<script src="./js/pageLoader.js"></script>
+<body>
+
+  <div  id="child" class="preloader__child">
+
+    <div class="load-3">
+
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <header class="header header__no-anim">
+      <div class="header__wrapper">
+        <div class="header__burger">
+
+          <a href="/" class="logo">
+            <img src="./img/logo-header.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="header__navigation">
+          <ul class="navigation__wrap">
+            <li class="navigation-li">
+              <a href="service.html"> Услуги </a>
+            </li>
+            <li class="navigation-li">
+              <a href="company.html"> Клиника </a>
+            </li>
+            <li class="navigation-li">
+              <a href="news.html"> Акции </a>
+            </li>
+            <li class="navigation-li">
+              <a href="result.html"> Результаты <br />до и после </a>
+            </li>
+            <li class="navigation-li">
+              <a href="contact.html"> Контакты </a>
+            </li>
+          </ul>
+          <div class="header__contact">
+            <div class="phone">
+              <object class="header-svg" type="image/svg+xml" data="./img/phone-icon.svg">
+                <img src="./img/phone-icon.svg" />
+              </object>
+              <a href="tel:+7 (495) 477-58-09">+7 (495) 477-58-09</a>
+            </div>
+            <div class="address">
+              <object class="header-svg" type="image/svg+xml" data="./img/metro-icon.svg">
+                <img src="./img/metro-icon.svg" />
+              </object>
+              <p>Менделеевская</p>
+            </div>
+            <div class="phone-mob">
+              <a href="tel:+7 (495) 477-58-09">
+                <img src="./img/phone-icon-mob.svg" alt="phone" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header__payment">
+          <a href="#" class="payment"> Оплата онлайн </a>
+          <a href="#">
+            <div class="email">
+              <img src="./img/email.svg" alt="email" />
+            </div>
+          </a>
+          <div class="burger__menu">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="head-page">
+        <div class="container">
+          <ul class="breadcrumbs">
+            <li>
+              <a href="./index.html">Главная</a>
+            </li>
+            <li>Услуги</li>
+          </ul>
+          <h1 class="page__hedtext">Услуги</h1>
+        </div>
+      </section>
+
+      <section class="search">
+        <div class="container">
+          <div class="search-select">
+            <div class="search-select__wrap">
+                <input type="text" placeholder="Введите название услуги" class="input-select">
+                <div class="search-select__control">
+                    <div class="select__search-btn">
+                        <img src="./img/icon/icon-search.svg" >
+                    </div>
+                    <div class="select__clear-btn">
+                        <svg class="clear-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="19.549" viewBox="0 0 19 19.549"><path d="M12.875,3.375a9.639,9.639,0,0,0-9.5,9.774,9.639,9.639,0,0,0,9.5,9.774,9.639,9.639,0,0,0,9.5-9.774A9.639,9.639,0,0,0,12.875,3.375Zm2.407,13.313-2.407-2.476-2.407,2.476a.719.719,0,0,1-1.032,0,.764.764,0,0,1,0-1.062l2.407-2.476L9.436,10.673a.764.764,0,0,1,0-1.062.719.719,0,0,1,1.032,0l2.407,2.476,2.407-2.476a.719.719,0,0,1,1.032,0,.77.77,0,0,1,0,1.062l-2.407,2.476,2.407,2.476a.77.77,0,0,1,0,1.062A.711.711,0,0,1,15.282,16.688Z" transform="translate(-3.375 -3.375)" opacity="0.3"/></svg>
+                        <h3 class="select__clear-text">Очистить</h3>
+                    </div>
+                </div>
+
+                <div class="select-content">
+                    <ul class="select-content__list">
+                        <li class="select-content__li">Название вбиваемого</li>
+                        <li class="select-content__li">Еще одно название вбиваемого</li>
+                        <li class="select-content__li">Название вбиваемого</li>
+                        <li class="select-content__li">Еще одно название вбиваемого
+                        </li>
+                        <li class="select-content__li">Еще одно название вбиваемого
+                        </li>
+                        <li class="select-content__li">Еще одно название вбиваемого
+                        </li>
+                        <li class="select-content__li">Еще одно название вбиваемого
+                        </li>
+                        <li class="select-content__li">Еще одно название вбиваемого
+                        </li>
+                        <li class="select-content__li">Еще одно название вбиваемого
+                        </li>
+                        <li class="select-content__li">Еще одно название вбиваемого
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        </div>
+      </section>
+
+      <section class="services__single-page ">
+        <div class="container">
+          <div class="services__wrap">
+            <div class="services__card  card__dec  service-single _anim-items _no-anim services__first-card">
+              <img class="card__image" src="./img/Aligners.png" alt="Элайнеры" />
+              <div class="card__content">
+                <h3 class="content__headtext">Элайнеры</h3>
+                <ul class="content__list">
+                  <li class="content__li">
+                    <a href="#">Лечение мезиального прикуса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"></a> Лечение перекрестного прикуса
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение дистального прикуса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Исправление скученности зубов</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение открытого прикуса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Формирование места под коронку</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение закрытого прикуса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Детские элайнеры</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__btn">
+                <a class="button" href="#"> Записаться на прием </a>
+              </div>
+
+              <div class="content__bite content__bite-dec">
+                <div class="content__bite-card">
+                  <img class="bite-card-img" src="./img/service/1.png">
+                  <p class="bite-card-text">Мезальный прикус</p>
+                </div>
+
+                <div class="content__bite-card">
+                  <img class="bite-card-img" src="./img/service/2.png">
+                  <p class="bite-card-text">Дистальный прикус</p>
+                </div>
+
+                <div class="content__bite-card">
+                  <img class="bite-card-img" src="./img/service/3.png">
+                  <p class="bite-card-text">Открытый прикус</p>
+                </div>
+
+                <div class="content__bite-card">
+                  <img class="bite-card-img" src="./img/service/4.png">
+                  <p class="bite-card-text">Перекресный прикус</p>
+                </div>
+
+                <div class="content__bite-card">
+                  <img class="bite-card-img" src="./img/service/5.png">
+                  <p class="bite-card-text">Глубокий прикус</p>
+                </div>
+            </div>
+            </div>
+            <div class="services__card accordion accordion-tab _anim-items _no-anim accordion-tab">
+              <div class="trigger">
+                <div class="trigger__wrap">
+                  <img class="card__image-mob" src="./img/Aligners.png" alt="Элайнеры" />
+                  <h3 class="content__headtext">Элайнеры</h3>
+                </div>
+                <div class="trigger__plus"></div>
+              </div>
+              <div class="accordion__content">
+                <ul class="content__list content__list-mob">
+                  <li class="content__li">
+                    <a href="#"> Лечение мезиального прикуса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение перекрестного прикуса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение дистального прикуса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Исправление скученности зубов</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение открытого прикуса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Формирование места под коронку</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение закрытого прикуса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Детские элайнеры</a>
+                  </li>
+                </ul>
+                <div class="content__bite content__bite-mob">
+                  <div class="content__bite-card">
+                    <img class="bite-card-img" src="./img/service/1.png">
+                    <p class="bite-card-text">Мезальный прикус</p>
+                  </div>
+
+                  <div class="content__bite-card">
+                    <img class="bite-card-img" src="./img/service/2.png">
+                    <p class="bite-card-text">Дистальный прикус</p>
+                  </div>
+
+                  <div class="content__bite-card">
+                    <img class="bite-card-img" src="./img/service/3.png">
+                    <p class="bite-card-text">Открытый прикус</p>
+                  </div>
+
+                  <div class="content__bite-card">
+                    <img class="bite-card-img" src="./img/service/4.png">
+                    <p class="bite-card-text">Перекресный прикус</p>
+                  </div>
+
+                  <div class="content__bite-card">
+                    <img class="bite-card-img" src="./img/service/5.png">
+                    <p class="bite-card-text">Глубокий прикус</p>
+                  </div>
+              </div>
+                <a class="button" href="#"> Записаться на прием </a>
+              </div>
+            </div>
+
+            <div class="services__card card__dec service-single _anim-items _no-anim">
+              <img class="card__image" src="./img/braces.png" alt="Брекеты" />
+              <div class="card__content">
+                <h3 class="content__headtext">Брекеты</h3>
+                <ul class="content__list">
+                  <li class="content__li">
+                    <a href="#">Лечение мезиального прикуса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение перекрестного прикуса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение дистального прикуса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Исправление скученности зубов</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение открытого прикуса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Формирование места под коронку</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение закрытого прикуса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Установка брекетов для детей</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__btn">
+                <a class="button" href="#"> Записаться на прием </a>
+              </div>
+            </div>
+            <div class="services__card accordion accordion-tab _anim-items _no-anim">
+              <div class="trigger">
+                <div class="trigger__wrap">
+                  <img class="card__image-mob" src="./img/braces.png" alt="Брекеты" />
+                  <h3 class="content__headtext">Элайнеры</h3>
+                </div>
+                <div class="trigger__plus"></div>
+              </div>
+              <div class="accordion__content">
+                <ul class="content__list">
+                  <li class="content__li">
+                    <a href="#"> Лечение мезиального прикуса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение перекрестного прикуса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение дистального прикуса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Исправление скученности зубов</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение открытого прикуса</a>Лечение открытого
+                    прикуса
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Формирование места под коронку</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение закрытого прикуса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Установка брекетов для детей</a>
+                  </li>
+                </ul>
+                <a class="button" href="#"> Записаться на прием </a>
+              </div>
+            </div>
+
+            <div class="services__card card__dec _anim-items _no-anim service-single">
+              <img class="card__image" src="./img/veneers.png" alt="Виниры" />
+              <div class="card__content">
+                <h3 class="content__headtext">
+                  Виниры и эстетическая стоматология
+                </h3>
+                <ul class="content__list">
+                  <li class="content__li">
+                    <a href="#">Установка виниров на зубы</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Профессиональная гигиена полости рта</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Установка композитных виниров</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Ультразвуковая чистка зубов AirFlow</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Установка керамических виниров</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Реставрация зубов</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Голливудская улыбка с помощью виниров</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Профессиональная комплексная биогигиена</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">
+                      Эстетическая стоматология <br />(отбеливание зубов)</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__btn">
+                <a class="button" href="#"> Записаться на прием </a>
+              </div>
+            </div>
+            <div class="services__card accordion accordion-tab _anim-items _no-anim">
+              <div class="trigger">
+                <div class="trigger__wrap">
+                  <img class="card__image-mob" src="./img/veneers.png" alt="Брекеты" />
+                  <h3 class="content__headtext">
+                    Виниры и эстетическая стоматология
+                  </h3>
+                </div>
+                <div class="trigger__plus"></div>
+              </div>
+              <div class="accordion__content">
+                <ul class="content__list">
+                  <li class="content__li">
+                    <a href="#">Установка виниров на зубы</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Профессиональная гигиена полости рта</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Установка композитных виниров</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Ультразвуковая чистка зубов AirFlow</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Установка керамических виниров</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Реставрация зубов</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Голливудская улыбка с помощью виниров</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Профессиональная комплексная биогигиена</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">
+                      Эстетическая стоматология <br />(отбеливание зубов)</a>
+                  </li>
+                </ul>
+                <a class="button" href="#"> Записаться на прием </a>
+              </div>
+            </div>
+
+            <div class="services__card card__dec _anim-items _no-anim service-single">
+              <img class="card__image" src="./img/Periodontology.png" alt=" Терапия" />
+              <div class="card__content">
+                <h3 class="content__headtext">Терапия</h3>
+                <ul class="content__list">
+                  <li class="content__li"><a href="#"> Лечение зубов</a></li>
+                  <li class="content__li">
+                    <a href="#">Лечение пришеечный кариеса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение зубов под микроскопом</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Лечение среднего кариеса</a>
+                  </li>
+                  <li class="content__li"><a href="#">Лечение кариеса</a></li>
+                  <li class="content__li">
+                    <a href="#">Лечение осложненного кариеса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Лечение пульпита</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Диагностика зубов и полости рта</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__btn">
+                <a class="button" href="#"> Записаться на прием </a>
+              </div>
+            </div>
+            <div class="services__card accordion _anim-items _no-anim">
+              <div class="trigger">
+                <div class="trigger__wrap">
+                  <img class="card__image-mob" src="./img/Periodontology.png" alt=" Терапия" />
+                  <h3 class="content__headtext">Терапия</h3>
+                </div>
+                <div class="trigger__plus"></div>
+              </div>
+              <div class="accordion__content">
+                <ul class="content__list">
+                  <li class="content__li"><a href="#"> Лечение зубов </a></li>
+                  <li class="content__li">
+                    <a href="#">Лечение пришеечный кариеса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение зубов под микроскопом</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Лечение среднего кариеса</a>
+                  </li>
+                  <li class="content__li"><a href="#">Лечение кариеса</a></li>
+                  <li class="content__li">
+                    <a href="#">Лечение осложненного кариеса</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Лечение пульпита</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Диагностика зубов и полости рта</a>
+                  </li>
+                </ul>
+                <a class="button" href="#"> Записаться на прием </a>
+              </div>
+            </div>
+
+            <div class="services__card card__dec _anim-items _no-anim service-single">
+              <img class="card__image" src="./img/Surgical.png" alt="Хирургическая стоматология" />
+              <div class="card__content">
+                <h3 class="content__headtext">
+                  Хирургическая стоматология и ортопедия
+                </h3>
+                <ul class="content__list">
+                  <li class="content__li">
+                    <a href="#">Удаление зубов мудрости</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Имплантация одного зуба</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Несъемное протезирование зубов</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Мгновенная имплантация зубов</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Установка коронок на зубы</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Установка имплантов Dentium</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Циркониевые коронки</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Установка имплантов Nobel Biocare</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Имплантация зубов</a>
+                  </li>
+                  <li class="content__li"><a href="#"> Синус-лифтинг </a></li>
+                  <li class="content__li">
+                    <a href="#"> Имплантация зубов под ключ</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Тотальное восстановление зубных рядов</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__btn">
+                <a class="button" href="#"> Записаться на прием </a>
+              </div>
+            </div>
+            <div class="services__card accordion accordion-tab _anim-items _no-anim">
+              <div class="trigger">
+                <div class="trigger__wrap">
+                  <img class="card__image-mob" src="./img/Surgical.png" alt="Хирургическая стоматология" />
+                  <h3 class="content__headtext">
+                    Хирургическая стоматология и ортопедия
+                  </h3>
+                </div>
+                <div class="trigger__plus"></div>
+              </div>
+              <div class="accordion__content">
+                <ul class="content__list">
+                  <li class="content__li">
+                    <a href="#"> Удаление зубов мудрости</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Имплантация одного зуба</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Несъемное протезирование зубов </a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Мгновенная имплантация зубов</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Установка коронок на зубы</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Установка имплантов Dentium</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Циркониевые коронки</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Установка имплантов Nobel Biocare</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Имплантация зубов</a>
+                  </li>
+                  <li class="content__li"><a href="#"> Синус-лифтинг </a></li>
+                  <li class="content__li">
+                    <a href="#"> Имплантация зубов под ключ</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Тотальное восстановление зубных рядов</a>
+                  </li>
+                </ul>
+                <a class="button" href="#"> Записаться на прием </a>
+              </div>
+            </div>
+
+            <div class="services__card card__dec _anim-items _no-anim service-single">
+              <img class="card__image" src="./img/serv6.png" alt="Пародонтология" />
+              <div class="card__content">
+                <h3 class="content__headtext">Гнатология</h3>
+                <ul class="content__list">
+                  <li class="content__li"><a href="#">Лечение десен </a></li>
+                  <li class="content__li">
+                    <a href="#">Лечение Пародонтоза</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Лечение Периодонтита</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Плазмолифтинг В Стоматологии</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение Гингивита</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Шинирование Зубов</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение Пародонтита</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__btn">
+                <a class="button" href="#"> Записаться на прием</a>
+              </div>
+            </div>
+            <div class="services__card accordion accordion-tab _anim-items _no-anim">
+              <div class="trigger">
+                <div class="trigger__wrap">
+                  <img class="card__image-mob" src="./img/serv6.png" alt="   Пародонтология" />
+                  <h3 class="content__headtext">Гнатология</h3>
+                </div>
+                <div class="trigger__plus"></div>
+              </div>
+              <div class="accordion__content">
+                <ul class="content__list">
+                  <li class="content__li"><a href="#"> Лечение десен </a></li>
+                  <li class="content__li">
+                    <a href="#"> Лечение Пародонтоза</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение Периодонтита</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Плазмолифтинг В Стоматологии</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Лечение Гингивита</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#">Шинирование Зубов</a>
+                  </li>
+                  <li class="content__li">
+                    <a href="#"> Лечение Пародонтита</a>
+                  </li>
+                </ul>
+                <a class="button" href="#"> Записаться на прием </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="circle page-service-top" src="./img/bg/circle.svg" />
+        <img class="circle page-service-left" src="./img/bg/left-serv-cir.svg" />
+      </section>
+
+
+      <section id="statistics" class="statistics statistics-top">
+        <div class="container">
+          <div class="statistics__headtext__wrap">
+
+            <p class="statistics__headtext  _anim-items _no-anim  statistics__line-one">Стоматологический
+            </p>
+              <p class="statistics__headtext  _anim-items _no-anim statistics__line-two ">научно-клинический центр
+              </p>
+
+              <p class="statistics__headtext  _anim-items _no-anim statistics__line-three _color">EUROKAPPA</p>
+
+          </div>
+          <div class="statistics__wrap" id="statistics__wrap">
+            <div class="statistics__count">
+              <p class="count">17300</p>
+              <p class="statistics__text">
+                довольных пациентов, завершивших лечение
+              </p>
+            </div>
+            <div class="statistics__data">
+              <div class="data__card _anim-items _no-anim  ">
+                <img class="data__img" src="./img/statistics_card/statistics_card-one.jpg" />
+                <p class="data__number">4</p>
+                <p class="data__description">Клинических корпуса</p>
+              </div>
+              <div class="data__card _anim-items _no-anim ">
+                <img class="data__img" src="./img/statistics_card/statistics_card-two.jpg" />
+                <p class="data__number">15</p>
+                <p class="data__description">
+                  Cтоматологических <br />
+                  кресел
+                </p>
+              </div>
+              <div class="data__card _anim-items _no-anim ">
+                <img class="data__img" src="./img/statistics_card/statistics_card-three.jpg" />
+                <p class="data__number">74</p>
+                <p class="data__description">
+                  медицинских сотрудника <br />
+                  работает в клинике
+                </p>
+              </div>
+              <div class="data__card _anim-items _no-anim ">
+                <img class="data__img" src="./img/statistics_card/statistics_card-four.jpg" />
+                <p class="data__number">6 500</p>
+                <p class="data__description">
+                  пациентов проходят лечение <br />
+                  прямо сейчас
+                </p>
+              </div>
+              <div class="data__card _anim-items _no-anim ">
+                <img class="data__img" src="./img/statistics_card/statistics_card-five.jpg" />
+                <p class="data__number">2016</p>
+                <p class="data__description">
+                  год основания клиники. <br />
+                  На рынке уже 7 лет
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="circle circle-one" src="./img/bg/circle.svg" >
+        <img class="circle circle-two" src="./img/bg/circle.svg" >
+      </section>
+    </main>
+
+    @include('partials/footer.html')
+
+
+
+
+  </div>
+
+  <script src="js/jquery.spincrement.min.js"></script>
+  <script src="js/animate.js"></script>
+  <script src="js/counter.js "></script>
+  <script src="js/searchSelect.js"></script>
+  <script src="js/serviceAnimCircle.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

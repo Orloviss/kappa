@@ -1,0 +1,2118 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html', {
+    'title': 'Прайс'
+  })
+<script src="./js/pageLoader.js"></script>
+
+<body>
+  <div  id="child" class="preloader__child">
+
+    <div class="load-3">
+
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+    <div class="wrapper">
+      <header class="header header__no-anim">
+        <div class="header__wrapper">
+          <div class="header__burger">
+            <a href="./index.html" class="logo">
+              <img src="./img/logo-header.svg" alt="logo" />
+            </a>
+          </div>
+          <div class="header__navigation">
+            <ul class="navigation__wrap">
+              <li class="navigation-li">
+                <a href="service.html"> Услуги </a>
+              </li>
+              <li class="navigation-li">
+                <a href="company.html"> Клиника </a>
+              </li>
+              <li class="navigation-li">
+                <a href="news.html"> Акции </a>
+              </li>
+              <li class="navigation-li">
+                <a href="result.html"> Результаты <br />до и после </a>
+              </li>
+              <li class="navigation-li">
+                <a href="contact.html"> Контакты </a>
+              </li>
+            </ul>
+            <div class="header__contact">
+              <div class="phone">
+                <object
+                  class="header-svg"
+                  type="image/svg+xml"
+                  data="./img/phone-icon.svg"
+                >
+                  <img src="./img/phone-icon.svg" />
+                </object>
+                <a href="tel:+7 (495) 477-58-09">+7 (495) 477-58-09</a>
+              </div>
+              <div class="address">
+                <object
+                  class="header-svg"
+                  type="image/svg+xml"
+                  data="./img/metro-icon.svg"
+                >
+                  <img src="./img/metro-icon.svg" />
+                </object>
+                <p>Менделеевская</p>
+              </div>
+              <div class="phone-mob">
+                <a href="tel:+7 (495) 477-58-09">
+                  <img src="./img/phone-icon-mob.svg" alt="phone" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header__payment">
+            <a href="#" class="payment"> Оплата онлайн </a>
+            <a href="#">
+              <div class="email">
+                <img src="./img/email.svg" alt="email" />
+              </div>
+            </a>
+            <div class="burger__menu">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="head-page">
+          <div class="container">
+            <ul class="breadcrumbs">
+              <li>
+                <a href="./index.html">Главная</a>
+              </li>
+              <li>Прайс-лист</li>
+            </ul>
+            <h1 class="page__hedtext">Прайс-лист</h1>
+          </div>
+        </section>
+
+        <section class="search">
+          <div class="container">
+            <div class="search-select">
+              <div class="search-select__wrap">
+                  <input type="text" placeholder="Введите название услуги" class="input-select">
+                  <div class="search-select__control">
+                      <div class="select__search-btn">
+                          <img src="./img/icon/icon-search.svg" >
+                      </div>
+                      <div class="select__clear-btn">
+                          <svg class="clear-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="19.549" viewBox="0 0 19 19.549"><path d="M12.875,3.375a9.639,9.639,0,0,0-9.5,9.774,9.639,9.639,0,0,0,9.5,9.774,9.639,9.639,0,0,0,9.5-9.774A9.639,9.639,0,0,0,12.875,3.375Zm2.407,13.313-2.407-2.476-2.407,2.476a.719.719,0,0,1-1.032,0,.764.764,0,0,1,0-1.062l2.407-2.476L9.436,10.673a.764.764,0,0,1,0-1.062.719.719,0,0,1,1.032,0l2.407,2.476,2.407-2.476a.719.719,0,0,1,1.032,0,.77.77,0,0,1,0,1.062l-2.407,2.476,2.407,2.476a.77.77,0,0,1,0,1.062A.711.711,0,0,1,15.282,16.688Z" transform="translate(-3.375 -3.375)" opacity="0.3"/></svg>
+                          <h3 class="select__clear-text">Очистить</h3>
+                      </div>
+                  </div>
+
+                  <div class="select-content">
+                      <ul class="select-content__list">
+                          <li class="select-content__li">Название вбиваемого</li>
+                          <li class="select-content__li">Еще одно название вбиваемого</li>
+                          <li class="select-content__li">Название вбиваемого</li>
+                          <li class="select-content__li">Еще одно название вбиваемого
+                          </li>
+                          <li class="select-content__li">Еще одно название вбиваемого
+                          </li>
+                          <li class="select-content__li">Еще одно название вбиваемого
+                          </li>
+                          <li class="select-content__li">Еще одно название вбиваемого
+                          </li>
+                          <li class="select-content__li">Еще одно название вбиваемого
+                          </li>
+                          <li class="select-content__li">Еще одно название вбиваемого
+                          </li>
+                          <li class="select-content__li">Еще одно название вбиваемого
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+
+          </div>
+          </div>
+        </section>
+
+        <section class="price">
+          <div class="container price-container">
+            <div class="price__wrap">
+              <div class="price__left-block">
+                <div class="price__left-wrap">
+                  <div class="price__card accordion-price accordion-tab">
+                    <div class="trigger trigger-price">
+                      <div class="trigger__wrap">
+                        <h3 class="price__headtext">Ортодонтия</h3>
+                      </div>
+                      <div class="trigger__plus-price no-color-plus"></div>
+                    </div>
+                    <div class="price__content">
+                      <ul class="price__content-list">
+                        <li class="content__li">
+                          <a href="#"> Лечение мезиального прикуса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение перекрестного прикуса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение дистального прикуса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Исправление скученности зубов</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение открытого прикуса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Формирование места под коронку</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение закрытого прикуса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Детские элайнеры</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="price__card accordion-price accordion-tab">
+                    <div class="trigger trigger-price">
+                      <div class="trigger__wrap">
+                        <h3 class="price__headtext">Элайнеры</h3>
+                      </div>
+                      <div class="trigger__plus-price no-color-plus"></div>
+                    </div>
+                    <div class="price__content">
+                      <ul class="price__content-list">
+                        <li class="content__li">
+                          <a href="#"> Лечение мезиального прикуса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение перекрестного прикуса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение дистального прикуса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Исправление скученности зубов</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение открытого прикуса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Формирование места под коронку</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение закрытого прикуса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Детские элайнеры</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="price__card accordion-price accordion-tab">
+                    <div class="trigger trigger-price">
+                      <div class="trigger__wrap">
+                        <h3 class="price__headtext">Брекеты</h3>
+                      </div>
+                      <div class="trigger__plus-price no-color-plus"></div>
+                    </div>
+                    <div class="price__content">
+                      <ul class="price__content-list">
+                        <li class="content__li">
+                          <a href="#">Лечение мезиального прикуса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение перекрестного прикуса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение дистального прикуса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Исправление скученности зубов</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение открытого прикуса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Формирование места под коронку</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение закрытого прикуса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Установка брекетов для детей</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="price__card accordion-price accordion-tab">
+                    <div class="trigger trigger-price">
+                      <div class="trigger__wrap">
+                        <h3 class="price__headtext">
+                          Виниры и эстетическая стоматология
+                        </h3>
+                      </div>
+                      <div class="trigger__plus-price no-color-plus"></div>
+                    </div>
+                    <div class="price__content">
+                      <ul class="price__content-list">
+                        <li class="content__li">
+                          <a href="#">Установка виниров на зубы</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#"> Профессиональная гигиена полости рта</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Установка композитных виниров</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#"> Ультразвуковая чистка зубов AirFlow</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Установка керамических виниров</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Реставрация зубов</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#"> Голливудская улыбка с помощью виниров</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">
+                            Профессиональная комплексная биогигиена</a
+                          >
+                        </li>
+                        <li class="content__li">
+                          <a href="#">
+                            Эстетическая стоматология <br />(отбеливание
+                            зубов)</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="price__card accordion-price accordion-tab">
+                    <div class="trigger trigger-price">
+                      <div class="trigger__wrap">
+                        <h3 class="price__headtext">Терапия</h3>
+                      </div>
+                      <div class="trigger__plus-price no-color-plus"></div>
+                    </div>
+                    <div class="price__content">
+                      <ul class="price__content-list">
+                        <li class="content__li">
+                          <a href="#"> Лечение зубов</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение пришеечный кариеса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение зубов под микроскопом</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#"> Лечение среднего кариеса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение кариеса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение осложненного кариеса</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#"> Лечение пульпита</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#"> Диагностика зубов и полости рта</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="price__card accordion-price accordion-tab">
+                    <div class="trigger trigger-price">
+                      <div class="trigger__wrap">
+                        <h3 class="price__headtext">
+                          Хирургическая стоматология и ортопедия
+                        </h3>
+                      </div>
+                      <div class="trigger__plus-price no-color-plus"></div>
+                    </div>
+                    <div class="price__content">
+                      <ul class="price__content-list">
+                        <li class="content__li">
+                          <a href="#"> Удаление зубов мудрости</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Имплантация одного зуба</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Несъемное протезирование зубов </a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Мгновенная имплантация зубов</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Установка коронок на зубы</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Установка имплантов Dentium</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Циркониевые коронки</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#"> Установка имплантов Nobel Biocare</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#"> Имплантация зубов</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#"> Синус-лифтинг </a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#"> Имплантация зубов под ключ</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#"> Тотальное восстановление зубных рядов</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="price__card accordion-price accordion-tab">
+                    <div class="trigger trigger-price">
+                      <div class="trigger__wrap">
+                        <h3 class="price__headtext">Пародонтология</h3>
+                      </div>
+                      <div class="trigger__plus-price no-color-plus"></div>
+                    </div>
+                    <div class="price__content">
+                      <ul class="price__content-list">
+                        <li class="content__li">
+                          <a href="#">Лечение десен </a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение Пародонтоза</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#"> Лечение Периодонтита</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Плазмолифтинг В Стоматологии</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение Гингивита</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Шинирование Зубов</a>
+                        </li>
+                        <li class="content__li">
+                          <a href="#">Лечение Пародонтита</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="price__right-block">
+                <div class="price__right-wrap">
+                  <div class="price__card accordion-price accordion-tab">
+                    <div class="trigger trigger-price">
+                      <div class="trigger__wrap">
+                        <h3 class="price__headtext price__headtext-right _number">01.</h3>
+                        <h3 class="price__headtext price__headtext-right">
+                          Ортодонтия
+                        </h3>
+                      </div>
+                      <div class="trigger__plus-price big-plus "></div>
+                    </div>
+                    <div class="price__content-right">
+                      <div class="block__overflow">
+                        <div class="content-right-wrap">
+                          <h2 class="price__content-headtext">Консультации</h2>
+                          <div class="right__table">
+                            <div class="table-header">
+                              <p class="table-header_code">Код услуги</p>
+                              <p class="table-header_name">Название услуги</p>
+                              <p class="table-header_price">
+                                Цена услуги, руб.
+                              </p>
+                            </div>
+
+                            <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">В01:063.002
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием врача-ортодонта повторный (каппы)
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">4 900,00
+                                </p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">В.01:065.007
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием первичный врача (осмотр, консультация, ОПТГ, ТРГ,
+                                    сканирование)
+                                    </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">2 500,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:07.004
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием платный врача-стоматолога
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">4 900,00
+                                </p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:03.059
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием врача-ортодонта повторный (брекеты)
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06.30.002.
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием по гарантии/сепарация
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">В01:065.008
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием повторный врача-ортодонта
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06.30.002.
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием смена чейна/кнопка
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="content-right-wrap">
+                          <h2 class="price__content-headtext">
+                            Рентгенологическое исследование
+                          </h2>
+                          <div class="right__table">
+                            <div class="table-header">
+                              <p class="table-header_code">Код услуги</p>
+                              <p class="table-header_name">Название услуги</p>
+                              <p class="table-header_price">
+                                Цена услуги, руб.
+                              </p>
+                            </div>
+
+                            <div class="table-line">
+                              <div class="table__col-wrap">
+                                <p class="table-header_code table-header__mob">Код услуги</p>
+                                <p class="table__col-one">А06:07.004</p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_name table-header__mob">Название услуги</p>
+                                <p class="table__col-two">Ортопантомография</p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_price table-header__mob">
+                                  Цена услуги, руб.
+                                </p>
+                                <p class="table__col-three">1 000,00</p>
+                              </div>
+                            </div>
+
+                           <div class="table-line">
+                              <div class="table__col-wrap">
+                                <p class="table-header_code table-header__mob">Код услуги</p>
+                                <p class="table__col-one">А06:07.003
+                                </p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_name table-header__mob">Название услуги</p>
+                                <p class="table__col-two">Прицельная внутриротовая контактная рентгенография</p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_price table-header__mob">
+                                  Цена услуги, руб.
+                                </p>
+                                <p class="table__col-three">350,00
+                                </p>
+                              </div>
+                            </div>
+
+                            <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:07.003.001
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прицельная внутриротовая контактная рентгенография
+                                    (контрольная)	</p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">250,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:03.059</p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Телерентгенография черепа в боковой проекции</p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 500,00</p>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="table__vision" onclick="window.scrollTo(0, 200);"
+                      >Свернуть </a>
+                    </div>
+                  </div>
+
+                  <div class="price__card accordion-price accordion-tab">
+                    <div class="trigger trigger-price">
+                      <div class="trigger__wrap">
+                        <h3 class="price__headtext price__headtext-right _number">02.</h3>
+                        <h3 class="price__headtext price__headtext-right">
+                            Акционные услуги
+                        </h3>
+                      </div>
+                      <div class="trigger__plus-price big-plus"></div>
+                    </div>
+                    <div class="price__content-right">
+                      <div class="block__overflow">
+                        <div class="content-right-wrap">
+                          <h2 class="price__content-headtext">Консультации</h2>
+                          <div class="right__table">
+                            <div class="table-header">
+                              <p class="table-header_code">Код услуги</p>
+                              <p class="table-header_name">Название услуги</p>
+                              <p class="table-header_price">
+                                Цена услуги, руб.
+                              </p>
+                            </div>
+
+                            <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">В01:063.002
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием врача-ортодонта повторный (каппы)
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">4 900,00
+                                </p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">В.01:065.007
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием первичный врача (осмотр, консультация, ОПТГ, ТРГ,
+                                    сканирование)
+                                    </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">2 500,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:07.004
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием платный врача-стоматолога
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">4 900,00
+                                </p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:03.059
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием врача-ортодонта повторный (брекеты)
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06.30.002.
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием по гарантии/сепарация
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">В01:065.008
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием повторный врача-ортодонта
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06.30.002.
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием смена чейна/кнопка
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="content-right-wrap">
+                          <h2 class="price__content-headtext">
+                            Рентгенологическое исследование
+                          </h2>
+                          <div class="right__table">
+                            <div class="table-header">
+                              <p class="table-header_code">Код услуги</p>
+                              <p class="table-header_name">Название услуги</p>
+                              <p class="table-header_price">
+                                Цена услуги, руб.
+                              </p>
+                            </div>
+
+                            <div class="table-line">
+                              <div class="table__col-wrap">
+                                <p class="table-header_code table-header__mob">Код услуги</p>
+                                <p class="table__col-one">А06:07.004</p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_name table-header__mob">Название услуги</p>
+                                <p class="table__col-two">Ортопантомография</p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_price table-header__mob">
+                                  Цена услуги, руб.
+                                </p>
+                                <p class="table__col-three">1 000,00</p>
+                              </div>
+                            </div>
+
+                           <div class="table-line">
+                              <div class="table__col-wrap">
+                                <p class="table-header_code table-header__mob">Код услуги</p>
+                                <p class="table__col-one">А06:07.003
+                                </p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_name table-header__mob">Название услуги</p>
+                                <p class="table__col-two">Прицельная внутриротовая контактная рентгенография</p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_price table-header__mob">
+                                  Цена услуги, руб.
+                                </p>
+                                <p class="table__col-three">350,00
+                                </p>
+                              </div>
+                            </div>
+
+                            <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:07.003.001
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прицельная внутриротовая контактная рентгенография
+                                    (контрольная)	</p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">250,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:03.059</p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Телерентгенография черепа в боковой проекции</p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 500,00</p>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="table__vision" onclick="window.scrollTo(0, 200);"
+                      >Свернуть </a>
+                    </div>
+                  </div>
+
+                  <div class="price__card accordion-price accordion-tab">
+                    <div class="trigger trigger-price">
+                      <div class="trigger__wrap">
+                        <h3 class="price__headtext price__headtext-right _number">03.</h3>
+                        <h3 class="price__headtext price__headtext-right">
+                            Терапевтическая стоматология
+                        </h3>
+                      </div>
+                      <div class="trigger__plus-price big-plus "></div>
+                    </div>
+                    <div class="price__content-right">
+                      <div class="block__overflow">
+                        <div class="content-right-wrap">
+                          <h2 class="price__content-headtext">Консультации</h2>
+                          <div class="right__table">
+                            <div class="table-header">
+                              <p class="table-header_code">Код услуги</p>
+                              <p class="table-header_name">Название услуги</p>
+                              <p class="table-header_price">
+                                Цена услуги, руб.
+                              </p>
+                            </div>
+
+                            <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">В01:063.002
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием врача-ортодонта повторный (каппы)
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">4 900,00
+                                </p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">В.01:065.007
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием первичный врача (осмотр, консультация, ОПТГ, ТРГ,
+                                    сканирование)
+                                    </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">2 500,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:07.004
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием платный врача-стоматолога
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">4 900,00
+                                </p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:03.059
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием врача-ортодонта повторный (брекеты)
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06.30.002.
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием по гарантии/сепарация
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">В01:065.008
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием повторный врача-ортодонта
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06.30.002.
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием смена чейна/кнопка
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="content-right-wrap">
+                          <h2 class="price__content-headtext">
+                            Рентгенологическое исследование
+                          </h2>
+                          <div class="right__table">
+                            <div class="table-header">
+                              <p class="table-header_code">Код услуги</p>
+                              <p class="table-header_name">Название услуги</p>
+                              <p class="table-header_price">
+                                Цена услуги, руб.
+                              </p>
+                            </div>
+
+                            <div class="table-line">
+                              <div class="table__col-wrap">
+                                <p class="table-header_code table-header__mob">Код услуги</p>
+                                <p class="table__col-one">А06:07.004</p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_name table-header__mob">Название услуги</p>
+                                <p class="table__col-two">Ортопантомография</p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_price table-header__mob">
+                                  Цена услуги, руб.
+                                </p>
+                                <p class="table__col-three">1 000,00</p>
+                              </div>
+                            </div>
+
+                           <div class="table-line">
+                              <div class="table__col-wrap">
+                                <p class="table-header_code table-header__mob">Код услуги</p>
+                                <p class="table__col-one">А06:07.003
+                                </p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_name table-header__mob">Название услуги</p>
+                                <p class="table__col-two">Прицельная внутриротовая контактная рентгенография</p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_price table-header__mob">
+                                  Цена услуги, руб.
+                                </p>
+                                <p class="table__col-three">350,00
+                                </p>
+                              </div>
+                            </div>
+
+                            <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:07.003.001
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прицельная внутриротовая контактная рентгенография
+                                    (контрольная)	</p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">250,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:03.059</p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Телерентгенография черепа в боковой проекции</p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 500,00</p>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="table__vision" onclick="window.scrollTo(0, 200);"
+                      >Свернуть </a>
+                    </div>
+                  </div>
+
+                  <div class="price__card accordion-price accordion-tab">
+                    <div class="trigger trigger-price">
+                      <div class="trigger__wrap">
+                        <h3 class="price__headtext price__headtext-right _number">04.</h3>
+                        <h3 class="price__headtext price__headtext-right">
+                            Хирургическая стоматология
+                        </h3>
+                      </div>
+                      <div class="trigger__plus-price big-plus"></div>
+                    </div>
+                    <div class="price__content-right">
+                      <div class="block__overflow">
+                        <div class="content-right-wrap">
+                          <h2 class="price__content-headtext">Консультации</h2>
+                          <div class="right__table">
+                            <div class="table-header">
+                              <p class="table-header_code">Код услуги</p>
+                              <p class="table-header_name">Название услуги</p>
+                              <p class="table-header_price">
+                                Цена услуги, руб.
+                              </p>
+                            </div>
+
+                            <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">В01:063.002
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием врача-ортодонта повторный (каппы)
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">4 900,00
+                                </p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">В.01:065.007
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием первичный врача (осмотр, консультация, ОПТГ, ТРГ,
+                                    сканирование)
+                                    </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">2 500,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:07.004
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием платный врача-стоматолога
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">4 900,00
+                                </p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:03.059
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием врача-ортодонта повторный (брекеты)
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06.30.002.
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием по гарантии/сепарация
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">В01:065.008
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием повторный врача-ортодонта
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06.30.002.
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием смена чейна/кнопка
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="content-right-wrap">
+                          <h2 class="price__content-headtext">
+                            Рентгенологическое исследование
+                          </h2>
+                          <div class="right__table">
+                            <div class="table-header">
+                              <p class="table-header_code">Код услуги</p>
+                              <p class="table-header_name">Название услуги</p>
+                              <p class="table-header_price">
+                                Цена услуги, руб.
+                              </p>
+                            </div>
+
+                            <div class="table-line">
+                              <div class="table__col-wrap">
+                                <p class="table-header_code table-header__mob">Код услуги</p>
+                                <p class="table__col-one">А06:07.004</p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_name table-header__mob">Название услуги</p>
+                                <p class="table__col-two">Ортопантомография</p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_price table-header__mob">
+                                  Цена услуги, руб.
+                                </p>
+                                <p class="table__col-three">1 000,00</p>
+                              </div>
+                            </div>
+
+                           <div class="table-line">
+                              <div class="table__col-wrap">
+                                <p class="table-header_code table-header__mob">Код услуги</p>
+                                <p class="table__col-one">А06:07.003
+                                </p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_name table-header__mob">Название услуги</p>
+                                <p class="table__col-two">Прицельная внутриротовая контактная рентгенография</p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_price table-header__mob">
+                                  Цена услуги, руб.
+                                </p>
+                                <p class="table__col-three">350,00
+                                </p>
+                              </div>
+                            </div>
+
+                            <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:07.003.001
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прицельная внутриротовая контактная рентгенография
+                                    (контрольная)	</p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">250,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:03.059</p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Телерентгенография черепа в боковой проекции</p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 500,00</p>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="table__vision" onclick="window.scrollTo(0, 200);"
+                      >Свернуть </a>
+                    </div>
+                  </div>
+
+                  <div class="price__card accordion-price accordion-tab">
+                    <div class="trigger trigger-price">
+                      <div class="trigger__wrap">
+                        <h3 class="price__headtext price__headtext-right _number">05.</h3>
+                        <h3 class="price__headtext price__headtext-right">
+                            Ортопедическая стоматология
+                        </h3>
+                      </div>
+                      <div class="trigger__plus-price big-plus"></div>
+                    </div>
+                    <div class="price__content-right">
+                      <div class="block__overflow">
+                        <div class="content-right-wrap">
+                          <h2 class="price__content-headtext">Консультации</h2>
+                          <div class="right__table">
+                            <div class="table-header">
+                              <p class="table-header_code">Код услуги</p>
+                              <p class="table-header_name">Название услуги</p>
+                              <p class="table-header_price">
+                                Цена услуги, руб.
+                              </p>
+                            </div>
+
+                            <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">В01:063.002
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием врача-ортодонта повторный (каппы)
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">4 900,00
+                                </p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">В.01:065.007
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием первичный врача (осмотр, консультация, ОПТГ, ТРГ,
+                                    сканирование)
+                                    </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">2 500,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:07.004
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием платный врача-стоматолога
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">4 900,00
+                                </p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:03.059
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием врача-ортодонта повторный (брекеты)
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06.30.002.
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием по гарантии/сепарация
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">В01:065.008
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием повторный врача-ортодонта
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06.30.002.
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием смена чейна/кнопка
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="content-right-wrap">
+                          <h2 class="price__content-headtext">
+                            Рентгенологическое исследование
+                          </h2>
+                          <div class="right__table">
+                            <div class="table-header">
+                              <p class="table-header_code">Код услуги</p>
+                              <p class="table-header_name">Название услуги</p>
+                              <p class="table-header_price">
+                                Цена услуги, руб.
+                              </p>
+                            </div>
+
+                            <div class="table-line">
+                              <div class="table__col-wrap">
+                                <p class="table-header_code table-header__mob">Код услуги</p>
+                                <p class="table__col-one">А06:07.004</p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_name table-header__mob">Название услуги</p>
+                                <p class="table__col-two">Ортопантомография</p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_price table-header__mob">
+                                  Цена услуги, руб.
+                                </p>
+                                <p class="table__col-three">1 000,00</p>
+                              </div>
+                            </div>
+
+                           <div class="table-line">
+                              <div class="table__col-wrap">
+                                <p class="table-header_code table-header__mob">Код услуги</p>
+                                <p class="table__col-one">А06:07.003
+                                </p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_name table-header__mob">Название услуги</p>
+                                <p class="table__col-two">Прицельная внутриротовая контактная рентгенография</p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_price table-header__mob">
+                                  Цена услуги, руб.
+                                </p>
+                                <p class="table__col-three">350,00
+                                </p>
+                              </div>
+                            </div>
+
+                            <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:07.003.001
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прицельная внутриротовая контактная рентгенография
+                                    (контрольная)	</p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">250,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:03.059</p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Телерентгенография черепа в боковой проекции</p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 500,00</p>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="table__vision" onclick="window.scrollTo(0, 200);"
+                      >Свернуть </a>
+                    </div>
+                  </div>
+
+                  <div class="price__card accordion-price accordion-tab">
+                    <div class="trigger trigger-price">
+                      <div class="trigger__wrap">
+                        <h3 class="price__headtext price__headtext-right _number">06.</h3>
+                        <h3 class="price__headtext price__headtext-right">
+                            Товары
+                        </h3>
+                      </div>
+                      <div class="trigger__plus-price big-plus"></div>
+                    </div>
+                    <div class="price__content-right">
+                      <div class="block__overflow">
+                        <div class="content-right-wrap">
+                          <h2 class="price__content-headtext">Консультации</h2>
+                          <div class="right__table">
+                            <div class="table-header">
+                              <p class="table-header_code">Код услуги</p>
+                              <p class="table-header_name">Название услуги</p>
+                              <p class="table-header_price">
+                                Цена услуги, руб.
+                              </p>
+                            </div>
+
+                            <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">В01:063.002
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием врача-ортодонта повторный (каппы)
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">4 900,00
+                                </p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">В.01:065.007
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием первичный врача (осмотр, консультация, ОПТГ, ТРГ,
+                                    сканирование)
+                                    </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">2 500,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:07.004
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием платный врача-стоматолога
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">4 900,00
+                                </p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:03.059
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием врача-ортодонта повторный (брекеты)
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06.30.002.
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием по гарантии/сепарация
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">В01:065.008
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием повторный врача-ортодонта
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06.30.002.
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прием смена чейна/кнопка
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 000,00</p>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="content-right-wrap">
+                          <h2 class="price__content-headtext">
+                            Рентгенологическое исследование
+                          </h2>
+                          <div class="right__table">
+                            <div class="table-header">
+                              <p class="table-header_code">Код услуги</p>
+                              <p class="table-header_name">Название услуги</p>
+                              <p class="table-header_price">
+                                Цена услуги, руб.
+                              </p>
+                            </div>
+
+                            <div class="table-line">
+                              <div class="table__col-wrap">
+                                <p class="table-header_code table-header__mob">Код услуги</p>
+                                <p class="table__col-one">А06:07.004</p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_name table-header__mob">Название услуги</p>
+                                <p class="table__col-two">Ортопантомография</p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_price table-header__mob">
+                                  Цена услуги, руб.
+                                </p>
+                                <p class="table__col-three">1 000,00</p>
+                              </div>
+                            </div>
+
+                           <div class="table-line">
+                              <div class="table__col-wrap">
+                                <p class="table-header_code table-header__mob">Код услуги</p>
+                                <p class="table__col-one">А06:07.003
+                                </p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_name table-header__mob">Название услуги</p>
+                                <p class="table__col-two">Прицельная внутриротовая контактная рентгенография</p>
+                              </div>
+                              <div class="table__col-wrap">
+                                <p class="table-header_price table-header__mob">
+                                  Цена услуги, руб.
+                                </p>
+                                <p class="table__col-three">350,00
+                                </p>
+                              </div>
+                            </div>
+
+                            <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:07.003.001
+                                </p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Прицельная внутриротовая контактная рентгенография
+                                    (контрольная)	</p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">250,00</p>
+                                </div>
+                              </div>
+
+                              <div class="table-line">
+                                <div class="table__col-wrap">
+                                  <p class="table-header_code table-header__mob">Код услуги</p>
+                                  <p class="table__col-one">А06:03.059</p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_name table-header__mob">Название услуги</p>
+                                  <p class="table__col-two">Телерентгенография черепа в боковой проекции</p>
+                                </div>
+                                <div class="table__col-wrap">
+                                  <p class="table-header_price table-header__mob">
+                                    Цена услуги, руб.
+                                  </p>
+                                  <p class="table__col-three">1 500,00</p>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="table__vision" onclick="window.scrollTo(0, 200);"
+                      >Свернуть </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="./img/bg/circle.svg" class="price__cirle circle ">
+          <img src="./img/bg/price-ellips-rot.svg" class="price__cirle-rotate">
+         <img src="./img/bg/price-ellips.svg" class="price__ellips">
+        </section>
+
+
+        <section class="reasons">
+          <div class="container">
+            <div class="reasons__wrap">
+              <h2 class="reason-text _anim-items _no-anim">Почему нас выбирают? </h2>
+              <p class="reason-subtext _anim-items _no-anim">Более 6 лет мы делаем зубы наших пациентов <br>
+                ровными, здоровыми и красивыми. </p>
+            </div>
+
+            <div class="reasons__advantage">
+
+              <div class="advantage__card _anim-items _no-anim">
+                <div class="advantage__card-wrap">
+                  <div class="advantage__wrap-text">
+                    <object class="advantage__card-img img-mob" type="image/svg+xml"
+                      data="./img/advantage/advantage-five.svg">
+                      <img src="./img/advantage/advantage-five.svg" />
+                    </object>
+                    <h3 class="advantage__card-headtext one">
+                      Квалификация
+                    </h3>
+                  </div>
+                  <p class="advantage__card-subtext">6 лет опыта и более 17 000
+                    вылеченных пациентов говорят
+                    о высоком качестве наших
+                    услуг
+                  </p>
+                  <div class="advantage__card-img img-dec">
+                    <object type="image/svg+xml" data="./img/advantage/advantage-five.svg">
+                      <img src="./img/advantage/advantage-five.svg" />
+                    </object>
+
+                    <img class="img-hover" src="./img/advantage/advantage-five-hover.svg" alt="">
+                  </div>
+                </div>
+
+
+              </div>
+
+
+              <div class="advantage__card _anim-items _no-anim">
+                <div class="advantage__card-wrap">
+                  <div class="advantage__wrap-text">
+                    <object class="advantage__card-img img-mob" type="image/svg+xml"
+                      data="./img/advantage/advantage-two.svg">
+                      <img src="./img/advantage/advantage-two.svg" />
+                    </object>
+                    <h3 class="advantage__card-headtext two">
+                      Скорость
+                    </h3>
+                  </div>
+                  <p class="advantage__card-subtext">Результаты лечения
+                    на элайнерах EUROKAPPA
+                    видны уже через 6 месяцев
+                  </p>
+                  <div class="advantage__card-img img-dec">
+                    <object class="svg" type="image/svg+xml" data="./img/advantage/advantage-two.svg">
+                      <img src="./img/advantage/advantage-two.svg" />
+                    </object>
+                    <img class="img-hover" src="./img/advantage/advantage-two-hover.svg" alt="">
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="advantage__card _anim-items _no-anim">
+                <div class="advantage__card-wrap">
+                  <div class="advantage__wrap-text">
+                    <object class="advantage__card-img img-mob" type="image/svg+xml"
+                      data="./img/advantage/advantage-four.svg">
+                      <img src="./img/advantage/advantage-four.svg" />
+                    </object>
+                    <h3 class="advantage__card-headtext three">
+                      Сервис
+                    </h3>
+                  </div>
+                  <p class="advantage__card-subtext">На протяжении всего
+                    этапа лечения пациента
+                    сопровождает персональный
+                    менеджер, который доступен
+                    24/7
+                  </p>
+                  <div class="advantage__card-img img-dec">
+                    <object type="image/svg+xml" data="./img/advantage/advantage-four.svg">
+                      <img src="./img/advantage/advantage-four.svg" />
+                    </object>
+
+                    <img class="img-hover" src="./img/advantage/advantage-four-hover.svg" alt="">
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="advantage__card _anim-items _no-anim">
+                <div class="advantage__card-wrap">
+                  <div class="advantage__wrap-text">
+                    <object class="advantage__card-img img-mob" type="image/svg+xml"
+                      data="./img/advantage/advantage-one.svg">
+                      <img src="./img/advantage/advantage-one.svg" />
+                    </object>
+                    <h3 class="advantage__card-headtext four">
+                      Стоимость
+                    </h3>
+                  </div>
+                  <p class="advantage__card-subtext">Мы являемся партнером
+                    компании EUROKAPPA – лидера
+                    по производству элайнеров
+                    в России, что позволяет
+                    минимизировать конечную
+                    стоимость лечения.
+                  </p>
+                  <div class="advantage__card-img img-dec">
+                    <object type="image/svg+xml" data="./img/advantage/advantage-three.svg">
+                      <img src="./img/advantage/advantage-three.svg" />
+                    </object>
+                    <img class="img-hover" src="./img/advantage/advantage-three-hover.svg" alt="">
+                  </div>
+                </div>
+
+              </div>
+              <div class="advantage__card _anim-items _no-anim">
+                <div class="advantage__card-wrap last__card">
+                  <div class="advantage__wrap-text">
+                    <object class="advantage__card-img img-mob" type="image/svg+xml"
+                      data="./img/advantage/advantage-three.svg">
+                      <img src="./img/advantage/advantage-three.svg" />
+                    </object>
+                    <h3 class="advantage__card-headtext five">
+                      Персональные <br>условия
+                    </h3>
+                  </div>
+                  <p class="advantage__card-subtext">Вы сможете выбрать один
+                    из подходящих вам пакетов,
+                    а также воспользоваться
+                    рассрочкой под 0%
+                  </p>
+                  <div class="advantage__card-img img-dec">
+                    <object type="image/svg+xml" data="./img/advantage/advantage-one.svg">
+                      <img src="./img/advantage/advantage-one.svg" />
+                    </object>
+
+                    <img src="./img/advantage/advantage-one-hover.svg"  class="img-hover" alt="">
+
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <img class="circle circle-six" src="./img/bg/circle.svg" >
+        </section>
+      </main>
+
+      @include('partials/footer.html')
+
+
+
+
+    </div>
+
+    <script src="js/priceCircleAnim.js"></script>
+    <script src="js/searchSelect.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

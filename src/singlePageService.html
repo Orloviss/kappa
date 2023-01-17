@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+  'title': 'Отдельная услуга'
+})
+<script src="./js/pageLoader.js"></script>
+
+<body>
+
+  <div  id="child" class="preloader__child">
+
+    <div class="load-3">
+
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+    <div class="wrapper">
+      <header class="header header__no-anim">
+        <div class="header__wrapper">
+          <div class="header__burger">
+
+            <a href="#" class="logo">
+              <img src="./img/logo-header.svg" alt="logo" />
+            </a>
+          </div>
+          <div class="header__navigation">
+            <ul class="navigation__wrap">
+              <li class="navigation-li">
+                <a href="service.html"> Услуги </a>
+              </li>
+              <li class="navigation-li">
+                <a href="company.html"> Клиника </a>
+              </li>
+              <li class="navigation-li">
+                <a href="news.html"> Акции </a>
+              </li>
+              <li class="navigation-li">
+                <a href="result.html"> Результаты <br />до и после </a>
+              </li>
+              <li class="navigation-li">
+                <a href="contact.html"> Контакты </a>
+              </li>
+            </ul>
+            <div class="header__contact">
+              <div class="phone">
+                <object
+                  class="header-svg"
+                  type="image/svg+xml"
+                  data="./img/phone-icon.svg"
+                >
+                  <img src="./img/phone-icon.svg" />
+                </object>
+                <a href="tel:+7 (495) 477-58-09">+7 (495) 477-58-09</a>
+              </div>
+              <div class="address">
+                <object
+                  class="header-svg"
+                  type="image/svg+xml"
+                  data="./img/metro-icon.svg"
+                >
+                  <img src="./img/metro-icon.svg" />
+                </object>
+                <p>Менделеевская</p>
+              </div>
+              <div class="phone-mob">
+                <a href="tel:+7 (495) 477-58-09">
+                  <img src="./img/phone-icon-mob.svg" alt="phone" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header__payment">
+            <a href="#" class="payment"> Оплата онлайн </a>
+            <a href="#">
+              <div class="email">
+                <img src="./img/email.svg" alt="email" />
+              </div>
+            </a>
+            <div class="burger__menu">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="head-page single__head-page">
+          <div class="container">
+            <ul class="breadcrumbs">
+              <li>
+                <a href="#">Главная</a>
+              </li>
+              <li>
+                <a href="./service.html">Услуги</a>
+              </li>
+              <li>Название очередной услуги на сайте</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="service__single-page">
+            <div class="container">
+                <div class="description__article">
+                    <div class="article">
+                        <h1 class="article__name-head">
+                            Исправление мезиального прикуса на брекетах
+                        </h1>
+                        <div class="article__img">
+                            <div class="article__img-before">
+                                <div class="before">
+                                    До
+                                </div>
+                                <img src="./img/singlePage/before-one.png">
+                            </div>
+                            <div class="article__img-after">
+                                <div class="after">
+                                    После
+                                </div>
+                                <img src="./img/singlePage/after-one.png">
+                            </div>
+                        </div>
+                        <div class="article__content">
+                            <p class="article__text">
+                                <span>Мезиальный прикус – это нарушение, при котором нижняя челюсть выдвинута вперед, и при этом
+                                    она крупнее, чем верхняя. В результате нижние зубы выдвинуты относительно верхних и частично
+                                    перекрывают их. </span>
+                            </p>
+                            <p class="article__text">
+                                Из-за такого нарушения возникает повышенная нагрузка при жевании. В результате зубы начинают
+стираться, страдает их эмаль. Мезиальный прикус часто приводит к ранней потере зубов. А протезировать
+их невозможно из-за того, что коронки или импланты не выдержат жевательной нагрузки.
+                            </p>
+                        </div>
+                        <a href="#" class="button"> Записаться на прием</a>
+
+                    </div>
+
+                    <div class="article">
+                        <h1 class="article__name">
+                            Как можно исправить мезиальный прикус?
+                        </h1>
+                        <div class="article__img">
+                            <div class="article__img-before">
+                                <div class="before">
+                                    До
+                                </div>
+                                <img src="./img/singlePage/after-two.png">
+                            </div>
+                            <div class="article__img-after">
+                                <div class="after">
+                                    После
+                                </div>
+                                <img src="./img/singlePage/after-two.png">
+                            </div>
+                        </div>
+                        <div class="article__content">
+                            <p class="article__text">
+                                Ход лечения зависит от того, нарушение какого именно типа развилось и насколько сильно оно выражено.
+                            </p>
+                            <p class="article__text">
+                                Зубоальвеолярный тип мезиального прикуса – такой, при котором нижняя челюсть нормального размера,
+                                и проблема заключается только в положении зубов. Это наиболее простой и благоприятный для лечения
+                                вариант. В этом случае достаточно установить брекеты.
+                            </p>
+                            <p class="article__text">
+                                Брекеты могут быть металлическими или керамическими (это более эстетичный вариант – они белого
+                                цвета и менее заметны на зубах). Принцип их действия одинаков: в брекеты устанавливается
+                                металлическая дуга, которая давит на зубы и постепенно меняет их положение. Также при мезиальном
+                                прикусе используют пружинки и тяги, которые меняют расположение нижней челюсти относительно
+                                верхней. Лечение может занять от года до полутора лет.
+                            </p>
+                            <p class="article__text">
+                                При скелетной патологии проблема заключается в том, что нижняя челюсть больше, чем верхняя.
+                                Поэтому исправить такие случаи сложнее. Обычно врач-ортодонт направляет пациента на консультацию
+                                к челюстно-лицевому хирургу. Многим пациентам с таким видом нарушения требуется операция, при
+                                которой меняют форму и размер нижней челюсти. И только после завершения реабилитации можно идти
+                                к врачу-ортодонту и устанавливать брекеты: они сформируют правильный прикус. Такое лечение может
+                                длиться несколько лет, но зато дает наилучший результат.
+                            </p>
+                        </div>
+                        <a href="#" class="button"> Записаться на прием</a>
+
+                    </div>
+
+                    <div class="article">
+                      <h1 class="article__name">
+                        Лечение на брекетах в клинике «Еврокаппа»
+                      </h1>
+                      <p class="article__text  article__text-three">
+                        Мы предлагаем своим пациентам несъемные металлические или керамические безлигатурные брекеты.
+                    </p>
+                    <p class="article__text article__text-four">
+                      Брекеты – это несъемная конструкция, поэтому не нужно переживать о том, чтобы соблюсти график
+                      ношения. Эффективность брекетов очень высока – с их помощью можно исправить все варианты
+                      нарушения прикуса. Лечение возможно в любом возрасте, никаких ограничений нет.
+                  </p>
+                      <div class="article__img">
+                          <div class="article__img-before">
+                              <div class="before">
+                                  До
+                              </div>
+                              <img src="./img/singlePage/before-three.png">
+                          </div>
+                          <div class="article__img-after">
+                              <div class="after">
+                                  После
+                              </div>
+                              <img src="./img/singlePage/after-three.png">
+                          </div>
+                      </div>
+                      <div class="article__content">
+                          <p class="article__text">
+                              <span>T Лечение дистального прикуса на брекетах</span>
+                          </p>
+                          <p class="article__text">
+                             <span>D Дистальный прикус: что это такое? Как проходит лечение на брекетах? В клинике «Еврокаппа»
+                              можно исправить дистальный прикус в любом возрасте с помощью брекетов.</span>
+                          </p>
+                      </div>
+
+                  </div>
+                  <img src="./img/bg/article__bg-corcle.png" class="article__bg-corcle">
+                </div>
+
+                <div class="sentence">
+                  <h2 class="sentence__headtext">Пакетные предложения
+                  </h2>
+                  <div class="right__table sentence__table">
+                    <div class="table-header">
+                      <p class="table-header_code">Код услуги</p>
+                      <p class="table-header_name sentence__name">Название услуги</p>
+                      <p class="table-header_price sentence__price">
+                        Цена услуги, руб.
+                      </p>
+                    </div>
+
+                    <div class="table-line">
+                        <div class="table__col-wrap">
+                          <p class="table-header_code table-header__mob">Код услуги</p>
+                          <p class="table__col-one">А06:07.004
+                        </p>
+                        </div>
+                        <div class="table__col-wrap">
+                          <p class="table-header_name table-header__mob">Название услуги</p>
+                          <p class="table__col-two sentence__col-two">Пакетное предложение "Ортодонтическое лечение с использованием капп
+                            Еврокаппа Стандарт"
+                        </p>
+                        </div>
+                        <div class="table__col-wrap">
+                          <p class="table-header_price table-header__mob">
+                            Цена услуги, руб.
+                          </p>
+                          <p class="table__col-three sentence__col-three">229 000,00
+
+                        </p>
+                        </div>
+                      </div>
+
+                      <div class="table-line">
+                        <div class="table__col-wrap">
+                          <p class="table__col-one">
+                        </p>
+                        </div>
+                        <div class="table__col-wrap">
+                          <p class="table-header_name table-header__mob">Название услуги</p>
+                          <p class="table__col-two sentence__col-two">Пакетное предложение "Ортодонтическое лечение с использованием капп
+                            Еврокаппа Премиум"
+
+                            </p>
+                        </div>
+                        <div class="table__col-wrap">
+                          <p class="table-header_price table-header__mob">
+                            Цена услуги, руб.
+                          </p>
+                          <p class="table__col-three sentence__col-three">249 000,00
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="table-line">
+                        <div class="table__col-wrap">
+                          <p class="table-header_code table-header__mob">Код услуги</p>
+                          <p class="table__col-one">А06:07.004
+                        </p>
+                        </div>
+                        <div class="table__col-wrap">
+                          <p class="table-header_name table-header__mob">Название услуги</p>
+                          <p class="table__col-two sentence__col-two">Пакетное предложение "Ортодонтическое лечение с использованием капп
+                            Еврокаппа Full"
+                        </p>
+                        </div>
+                        <div class="table__col-wrap">
+                          <p class="table-header_price table-header__mob">
+                            Цена услуги, руб.
+                          </p>
+                          <p class="table__col-three sentence__col-three">399 000,00
+
+                        </p>
+                        </div>
+                      </div>
+
+                      <div class="table-line">
+                        <div class="table__col-wrap">
+                          <p class="table-header_code table-header__mob">Код услуги</p>
+                          <p class="table__col-one">А06:07.004
+                        </p>
+                        </div>
+                        <div class="table__col-wrap">
+                          <p class="table-header_name table-header__mob">Название услуги</p>
+                          <p class="table__col-two sentence__col-two">Пакетное предложение "Ортодонтическое лечение с использованием капп
+                            Еврокаппа Тотал"
+                        </p>
+                        </div>
+                        <div class="table__col-wrap">
+                          <p class="table-header_price table-header__mob">
+                            Цена услуги, руб.
+                          </p>
+                          <p class="table__col-three sentence__col-three">299 000,00
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="table-line">
+                        <div class="table__col-wrap">
+                          <p class="table-header_code table-header__mob">Код услуги</p>
+                          <p class="table__col-one">А06:07.004
+                        </p>
+                        </div>
+                        <div class="table__col-wrap">
+                          <p class="table-header_name table-header__mob">Название услуги</p>
+                          <p class="table__col-two sentence__col-two">Пакетное предложение "Ортодонтическое лечение с применением брекет-системы
+                            металлической"
+                        </p>
+                        </div>
+                        <div class="table__col-wrap">
+                          <p class="table-header_price table-header__mob">
+                            Цена услуги, руб.
+                          </p>
+                          <p class="table__col-three sentence__col-three">159 000,00
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="table-line">
+                        <div class="table__col-wrap">
+                          <p class="table-header_code table-header__mob">Код услуги</p>
+                          <p class="table__col-one">А06:07.004
+                        </p>
+                        </div>
+                        <div class="table__col-wrap">
+                          <p class="table-header_name table-header__mob">Название услуги</p>
+                          <p class="table__col-two sentence__col-two">Пакетное предложение "Ортодонтическое лечение с применением брекет-системы
+                            керамической"
+
+                        </p>
+                        </div>
+                        <div class="table__col-wrap">
+                          <p class="table-header_price table-header__mob">
+                            Цена услуги, руб.
+                          </p>
+                          <p class="table__col-three sentence__col-three">189 000,00
+                          </p>
+                        </div>
+                      </div>
+                      <div class="table-line">
+                        <div class="table__col-wrap">
+                          <p class="table-header_code table-header__mob">Код услуги</p>
+                          <p class="table__col-one">А06:07.004
+                        </p>
+                        </div>
+                        <div class="table__col-wrap">
+                          <p class="table-header_name table-header__mob">Название услуги</p>
+                          <p class="table__col-two sentence__col-two">Пакетное предложение "Ортодонтическое лечение с использованием капп
+                            Еврокаппа Детский Лайт"
+                        </p>
+                        </div>
+                        <div class="table__col-wrap">
+                          <p class="table-header_price table-header__mob">
+                            Цена услуги, руб.
+                          </p>
+                          <p class="table__col-three sentence__col-three">60 000,00
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="table-line">
+                        <div class="table__col-wrap">
+                          <p class="table-header_code table-header__mob">Код услуги</p>
+                          <p class="table__col-one">А06:07.004
+                        </p>
+                        </div>
+                        <div class="table__col-wrap">
+                          <p class="table-header_name table-header__mob">Название услуги</p>
+                          <p class="table__col-two sentence__col-two">Пакетное предложение "Ортодонтическое лечение с использованием капп
+                            Еврокаппа Детский Стандарт"
+                        </p>
+                        </div>
+                        <div class="table__col-wrap">
+                          <p class="table-header_price table-header__mob">
+                            Цена услуги, руб.
+                          </p>
+                          <p class="table__col-three sentence__col-three">229 000,00
+
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="sentence__button">
+                    <a href="#" class="button"> Записаться на прием</a>
+                    <img src="./img/logo.svg" >
+                  </div>
+                </div>
+
+                <div class="list__service">
+                  <a href="#">
+                    к списку УСЛУГ
+                  </a>
+                </div>
+            </div>
+            <img src="./img/singlePage/singele_circle-rot.png" class="service__-page-circle-one">
+            <img src="./img/bg/circle.svg" class="service__-page-circle-two" >
+            <div class="blur_bg"></div>
+        </section>
+
+        <section class="personal">
+          <div class="container">
+            <div class="personal__wrap">
+              <div class="personal__content">
+
+                  <h3 class="personal__text  _anim-items _no-anim ">НАШИ Врачи</h3>
+                <p class="personal__description">
+                  Главное достоинство нашей клиники – врачи с большим клиническим опытом в сочетании с новейшим оборудованием экспертного класса
+                </p>
+                <div class="content__tab">
+                  <div class="tab active">Все</div>
+                  <div class="tab">Ортопеды</div>
+                  <div class="tab">Ортодонты</div>
+                  <div class="tab">Терапевты</div>
+                  <div class="tab">Хирурги</div>
+                  <div class="tab">Гнатологи</div>
+                </div>
+                <a class="button button-dec" href="#"> Все ВРАЧИ </a>
+              </div>
+
+              <div class="personal__doctors">
+                <div class="doctors__card  ">
+                  <div class="card-up__background">
+                    <div class="doctors__image">
+                      <img src="./img/personal/doctor-one.png" alt="Арлетта Маллаева" />
+                    </div>
+                  </div>
+                  <div class="doctors__description">
+                    <p class="doctors__name">Арлетта Маллаева</p>
+                    <a class="button" href="#"> Записаться на прием </a>
+                  </div>
+                </div>
+
+                <div class="doctors__card">
+                  <div class="card-up__background">
+                    <div class="doctors__image">
+                      <img src="./img/personal/doctor-two.png" alt="Анна Оганисян" />
+                    </div>
+                  </div>
+                  <div class="doctors__description">
+                    <p class="doctors__name">Анна Оганисян</p>
+                    <a class="button" href="#"> Записаться на прием </a>
+                  </div>
+                </div>
+
+                <div class="doctors__card ">
+                  <div class="card-up__background">
+                    <div class="doctors__image">
+                      <img src="./img/personal/doctor-three.png" alt="Виктор Ермаков" />
+                    </div>
+                  </div>
+                  <div class="doctors__description">
+                    <p class="doctors__name">Виктор Ермаков</p>
+                    <a class="button" href="#">Записаться на прием</a>
+                  </div>
+                </div>
+
+                <div class="doctors__card  ">
+                  <div class="card-up__background">
+                    <div class="doctors__image">
+                      <img src="./img/personal/doctor-four.png" alt="Сергей Гусаков" />
+                    </div>
+                  </div>
+                  <div class="doctors__description">
+                    <p class="doctors__name">Сергей Гусаков</p>
+                    <a class="button" href="#"> Записаться на прием </a>
+                  </div>
+                </div>
+
+                <div class="doctors__card ">
+                  <div class="card-up__background">
+                    <div class="doctors__image">
+                      <img src="./img/personal/doctor-five.png" alt="Олег Байбеков" />
+                    </div>
+                  </div>
+                  <div class="doctors__description">
+                    <p class="doctors__name">Олег Байбеков</p>
+                    <a class="button" href="#"> Записаться на прием </a>
+                  </div>
+                </div>
+
+                <div class="doctors__card ">
+                  <div class="card-up__background">
+                    <div class="doctors__image">
+                      <img src="./img/personal/doctor-six.png" alt="Марьяна Барагунова" />
+                    </div>
+                  </div>
+                  <div class="doctors__description">
+                    <p class="doctors__name">Марьяна Барагунова</p>
+                    <a class="button" href="#"> Записаться на прием </a>
+                  </div>
+                </div>
+              </div>
+              <div class="button__mob">
+                <a href="#" class="button"> Все ВРАЧИ </a>
+              </div>
+            </div>
+          </div>
+          <img class="circle circle-five" src="./img/bg/circle.svg" >
+        </section>
+
+        <section class="reasons">
+          <div class="container">
+            <div class="reasons__wrap">
+              <h2 class="reason-text _anim-items _no-anim">Почему нас выбирают? </h2>
+              <p class="reason-subtext _anim-items _no-anim">Более 6 лет мы делаем зубы наших пациентов <br>
+                ровными, здоровыми и красивыми. </p>
+            </div>
+
+            <div class="reasons__advantage">
+
+              <div class="advantage__card _anim-items _no-anim">
+                <div class="advantage__card-wrap">
+                  <div class="advantage__wrap-text">
+                    <object class="advantage__card-img img-mob" type="image/svg+xml"
+                      data="./img/advantage/advantage-five.svg">
+                      <img src="./img/advantage/advantage-five.svg" />
+                    </object>
+                    <h3 class="advantage__card-headtext one">
+                      Квалификация
+                    </h3>
+                  </div>
+                  <p class="advantage__card-subtext">6 лет опыта и более 17 000
+                    вылеченных пациентов говорят
+                    о высоком качестве наших
+                    услуг
+                  </p>
+                  <div class="advantage__card-img img-dec">
+                    <object type="image/svg+xml" data="./img/advantage/advantage-five.svg">
+                      <img src="./img/advantage/advantage-five.svg" />
+                    </object>
+
+                    <img class="img-hover" src="./img/advantage/advantage-five-hover.svg" alt="">
+                  </div>
+                </div>
+
+
+              </div>
+
+
+              <div class="advantage__card _anim-items _no-anim">
+                <div class="advantage__card-wrap">
+                  <div class="advantage__wrap-text">
+                    <object class="advantage__card-img img-mob" type="image/svg+xml"
+                      data="./img/advantage/advantage-two.svg">
+                      <img src="./img/advantage/advantage-two.svg" />
+                    </object>
+                    <h3 class="advantage__card-headtext two">
+                      Скорость
+                    </h3>
+                  </div>
+                  <p class="advantage__card-subtext">Результаты лечения
+                    на элайнерах EUROKAPPA
+                    видны уже через 6 месяцев
+                  </p>
+                  <div class="advantage__card-img img-dec">
+                    <object class="svg" type="image/svg+xml" data="./img/advantage/advantage-two.svg">
+                      <img src="./img/advantage/advantage-two.svg" />
+                    </object>
+                    <img class="img-hover" src="./img/advantage/advantage-two-hover.svg" alt="">
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="advantage__card _anim-items _no-anim">
+                <div class="advantage__card-wrap">
+                  <div class="advantage__wrap-text">
+                    <object class="advantage__card-img img-mob" type="image/svg+xml"
+                      data="./img/advantage/advantage-four.svg">
+                      <img src="./img/advantage/advantage-four.svg" />
+                    </object>
+                    <h3 class="advantage__card-headtext three">
+                      Сервис
+                    </h3>
+                  </div>
+                  <p class="advantage__card-subtext">На протяжении всего
+                    этапа лечения пациента
+                    сопровождает персональный
+                    менеджер, который доступен
+                    24/7
+                  </p>
+                  <div class="advantage__card-img img-dec">
+                    <object type="image/svg+xml" data="./img/advantage/advantage-four.svg">
+                      <img src="./img/advantage/advantage-four.svg" />
+                    </object>
+
+                    <img class="img-hover" src="./img/advantage/advantage-four-hover.svg" alt="">
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="advantage__card _anim-items _no-anim">
+                <div class="advantage__card-wrap">
+                  <div class="advantage__wrap-text">
+                    <object class="advantage__card-img img-mob" type="image/svg+xml"
+                      data="./img/advantage/advantage-one.svg">
+                      <img src="./img/advantage/advantage-one.svg" />
+                    </object>
+                    <h3 class="advantage__card-headtext four">
+                      Стоимость
+                    </h3>
+                  </div>
+                  <p class="advantage__card-subtext">Мы являемся партнером
+                    компании EUROKAPPA – лидера
+                    по производству элайнеров
+                    в России, что позволяет
+                    минимизировать конечную
+                    стоимость лечения.
+                  </p>
+                  <div class="advantage__card-img img-dec">
+                    <object type="image/svg+xml" data="./img/advantage/advantage-three.svg">
+                      <img src="./img/advantage/advantage-three.svg" />
+                    </object>
+                    <img class="img-hover" src="./img/advantage/advantage-three-hover.svg" alt="">
+                  </div>
+                </div>
+
+              </div>
+              <div class="advantage__card _anim-items _no-anim">
+                <div class="advantage__card-wrap last__card">
+                  <div class="advantage__wrap-text">
+                    <object class="advantage__card-img img-mob" type="image/svg+xml"
+                      data="./img/advantage/advantage-three.svg">
+                      <img src="./img/advantage/advantage-three.svg" />
+                    </object>
+                    <h3 class="advantage__card-headtext five">
+                      Персональные <br>условия
+                    </h3>
+                  </div>
+                  <p class="advantage__card-subtext">Вы сможете выбрать один
+                    из подходящих вам пакетов,
+                    а также воспользоваться
+                    рассрочкой под 0%
+                  </p>
+                  <div class="advantage__card-img img-dec">
+                    <object type="image/svg+xml" data="./img/advantage/advantage-one.svg">
+                      <img src="./img/advantage/advantage-one.svg" />
+                    </object>
+
+                    <img src="./img/advantage/advantage-one-hover.svg"  class="img-hover" alt="">
+
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <img class="circle circle-six" src="./img/bg/circle.svg" >
+        </section>
+      </main>
+
+      @include('partials/footer.html')
+
+
+
+
+    </div>
+
+    <script src="js/singleAnimCircle.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

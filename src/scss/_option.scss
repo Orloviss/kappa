@@ -1,0 +1,40 @@
+
+.hidden-animate {
+    &._anim {
+            animation: hidden-text 1s linear;
+            transition: all 1s ease 1ms;
+    }
+}
+@keyframes hidden-text {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+._color {
+    color: #68D1FF;
+}
+._color-two {
+    color:#3A68B9;
+    font-weight: 700;
+}
+.statistics__line-one {
+    &._anim {
+        transition: all 0.5s ease 0ms;
+        opacity: 1;
+}
+}
+.statistics__line-two {
+    &._anim {
+        transition: all 1s ease 0ms;
+        opacity: 1;
+    }
+}
+.statistics__line-three {
+    &._anim {
+        transition: all 1.5s ease 0ms;
+        opacity: 1;
+}
+}

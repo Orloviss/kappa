@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+  'title': 'Новости'
+})
+<script src="./js/pageLoader.js"></script>
+
+<body>
+  <div  id="child" class="preloader__child">
+
+    <div class="load-3">
+
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+    <div class="wrapper">
+      <header class="header header__no-anim">
+        <div class="header__wrapper">
+          <div class="header__burger">
+            <a href="./index.html" class="logo">
+              <img src="./img/logo-header.svg" alt="logo" />
+            </a>
+          </div>
+          <div class="header__navigation">
+            <ul class="navigation__wrap">
+              <li class="navigation-li">
+                <a href="service.html"> Услуги </a>
+              </li>
+              <li class="navigation-li">
+                <a href="company.html"> Клиника </a>
+              </li>
+              <li class="navigation-li">
+                <a href="news.html"> Акции </a>
+              </li>
+              <li class="navigation-li">
+                <a href="result.html"> Результаты <br />до и после </a>
+              </li>
+              <li class="navigation-li">
+                <a href="contact.html"> Контакты </a>
+              </li>
+            </ul>
+            <div class="header__contact">
+              <div class="phone">
+                <object
+                  class="header-svg"
+                  type="image/svg+xml"
+                  data="./img/phone-icon.svg"
+                >
+                  <img src="./img/phone-icon.svg" />
+                </object>
+                <a href="tel:+7 (495) 477-58-09">+7 (495) 477-58-09</a>
+              </div>
+              <div class="address">
+                <object
+                  class="header-svg"
+                  type="image/svg+xml"
+                  data="./img/metro-icon.svg"
+                >
+                  <img src="./img/metro-icon.svg" />
+                </object>
+                <p>Менделеевская</p>
+              </div>
+              <div class="phone-mob">
+                <a href="tel:+7 (495) 477-58-09">
+                  <img src="./img/phone-icon-mob.svg" alt="phone" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header__payment">
+            <a href="#" class="payment"> Оплата онлайн </a>
+            <a href="#">
+              <div class="email">
+                <img src="./img/email.svg" alt="email" />
+              </div>
+            </a>
+            <div class="burger__menu">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="head-page">
+          <div class="container">
+            <ul class="breadcrumbs">
+              <li>
+                <a href="./index.html">Главная</a>
+              </li>
+              <li>Новости</li>
+            </ul>
+            <div class="head-page__content news__content">
+              <h1 class="page__hedtext news__headtext">Новости</h1>
+              <div class="date">
+                <div class="date__wrap">
+                  <img src="./img/data-icon.svg" alt="date-icon" />
+                  <div class="date__content">
+                    <p class="date__year">10 октрября 2022 г.</p>
+                    <p class="date__week">понедельник, 14:34</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="tabs doctors__tabs news__tabs">
+          <div class="container">
+            <div class="tabs__wrap">
+              <div class="tabs__trigger news__trigger active">Все события</div>
+              <div class="tabs__trigger news__trigger">Новости</div>
+              <div class="tabs__trigger news__trigger">Мероприятия</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="news">
+          <div class="container">
+            <div class="news__row-wrap">
+                <div class="news__row">
+                    <div class="headnews">
+                      <div class="headnews__img">
+                        <img src="./img/news/Headnews.png" alt="headnews" />
+                        <div class="headnews__content">
+                          <div class="news__data">
+                            <p class="news__data-year">09 октября, 2022 г.</p>
+                            <p class="news__data-chapter">НОВОСТИ</p>
+                          </div>
+                          <h3 class="heanews__text">
+                            Заголовок очередной новости в несколько строк на сайте
+                          </h3>
+                          <div class="heanews__btn">
+                            <a href="#"> Подробнее </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="news__card row-one__card">
+                      <div class="card__col">
+                        <div class="card__wrap">
+                          <img src="./img/news/news__car.png" />
+                          <div class="news__data">
+                            <p class="news__data-year">09 октября, 2022 г.</p>
+                            <p class="news__data-chapter">НОВОСТИ</p>
+                          </div>
+                          <h2 class="news__card-headtext">
+                            Еще один заголовок для новости в несколько строк
+                          </h2>
+                          <div class="heanews__btn news__card-btn">
+                              <a href="#"> Подробнее </a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="news__row row-two">
+                          <div class="news__card">
+                              <div class="card__col">
+                                <div class="card__wrap">
+                                  <img src="./img/news/news-one.png" />
+                                  <div class="news__data">
+                                    <p class="news__data-year">09 октября, 2022 г.</p>
+                                    <p class="news__data-chapter">НОВОСТИ</p>
+                                  </div>
+                                  <h2 class="news__card-headtext">
+                                    Еще один заголовок для новости в несколько строк
+                                  </h2>
+                                  <div class="heanews__btn news__card-btn button__card">
+                                      <a href="#"> Подробнее </a>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+
+                          <div class="news__card">
+                              <div class="card__col">
+                                <div class="card__wrap">
+                                  <img src="./img/news/news-two.png" />
+                                  <div class="news__data">
+                                    <p class="news__data-year">09 октября, 2022 г.</p>
+                                    <p class="news__data-chapter">НОВОСТИ</p>
+                                  </div>
+                                  <h2 class="news__card-headtext">
+                                    Еще один заголовок для новости в несколько строк
+                                  </h2>
+                                  <div class="heanews__btn news__card-btn button__card">
+                                      <a href="#"> Подробнее </a>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+
+                          <div class="news__card">
+                              <div class="card__col">
+                                <div class="card__wrap">
+                                  <img src="./img/news/news-three.png" />
+                                  <div class="news__data">
+                                    <p class="news__data-year">09 октября, 2022 г.</p>
+                                    <p class="news__data-chapter">НОВОСТИ</p>
+                                  </div>
+                                  <h2 class="news__card-headtext">
+                                      Новость на сайт в одну строку
+                                  </h2>
+                                  <div class="heanews__btn news__card-btn button__card">
+                                      <a href="#"> Подробнее </a>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                  </div>
+
+                  <div class="news__row row-two">
+                      <div class="news__card">
+                          <div class="card__col">
+                            <div class="card__wrap">
+                              <img src="./img/news/news-four.png" />
+                              <div class="news__data">
+                                <p class="news__data-year">09 октября, 2022 г.</p>
+                                <p class="news__data-chapter">НОВОСТИ</p>
+                              </div>
+                              <h2 class="news__card-headtext">
+                                Еще один заголовок для новости в несколько строк
+                              </h2>
+                              <div class="heanews__btn news__card-btn button__card">
+                                  <a href="#"> Подробнее </a>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="news__card">
+                          <div class="card__col">
+                            <div class="card__wrap">
+                              <img src="./img/news/news-five.png" />
+                              <div class="news__data">
+                                <p class="news__data-year">09 октября, 2022 г.</p>
+                                <p class="news__data-chapter">НОВОСТИ</p>
+                              </div>
+                              <h2 class="news__card-headtext">
+                                Еще один заголовок для новости в несколько строк
+                              </h2>
+                              <div class="heanews__btn news__card-btn button__card">
+                                  <a href="#"> Подробнее </a>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="news__card">
+                          <div class="card__col">
+                            <div class="card__wrap">
+                              <img src="./img/news/news-six.png" />
+                              <div class="news__data">
+                                <p class="news__data-year">09 октября, 2022 г.</p>
+                                <p class="news__data-chapter">НОВОСТИ</p>
+                              </div>
+                              <h2 class="news__card-headtext">
+                                  Новость на сайт в одну строку
+                              </h2>
+                              <div class="heanews__btn news__card-btn button__card">
+                                  <a href="#"> Подробнее </a>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+              </div>
+            </div>
+
+            <div class="news__pagination _anim-items _no-anim">
+                <div class="pagination-back no-active">Назад</div>
+                <div class="pagination">
+                    <div class="pagination-number active">1</div>
+                    <div class="pagination-number">2</div>
+                    <div class="pagination-number">3</div>
+                    <div >..</div>
+                    <div class="pagination-number">17</div>
+                </div>
+                <div class="pagination-next">Далее</div>
+            </div>
+          </div>
+          <img src="./img/bg/circle.svg" class="news-circle">
+          <img src="./img/bg/burger__circle-rot.svg" class="news-circle-rot">
+        </section>
+      </main>
+
+      @include('partials/footer.html')
+
+
+
+
+    </div>
+
+    <script src="js/animate.js"></script>
+    <script src="js/newsCircleAnim.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

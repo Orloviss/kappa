@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+  @include('partials/head.html', {
+    'title': 'Главная'
+  })
+<script src="./js/jqueryLoader.js"></script>
+<script src="./js/videoRev.js"></script>
+<script src="./js/videoPlay.js"></script>
+<script src="./js/counter.js"></script>
+<script src="./js/circleAnim.js"></script>
+<body>
+
+  <div id="overlay">
+    <div class="overlaycontainer">
+      <div class="masks">
+        <svg id="logoss" class="colorfull" width="108" height="105" viewBox="0 0 108 105" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M20.8949 104.981C20.6451 105.012 20.3906 104.985 20.15 104.909C19.9094 104.827 19.6919 104.701 19.5069 104.53C17.6376 104.024 16.0043 102.91 14.88 101.372C11.6411 95.9585 12.5665 95.5074 28.7606 81.5228L40.3279 72.0494C10.2531 89.6429 9.79041 89.1917 6.55156 88.2895C4.81186 87.7708 3.33125 86.6475 2.38737 85.1317C-0.851481 79.7183 0.0739581 79.2672 17.6561 64.3804L30.6115 54.0047C9.79046 65.7337 9.32772 65.7337 6.55161 64.8315C4.68234 64.3262 3.04908 63.212 1.92473 61.6737C-0.388735 57.6137 -0.851429 56.7114 18.5815 36.8623C9.32772 41.8246 8.86502 41.8246 6.55161 41.3735C5.59387 41.2066 4.67771 40.8367 3.88189 40.2908C3.08144 39.745 2.41519 39.0367 1.92473 38.2157C-0.388735 35.9601 -0.388735 35.9601 4.23814 19.72C5.22834 16.7697 6.00103 13.7562 6.55161 10.6976C5.16358 11.1487 1.92473 6.18648 7.477 4.382C11.6412 2.57752 16.7308 -1.03138 20.4323 4.83312C21.8204 7.53984 22.2831 7.53984 18.5816 21.0733L27.3727 15.6599C54.2086 0.321928 54.2086 0.321927 57.4475 1.22417C59.3168 1.72943 60.95 2.8437 62.0744 4.382C64.8505 8.89314 64.8505 8.89314 45.4176 29.6445L50.0445 26.9378C96.7761 -0.129194 96.7761 -0.129192 100.478 1.22417C102.217 1.74295 103.698 2.86625 104.642 4.382C107.881 9.79538 106.955 10.2465 88.9104 25.1333L75.9551 35.509C99.0896 22.4266 99.5523 22.4266 102.328 23.3289C104.068 23.8476 105.549 24.9709 106.493 26.4867C109.731 31.9001 108.806 32.3512 92.6119 45.8847L81.5073 55.3581C99.0895 45.4336 99.5522 45.8847 102.328 46.3358C104.068 46.8546 105.549 47.9778 106.493 49.4936C108.806 53.5537 109.269 54.0048 93.5373 72.5005C99.5522 69.3427 100.015 69.7938 102.328 69.7938C104.137 70.3216 105.674 71.499 106.618 73.0915C107.566 74.6884 107.853 76.5741 107.418 78.365C107.214 79.4161 106.715 80.3906 105.979 81.1845C105.248 81.983 104.304 82.5649 103.254 82.8762C101.866 83.3273 92.1492 89.1918 85.2089 93.2519C64.3879 105.432 64.3879 105.432 61.149 104.53C59.2798 104.024 57.6465 102.91 56.5222 101.372C54.2087 97.3119 53.7461 96.8607 69.9402 78.365L64.3879 81.5228C29.2235 101.823 23.6713 104.981 20.8951 104.981"
+            fill="#006495" />
+        </svg>
+
+        <svg id="second_part-svg" class="second-part-svg" width="105" height="102" viewBox="0 0 105 102" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path class="second-part" fill-rule="evenodd" clip-rule="evenodd"
+            d="M19.6915 10.215L26.6346 7.50681C41.9093 -0.166445 51.1666 0.284926 54.4067 0.736297C57.6468 1.18767 62.2755 4.34721 55.3324 14.7287C55.7953 14.7287 58.5725 13.3746 59.0354 13.3746C78.4758 4.34721 85.4189 1.18767 87.7332 0.284926C89.7838 -0.0851772 91.9083 0.23527 93.7505 1.18767C95.005 1.67065 96.1159 2.44699 96.9906 3.44452C100.694 7.05544 101.619 8.86093 93.7505 18.3397C94.2134 19.6938 88.1962 26.4643 88.1962 28.2697C99.7677 21.4992 100.231 25.5616 101.156 27.8184C102.179 28.6714 102.976 29.7547 103.471 30.9779C104.859 35.9429 104.397 38.6512 96.5278 48.1299C96.5278 49.484 90.9733 55.8032 90.9733 57.1572C99.7678 54.449 99.7678 56.7059 101.156 58.5113C102.059 59.2967 102.841 60.2085 103.471 61.2196C104.859 64.8305 104.859 65.7332 96.9906 75.212C100.231 73.8579 102.545 79.2742 99.7678 81.5311C99.305 81.9825 96.0649 84.2393 96.0649 84.6907C99.7678 82.8852 100.694 87.3989 98.3792 88.3016C88.1869 93.3163 77.6706 97.6855 66.9041 101.391C59.9612 102.294 53.9438 95.9748 61.8126 88.3016C62.2755 87.8502 57.6468 90.1071 56.7211 90.1071C34.5034 100.037 26.6346 101.843 22.9317 101.843H22.006C21.2839 101.879 20.5619 101.73 19.9138 101.414C19.2612 101.098 18.7104 100.624 18.303 100.037C15.5258 97.3289 15.063 96.8775 22.006 89.6556C21.0803 89.2043 25.7089 83.7879 24.7832 83.3365C7.19425 90.5584 5.3427 87.8501 3.49127 84.6906C2.58866 83.9052 1.80635 82.9935 1.17691 81.9824C-0.211764 79.2742 -0.211763 74.7605 9.04563 65.2818L15.5258 56.2544C5.34265 60.3167 4.87983 57.6085 3.49121 54.4489C2.57011 53.5101 1.78785 52.4449 1.17685 51.2893C-0.211816 45.8729 -0.211817 42.7133 9.5085 30.9778C4.87978 32.7833 4.41685 31.8805 3.49116 31.8805C2.50527 31.3705 1.69977 30.5851 1.1768 29.6237C0.251056 26.9155 0.713928 25.11 3.95403 16.0827C4.41685 15.6313 5.80542 10.2149 6.2684 9.76351C6.50903 8.16117 7.35149 6.6987 8.6244 5.66509C9.90195 4.62695 11.5266 4.08079 13.1883 4.13944C14.85 4.19362 16.4283 4.84356 17.6272 5.96749C18.8307 7.0869 19.562 8.59913 19.6915 10.215Z"
+            fill="#1E8DCC" />
+        </svg>
+
+        <svg id="third-part-svg" class="third-part-svg" width="100" height="99" viewBox="0 0 100 99" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path class="third-part" fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.0374152 20.2485C0.0189208 17.6937 0.518586 15.1616 1.51333 12.8009C2.50813 10.4358 3.97483 8.29175 5.82538 6.48631C7.67613 4.6763 9.87834 3.25002 12.2982 2.27958C14.7226 1.31366 17.3183 0.821684 19.9322 0.839726H80.0798C82.6985 0.821684 85.2941 1.31366 87.7185 2.27958C90.1383 3.25002 92.3406 4.67636 94.1913 6.48631C96.042 8.2918 97.504 10.4358 98.4988 12.8009C99.4935 15.1616 99.9932 17.6937 99.9747 20.2485V78.9263C99.9932 81.481 99.4935 84.0132 98.4988 86.3738C97.504 88.739 96.042 90.8829 94.1913 92.6884C92.3406 94.4984 90.1383 95.9247 87.7185 96.8952C85.2941 97.8656 82.6985 98.3531 80.0798 98.335H19.9322C17.3183 98.3531 14.7226 97.8656 12.2982 96.8952C9.87834 95.9247 7.67613 94.4984 5.82538 92.6884C3.97478 90.8829 2.50808 88.739 1.51333 86.3738C0.518586 84.0132 0.0189208 81.481 0.0374152 78.9263V20.2485Z"
+            fill="#38BFC4" />
+        </svg>
+
+
+
+
+
+
+        <svg class="mask-first" width="108" height="105" viewBox="0 0 108 105" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M20.8949 104.981C20.6451 105.012 20.3906 104.985 20.15 104.909C19.9094 104.827 19.6919 104.701 19.5069 104.53C17.6376 104.024 16.0043 102.91 14.88 101.372C11.6411 95.9585 12.5665 95.5074 28.7606 81.5228L40.3279 72.0494C10.2531 89.6429 9.79041 89.1917 6.55156 88.2895C4.81186 87.7708 3.33125 86.6475 2.38737 85.1317C-0.851481 79.7183 0.0739581 79.2672 17.6561 64.3804L30.6115 54.0047C9.79046 65.7337 9.32772 65.7337 6.55161 64.8315C4.68234 64.3262 3.04908 63.212 1.92473 61.6737C-0.388735 57.6137 -0.851429 56.7114 18.5815 36.8623C9.32772 41.8246 8.86502 41.8246 6.55161 41.3735C5.59387 41.2066 4.67771 40.8367 3.88189 40.2908C3.08144 39.745 2.41519 39.0367 1.92473 38.2157C-0.388735 35.9601 -0.388735 35.9601 4.23814 19.72C5.22834 16.7697 6.00103 13.7562 6.55161 10.6976C5.16358 11.1487 1.92473 6.18648 7.477 4.382C11.6412 2.57752 16.7308 -1.03138 20.4323 4.83312C21.8204 7.53984 22.2831 7.53984 18.5816 21.0733L27.3727 15.6599C54.2086 0.321928 54.2086 0.321927 57.4475 1.22417C59.3168 1.72943 60.95 2.8437 62.0744 4.382C64.8505 8.89314 64.8505 8.89314 45.4176 29.6445L50.0445 26.9378C96.7761 -0.129194 96.7761 -0.129192 100.478 1.22417C102.217 1.74295 103.698 2.86625 104.642 4.382C107.881 9.79538 106.955 10.2465 88.9104 25.1333L75.9551 35.509C99.0896 22.4266 99.5523 22.4266 102.328 23.3289C104.068 23.8476 105.549 24.9709 106.493 26.4867C109.731 31.9001 108.806 32.3512 92.6119 45.8847L81.5073 55.3581C99.0895 45.4336 99.5522 45.8847 102.328 46.3358C104.068 46.8546 105.549 47.9778 106.493 49.4936C108.806 53.5537 109.269 54.0048 93.5373 72.5005C99.5522 69.3427 100.015 69.7938 102.328 69.7938C104.137 70.3216 105.674 71.499 106.618 73.0915C107.566 74.6884 107.853 76.5741 107.418 78.365C107.214 79.4161 106.715 80.3906 105.979 81.1845C105.248 81.983 104.304 82.5649 103.254 82.8762C101.866 83.3273 92.1492 89.1918 85.2089 93.2519C64.3879 105.432 64.3879 105.432 61.149 104.53C59.2798 104.024 57.6465 102.91 56.5222 101.372C54.2087 97.3119 53.7461 96.8607 69.9402 78.365L64.3879 81.5228C29.2235 101.823 23.6713 104.981 20.8951 104.981"
+            fill="#dbdbdb" />
+        </svg>
+        <svg class="mask-second" width="105" height="102" viewBox="0 0 105 102" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M19.6915 10.215L26.6346 7.50681C41.9093 -0.166445 51.1666 0.284926 54.4067 0.736297C57.6468 1.18767 62.2755 4.34721 55.3324 14.7287C55.7953 14.7287 58.5725 13.3746 59.0354 13.3746C78.4758 4.34721 85.4189 1.18767 87.7332 0.284926C89.7838 -0.0851772 91.9083 0.23527 93.7505 1.18767C95.005 1.67065 96.1159 2.44699 96.9906 3.44452C100.694 7.05544 101.619 8.86093 93.7505 18.3397C94.2134 19.6938 88.1962 26.4643 88.1962 28.2697C99.7677 21.4992 100.231 25.5616 101.156 27.8184C102.179 28.6714 102.976 29.7547 103.471 30.9779C104.859 35.9429 104.397 38.6512 96.5278 48.1299C96.5278 49.484 90.9733 55.8032 90.9733 57.1572C99.7678 54.449 99.7678 56.7059 101.156 58.5113C102.059 59.2967 102.841 60.2085 103.471 61.2196C104.859 64.8305 104.859 65.7332 96.9906 75.212C100.231 73.8579 102.545 79.2742 99.7678 81.5311C99.305 81.9825 96.0649 84.2393 96.0649 84.6907C99.7678 82.8852 100.694 87.3989 98.3792 88.3016C88.1869 93.3163 77.6706 97.6855 66.9041 101.391C59.9612 102.294 53.9438 95.9748 61.8126 88.3016C62.2755 87.8502 57.6468 90.1071 56.7211 90.1071C34.5034 100.037 26.6346 101.843 22.9317 101.843H22.006C21.2839 101.879 20.5619 101.73 19.9138 101.414C19.2612 101.098 18.7104 100.624 18.303 100.037C15.5258 97.3289 15.063 96.8775 22.006 89.6556C21.0803 89.2043 25.7089 83.7879 24.7832 83.3365C7.19425 90.5584 5.3427 87.8501 3.49127 84.6906C2.58866 83.9052 1.80635 82.9935 1.17691 81.9824C-0.211764 79.2742 -0.211763 74.7605 9.04563 65.2818L15.5258 56.2544C5.34265 60.3167 4.87983 57.6085 3.49121 54.4489C2.57011 53.5101 1.78785 52.4449 1.17685 51.2893C-0.211816 45.8729 -0.211817 42.7133 9.5085 30.9778C4.87978 32.7833 4.41685 31.8805 3.49116 31.8805C2.50527 31.3705 1.69977 30.5851 1.1768 29.6237C0.251056 26.9155 0.713928 25.11 3.95403 16.0827C4.41685 15.6313 5.80542 10.2149 6.2684 9.76351C6.50903 8.16117 7.35149 6.6987 8.6244 5.66509C9.90195 4.62695 11.5266 4.08079 13.1883 4.13944C14.85 4.19362 16.4283 4.84356 17.6272 5.96749C18.8307 7.0869 19.562 8.59913 19.6915 10.215Z"
+            fill="#dbdbdb" />
+        </svg>
+
+        <svg class="mask-third" width="100" height="99" viewBox="0 0 100 99" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.0374152 20.2485C0.0189208 17.6937 0.518586 15.1616 1.51333 12.8009C2.50813 10.4358 3.97483 8.29175 5.82538 6.48631C7.67613 4.6763 9.87834 3.25002 12.2982 2.27958C14.7226 1.31366 17.3183 0.821684 19.9322 0.839726H80.0798C82.6985 0.821684 85.2941 1.31366 87.7185 2.27958C90.1383 3.25002 92.3406 4.67636 94.1913 6.48631C96.042 8.2918 97.504 10.4358 98.4988 12.8009C99.4935 15.1616 99.9932 17.6937 99.9747 20.2485V78.9263C99.9932 81.481 99.4935 84.0132 98.4988 86.3738C97.504 88.739 96.042 90.8829 94.1913 92.6884C92.3406 94.4984 90.1383 95.9247 87.7185 96.8952C85.2941 97.8656 82.6985 98.3531 80.0798 98.335H19.9322C17.3183 98.3531 14.7226 97.8656 12.2982 96.8952C9.87834 95.9247 7.67613 94.4984 5.82538 92.6884C3.97478 90.8829 2.50808 88.739 1.51333 86.3738C0.518586 84.0132 0.0189208 81.481 0.0374152 78.9263V20.2485Z"
+            fill="#dbdbdb" />
+        </svg>
+      </div>
+
+
+    </div>
+    <p class="load-btn"> ЗАГРУЗКА</p>
+    <div class="progress__body">
+      <div id="progress"></div>
+      <div id="progstat"></div>
+    </div>
+  </div>
+  <div class="wrapper">
+    @include('partials/header.html')
+
+
+    <main class="main">
+      <section class="start ">
+        <div class="start__wrap">
+          <div class="start__container">
+            <div id="left_pseudo" class="start__content  _no-anim">
+              <h1 class="headtext">EUROKAPPA</h1>
+              <p class="subtext">
+                Крупнейший научно-клинический центр в России,
+                специализирующийся на ортодонтии
+              </p>
+              <a href="#" class="button"> ЗАПИСАТЬСЯ НА ПРИЕМ </a>
+              <div class="start-circle">
+                <img src="./img/page-main/Circle-rot_main.svg" />
+              </div>
+            </div>
+            <div class="scroll _anim-items _no-anim">
+              <a href="#statistics">
+                <img src="./img/scroll.svg" alt="scroll" />
+              </a>
+              <p class="scroll__text">Прокрутка</p>
+            </div>
+          </div>
+          <video class="video" autoplay loop muted>
+            <source src="bg.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+      </section>
+
+      <section id="right_pseudo" class="awards _no-anim">
+        <div class="awards__wrap">
+          <div class="awards__item">
+            <div class="item__column">
+              <img class="awards__one" src="./img/european.svg" alt="European" />
+              <p class="awards__text">
+                Член Европейской <br />ассоциации элайнеров
+              </p>
+            </div>
+          </div>
+          <div class="awards__item">
+            <div class="item__column">
+              <img class="awards__two" src="./img/sogaz.svg" alt="sogaz" />
+              <p class="awards__text">
+                Официальный партнер <br />
+                по цифровой ортодонтии
+              </p>
+            </div>
+          </div>
+          <div class="awards__item">
+            <div class="item__column">
+              <img class="awards__three" src="./img/dental.svg" alt="
+                                dental" />
+              <p class="awards__text">
+                Одобрено Стоматологической <br />
+                ассоциацией России
+              </p>
+            </div>
+          </div>
+          <div class="awards__item">
+            <div class="item__column">
+              <img class="awards__four" src="./img/iso.svg" alt="iso" />
+              <p class="awards__text">
+                Стандарт качества <br />
+                сервиса ISO 9001
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="start-circle">
+          <img src="./img/page-main/Circle-rot_main.svg" />
+        </div> -->
+      </section>
+
+        <section id="statistics" class="statistics statistics-top">
+          <div class="container">
+            <div class="statistics__headtext__wrap">
+
+              <p class="statistics__headtext  _anim-items _no-anim  statistics__line-one">Стоматологический
+              </p>
+                <p class="statistics__headtext  _anim-items _no-anim statistics__line-two ">научно-клинический центр
+                </p>
+
+                <p class="statistics__headtext  _anim-items _no-anim statistics__line-three _color">EUROKAPPA</p>
+
+            </div>
+            <div class="statistics__wrap" id="statistics__wrap">
+              <div class="statistics__count">
+                <p class="count">17300</p>
+                <p class="statistics__text">
+                  довольных пациентов, завершивших лечение
+                </p>
+              </div>
+              <div class="statistics__data">
+                <div class="data__card _anim-items _no-anim  ">
+                  <img class="data__img" src="./img/statistics_card/statistics_card-one.jpg" />
+                  <p class="data__number">4</p>
+                  <p class="data__description">Клинических корпуса</p>
+                </div>
+                <div class="data__card _anim-items _no-anim ">
+                  <img class="data__img" src="./img/statistics_card/statistics_card-two.jpg" />
+                  <p class="data__number">15</p>
+                  <p class="data__description">
+                    Cтоматологических <br />
+                    кресел
+                  </p>
+                </div>
+                <div class="data__card _anim-items _no-anim ">
+                  <img class="data__img" src="./img/statistics_card/statistics_card-three.jpg" />
+                  <p class="data__number">74</p>
+                  <p class="data__description">
+                    медицинских сотрудника <br />
+                    работает в клинике
+                  </p>
+                </div>
+                <div class="data__card _anim-items _no-anim ">
+                  <img class="data__img" src="./img/statistics_card/statistics_card-four.jpg" />
+                  <p class="data__number">6 500</p>
+                  <p class="data__description">
+                    пациентов проходят лечение <br />
+                    прямо сейчас
+                  </p>
+                </div>
+                <div class="data__card _anim-items _no-anim ">
+                  <img class="data__img" src="./img/statistics_card/statistics_card-five.jpg" />
+                  <p class="data__number">2016</p>
+                  <p class="data__description">
+                    год основания клиники. <br />
+                    На рынке уже 7 лет
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="circle circle-one" src="./img/bg/circle.svg" >
+          <img class="circle circle-two" src="./img/bg/circle.svg" >
+          <img class="circle-three" src="./img/bg/circle_big.svg" >
+        </section>
+
+        <section class="services">
+          <div class="container">
+
+              <h2 class="services__headtext _anim-items _no-anim ">УСЛУГИ</h2>
+
+              <div class="services__card-wrapper__slaider swiper-container  services__card-wrapper-dec _anim-items _no-anim ">
+                <div class="swiper-wrapper about-us__wrapper">
+                  <div class="swiper-slide about-us__slide ">
+                    <div class="services__card-item card-item-one _anim-items _no-anim">
+                      <div class="card-item-img">
+                        <img src="./img/Aligners.png">
+                      </div>
+                      <p class="card-item-name">
+                        Ортодонтия
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide about-us__slide ">
+                    <div class="services__card-item card-item-two _anim-items _no-anim">
+                      <div class="card-item-img">
+                        <img src="./img/veneers.png">
+                      </div>
+                      <p class="card-item-name">
+                        Виниры и эстетическая <br>
+                        стоматология
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide about-us__slide ">
+                    <div class="services__card-item card-item-three _anim-items _no-anim">
+                      <div class="card-item-img">
+                        <img src="./img/Periodontology.png">
+                      </div>
+                      <p class="card-item-name">
+                        Терапия
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide about-us__slide ">
+                    <div class="services__card-item card-item-four _anim-items _no-anim">
+                      <div class="card-item-img">
+                        <img src="./img/Surgical.png">
+                      </div>
+                      <p class="card-item-name">
+                        Хирургическая <br>
+      стоматология<br> и ортопедия
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide about-us__slide ">
+                    <div class="services__card-item card-item-five _anim-items _no-anim">
+                      <div class="card-item-img">
+                        <img src="./img/service/card-item2.png">
+                      </div>
+                      <p class="card-item-name">
+                        Пародонтология
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide about-us__slide ">
+                    <div class="services__card-item card-item-six _anim-items _no-anim">
+                      <div class="card-item-img">
+                        <img src="./img/serv6.png">
+                      </div>
+                      <p class="card-item-name">
+                        Гнатология
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="swiper-scrollbar"></div>
+
+
+                <div class="swiper-arrow-wrap">
+                  <div class="swiper-arrow-prev">
+                    <img src="./img/aboutUs/prev.svg" />
+                    <img class="hover__arrow" src="./img/aboutUs/arrow-back_hover.svg">
+                  </div>
+                  <div class="swiper-arrow-next">
+                    <img src="./img/aboutUs/next.svg" />
+                    <img class="hover__arrow" src="./img/aboutUs/arrow-next_hover.svg">
+                  </div>
+                  </div>
+                </div>
+
+
+              <div class="services__card-wrapper services__card-wrapper-mob">
+
+                <div class="services__card-item _anim-items _no-anim">
+                  <div class="card-item-img">
+                    <img src="./img/Aligners.png">
+                  </div>
+                  <p class="card-item-name">
+                    Ортодонтия
+                  </p>
+                </div>
+
+                <div class="services__card-item _anim-items _no-anim">
+                  <div class="card-item-img">
+                    <img src="./img/veneers.png">
+                  </div>
+                  <p class="card-item-name">
+                    Виниры и эстетическая <br>
+                    стоматология
+                  </p>
+                </div>
+
+                <div class="services__card-item _anim-items _no-anim">
+                  <div class="card-item-img">
+                    <img src="./img/Periodontology.png">
+                  </div>
+                  <p class="card-item-name">
+                    Терапия
+                  </p>
+                </div>
+
+                <div class="services__card-item _anim-items _no-anim">
+                  <div class="card-item-img">
+                    <img src="./img/Surgical.png">
+                  </div>
+                  <p class="card-item-name">
+                    Хирургическая <br>
+  стоматология и ортопедия
+                  </p>
+                </div>
+
+                <div class="services__card-item _anim-items _no-anim">
+                  <div class="card-item-img">
+                    <img src="./img/service/card-item2.png">
+                  </div>
+                  <p class="card-item-name">
+                    Пародонтология
+                  </p>
+                </div>
+
+                <div class="services__card-item _anim-items _no-anim">
+                  <div class="card-item-img">
+                    <img src="./img/serv6.png">
+                  </div>
+                  <p class="card-item-name">
+                    Гнатология
+                  </p>
+                </div>
+              </div>
+
+              <a href="service.html" class="service-btn">
+                Все услуги
+              </a>
+          </div>
+          <img class="circle circle-four" src="./img/bg/circle.svg" >
+        </section>
+
+        <section class="personal">
+          <div class="container">
+            <div class="personal__wrap">
+              <div class="personal__content">
+
+                  <h3 class="personal__text  _anim-items _no-anim ">НАШИ Врачи</h3>
+                <p class="personal__description">
+                  Главное достоинство нашей клиники – врачи с большим клиническим опытом в сочетании с новейшим оборудованием экспертного класса
+                </p>
+                <div class="content__tab">
+                  <div class="tab active">Все</div>
+                  <div class="tab">Ортопеды</div>
+                  <div class="tab">Ортодонты</div>
+                  <div class="tab">Терапевты</div>
+                  <div class="tab">Хирурги</div>
+                  <div class="tab">Гнатологи</div>
+                </div>
+                <a class="button button-dec" href="#"> Все ВРАЧИ </a>
+              </div>
+
+              <div class="personal__doctors">
+                <div class="doctors__card  ">
+                  <div class="card-up__background">
+                    <div class="doctors__image">
+                      <img src="./img/personal/doctor-one.png" alt="Арлетта Маллаева" />
+                    </div>
+                  </div>
+                  <div class="doctors__description">
+                    <p class="doctors__name">Арлетта Маллаева</p>
+                    <a class="button" href="#"> Записаться на прием </a>
+                  </div>
+                </div>
+
+                <div class="doctors__card">
+                  <div class="card-up__background">
+                    <div class="doctors__image">
+                      <img src="./img/personal/doctor-two.png" alt="Анна Оганисян" />
+                    </div>
+                  </div>
+                  <div class="doctors__description">
+                    <p class="doctors__name">Анна Оганисян</p>
+                    <a class="button" href="#"> Записаться на прием </a>
+                  </div>
+                </div>
+
+                <div class="doctors__card ">
+                  <div class="card-up__background">
+                    <div class="doctors__image">
+                      <img src="./img/personal/doctor-three.png" alt="Виктор Ермаков" />
+                    </div>
+                  </div>
+                  <div class="doctors__description">
+                    <p class="doctors__name">Виктор Ермаков</p>
+                    <a class="button" href="#">Записаться на прием</a>
+                  </div>
+                </div>
+
+                <div class="doctors__card  ">
+                  <div class="card-up__background">
+                    <div class="doctors__image">
+                      <img src="./img/personal/doctor-four.png" alt="Сергей Гусаков" />
+                    </div>
+                  </div>
+                  <div class="doctors__description">
+                    <p class="doctors__name">Сергей Гусаков</p>
+                    <a class="button" href="#"> Записаться на прием </a>
+                  </div>
+                </div>
+
+                <div class="doctors__card ">
+                  <div class="card-up__background">
+                    <div class="doctors__image">
+                      <img src="./img/personal/doctor-five.png" alt="Олег Байбеков" />
+                    </div>
+                  </div>
+                  <div class="doctors__description">
+                    <p class="doctors__name">Олег Байбеков</p>
+                    <a class="button" href="#"> Записаться на прием </a>
+                  </div>
+                </div>
+
+                <div class="doctors__card ">
+                  <div class="card-up__background">
+                    <div class="doctors__image">
+                      <img src="./img/personal/doctor-six.png" alt="Марьяна Барагунова" />
+                    </div>
+                  </div>
+                  <div class="doctors__description">
+                    <p class="doctors__name">Марьяна Барагунова</p>
+                    <a class="button" href="#"> Записаться на прием </a>
+                  </div>
+                </div>
+              </div>
+              <div class="button__mob">
+                <a href="#" class="button"> Все ВРАЧИ </a>
+              </div>
+            </div>
+          </div>
+          <img class="circle circle-five" src="./img/bg/circle.svg" >
+        </section>
+
+        <section class="about-us">
+          <div class="about-us__video _anim-items _no-anim">
+            <div class="video-wrap head-video">
+              <video muted poster="./img/aboutUs/video-bg.png" >
+                <source src="bg.mp4" type="video/mp4" />
+              </video>
+              <div class="video-icon">
+                <div class="icon-wrap">
+                  <img class="icon-play" src="./img/play.svg" >
+                  <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+              </div>
+            </div>
+            <h2 class="video-text _anim-items _no-anim">ВИДЕО</h2>
+          </div>
+        </section>
+
+        <section class="reasons">
+          <div class="container">
+            <div class="reasons__wrap">
+              <h2 class="reason-text _anim-items _no-anim">Почему нас выбирают? </h2>
+              <p class="reason-subtext _anim-items _no-anim">Более 6 лет мы делаем зубы наших пациентов <br>
+                ровными, здоровыми и красивыми. </p>
+            </div>
+
+            <div class="reasons__advantage">
+
+              <div class="advantage__card _anim-items _no-anim">
+                <div class="advantage__card-wrap">
+                  <div class="advantage__wrap-text">
+                    <object class="advantage__card-img img-mob" type="image/svg+xml"
+                      data="./img/advantage/advantage-five.svg">
+                      <img src="./img/advantage/advantage-five.svg" />
+                    </object>
+                    <h3 class="advantage__card-headtext one">
+                      Квалификация
+                    </h3>
+                  </div>
+                  <p class="advantage__card-subtext">6 лет опыта и более 17 000
+                    вылеченных пациентов говорят
+                    о высоком качестве наших
+                    услуг
+                  </p>
+                  <div class="advantage__card-img img-dec">
+                    <object type="image/svg+xml" data="./img/advantage/advantage-five.svg">
+                      <img src="./img/advantage/advantage-five.svg" />
+                    </object>
+
+                    <img class="img-hover" src="./img/advantage/advantage-five-hover.svg" alt="">
+                  </div>
+                </div>
+
+
+              </div>
+
+
+              <div class="advantage__card _anim-items _no-anim">
+                <div class="advantage__card-wrap">
+                  <div class="advantage__wrap-text">
+                    <object class="advantage__card-img img-mob" type="image/svg+xml"
+                      data="./img/advantage/advantage-two.svg">
+                      <img src="./img/advantage/advantage-two.svg" />
+                    </object>
+                    <h3 class="advantage__card-headtext two">
+                      Скорость
+                    </h3>
+                  </div>
+                  <p class="advantage__card-subtext">Результаты лечения
+                    на элайнерах EUROKAPPA
+                    видны уже через 6 месяцев
+                  </p>
+                  <div class="advantage__card-img img-dec">
+                    <object class="svg" type="image/svg+xml" data="./img/advantage/advantage-two.svg">
+                      <img src="./img/advantage/advantage-two.svg" />
+                    </object>
+                    <img class="img-hover" src="./img/advantage/advantage-two-hover.svg" alt="">
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="advantage__card _anim-items _no-anim">
+                <div class="advantage__card-wrap">
+                  <div class="advantage__wrap-text">
+                    <object class="advantage__card-img img-mob" type="image/svg+xml"
+                      data="./img/advantage/advantage-four.svg">
+                      <img src="./img/advantage/advantage-four.svg" />
+                    </object>
+                    <h3 class="advantage__card-headtext three">
+                      Сервис
+                    </h3>
+                  </div>
+                  <p class="advantage__card-subtext">На протяжении всего
+                    этапа лечения пациента
+                    сопровождает персональный
+                    менеджер, который доступен
+                    24/7
+                  </p>
+                  <div class="advantage__card-img img-dec">
+                    <object type="image/svg+xml" data="./img/advantage/advantage-four.svg">
+                      <img src="./img/advantage/advantage-four.svg" />
+                    </object>
+
+                    <img class="img-hover" src="./img/advantage/advantage-four-hover.svg" alt="">
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="advantage__card _anim-items _no-anim">
+                <div class="advantage__card-wrap">
+                  <div class="advantage__wrap-text">
+                    <object class="advantage__card-img img-mob" type="image/svg+xml"
+                      data="./img/advantage/advantage-one.svg">
+                      <img src="./img/advantage/advantage-one.svg" />
+                    </object>
+                    <h3 class="advantage__card-headtext four">
+                      Стоимость
+                    </h3>
+                  </div>
+                  <p class="advantage__card-subtext">Мы являемся партнером
+                    компании EUROKAPPA – лидера
+                    по производству элайнеров
+                    в России, что позволяет
+                    минимизировать конечную
+                    стоимость лечения.
+                  </p>
+                  <div class="advantage__card-img img-dec">
+                    <object type="image/svg+xml" data="./img/advantage/advantage-three.svg">
+                      <img src="./img/advantage/advantage-three.svg" />
+                    </object>
+                    <img class="img-hover" src="./img/advantage/advantage-three-hover.svg" alt="">
+                  </div>
+                </div>
+
+              </div>
+              <div class="advantage__card _anim-items _no-anim">
+                <div class="advantage__card-wrap last__card">
+                  <div class="advantage__wrap-text">
+                    <object class="advantage__card-img img-mob" type="image/svg+xml"
+                      data="./img/advantage/advantage-three.svg">
+                      <img src="./img/advantage/advantage-three.svg" />
+                    </object>
+                    <h3 class="advantage__card-headtext five">
+                      Персональные <br>условия
+                    </h3>
+                  </div>
+                  <p class="advantage__card-subtext">Вы сможете выбрать один
+                    из подходящих вам пакетов,
+                    а также воспользоваться
+                    рассрочкой под 0%
+                  </p>
+                  <div class="advantage__card-img img-dec">
+                    <object type="image/svg+xml" data="./img/advantage/advantage-one.svg">
+                      <img src="./img/advantage/advantage-one.svg" />
+                    </object>
+
+                    <img src="./img/advantage/advantage-one-hover.svg"  class="img-hover" alt="">
+
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <img class="circle circle-six" src="./img/bg/circle.svg" >
+        </section>
+
+        <section class="section-reviews">
+          <div class="reviews">
+            <div class="container">
+              <div class="services__headtext-bg">
+
+                  <h2 class="services__headtext  _anim-items _no-anim ">Отзывы</h2>
+
+              </div>
+                <div class="reviews__slaider swiper-container _anim-items _no-anim ">
+                <div class="swiper-wrapper about-us__wrapper">
+                  <div class="swiper-slide about-us__slide ">
+
+                    <div class="video-wrap">
+                     <video class="reviews-video video-one" >
+                      <source src="one.mp4" type="video/mp4" />
+                    </video>
+                      <div class="video-icon play-one">
+                        <div class="icon-wrap">
+                          <img class="icon-play" src="./img/play.svg" >
+                          <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide about-us__slide ">
+                    <div class="video-wrap ">
+                      <video class="reviews-video video-two">
+                        <source src="two.mov" type="video/mp4" />
+                      </video>
+                      <div class="video-icon">
+                        <div class="icon-wrap play-two">
+                          <img class="icon-play" src="./img/play.svg" >
+                          <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide about-us__slide ">
+
+                    <div class="video-wrap">
+                      <video class="reviews-video video-three">
+                        <source src="three.mov" type="video/mp4" />
+                      </video>
+                      <div class="video-icon">
+                        <div class="icon-wrap play-three">
+                          <img class="icon-play" src="./img/play.svg" >
+                          <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide about-us__slide ">
+
+                    <div class="video-wrap">
+                      <video class="reviews-video video-four" >
+                        <source src="four.mov" type="video/mp4" />
+                      </video>
+                      <div class="video-icon">
+                        <div class="icon-wrap play-four">
+                          <img class="icon-play" src="./img/play.svg" >
+                          <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide about-us__slide ">
+
+                    <div class="video-wrap">
+                      <video class="reviews-video video-five" >
+                        <source src="five.mp4" type="video/mp4" />
+                      </video>
+                      <div class="video-icon">
+                        <div class="icon-wrap play-five">
+                          <img class="icon-play" src="./img/play.svg" >
+                          <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide about-us__slide ">
+                    <div class="video-wrap">
+                      <video class="reviews-video video-six" >
+                        <source src="six.mp4" type="video/mp4" />
+                      </video>
+                      <div class="video-icon play-six">
+                        <div class="icon-wrap">
+                          <img class="icon-play" src="./img/play.svg" >
+                          <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide about-us__slide ">
+                    <div class="video-wrap">
+                      <video class="reviews-video video-seven" >
+                        <source src="seven.mp4" type="video/mp4" />
+                      </video>
+                      <div class="video-icon">
+                        <div class="icon-wrap play-seven">
+                          <img class="icon-play" src="./img/play.svg" >
+                          <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide about-us__slide ">
+                    <div class="video-wrap">
+                      <video class=" reviews-video video-eight" >
+                        <source src="eight.mov" type="video/mp4" />
+                      </video>
+                      <div class="video-icon">
+                        <div class="icon-wrap play-eight">
+                          <img class="icon-play" src="./img/play.svg" >
+                          <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide about-us__slide ">
+                    <div class="video-wrap">
+                      <video class="reviews-video video-nine" >
+                        <source src="nine.mov" type="video/mp4" />
+                      </video>
+                      <div class="video-icon">
+                        <div class="icon-wrap play-nine">
+                          <img class="icon-play" src="./img/play.svg" >
+                          <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide about-us__slide ">
+                    <div class="video-wrap">
+                      <video class="reviews-video video-ten" >
+                        <source src="ten.mov" type="video/mp4" />
+                      </video>
+                      <div class="video-icon">
+                        <div class="icon-wrap play-ten">
+                          <img class="icon-play" src="./img/play.svg" >
+                          <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-scrollbar"></div>
+
+
+                <div class="swiper-arrow-wrap">
+                  <div class="swiper-arrow-prev">
+                    <img src="./img/aboutUs/prev.svg" />
+                    <img class="hover__arrow" src="./img/aboutUs/arrow-back_hover.svg">
+                  </div>
+                  <div class="swiper-arrow-next">
+                    <img src="./img/aboutUs/next.svg" />
+                    <img class="hover__arrow" src="./img/aboutUs/arrow-next_hover.svg">
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section class="story">
+          <div class="container">
+            <div class="story__wrap">
+              <div class="story-content">
+                <h2 class="story-headtext _anim-items _no-anim">
+                  Производитель элайнеров
+                </h2>
+                <div class="story-subtext-wrap">
+                  <p class="story-subtext">
+                    <span>EUROKAPPA Factory — ведущий производитель элайнеров в России
+                      с самым современным, быстрым и точным производством. Наши элайнеры
+                      представлены в 85 городах России и СНГ.</span>
+                  </p>
+
+                  <p class="story-subtext">
+                    Более 1000 докторов лечат своих пациентов на элайнерах. Производство
+    EUROKAPPA Factory единственное в России сертифицированное по международному
+    стандарту качества производителей медицинских изделий ISO 13485‑2017.
+
+                  </p>
+
+                  <p class="story-subtext">
+                    Передовое оборудование и высокая квалификация наших ортодонтов-технологов
+    позволили нам добиться наивысшего качества производства среди российских
+    производителей.
+                  </p>
+                </div>
+
+                <a href="#" class="button">
+                  ПОДРОБНЕЕ
+                </a>
+              </div>
+
+              <div class="story__video">
+                <div class="video-wrap head-video">
+                  <video class="story__videos" poster="./img/story.png" >
+                    <source src="story.mp4" type="video/mp4" />
+                  </video>
+                  <div class="video-icon">
+                    <div class="icon-wrap">
+                      <img class="icon-play" src="./img/play.svg" >
+                      <img class="icon-play-hover" src="./img/play-hover.svg" ></div>
+                  </div>
+                </div>
+                <img src="./img/story-circle.svg" class="story-circle">
+                <img src="./img/story-circle-small.png" class="story-circle-small">
+              </div>
+
+            </div>
+          </div>
+        </section>
+    </main>
+
+    @include('partials/footer.html')
+
+
+    </div>
+
+    <div class="wrapper forms">
+
+      <div class="form">
+          <img src="./img/bg/burger_corcle.svg" class="popUp__contact-circle form_circle">
+          <img src="./img/bg/article__bg-corcle.png" class="article__bg-corcle form__fake">
+          <img class="circle-three form_circle-round./img/bg/circle_big.svg" style="transform: rotate(91deg);">
+          <div class="form__body">
+              <h1>Записаться на прием</h1>
+              <p>Будем рады видеть вас в нашей клинике</p>
+            <div class="input__box">
+
+              <input name="fio" id="fio" type="text" class="big__input first_inp" value="" />
+              <label class="animated first__label" for="fio">Введите ФИО</label>
+
+          </div>
+              <div class="inputfields">
+                  <div class="input__box">
+
+                      <input name="tel" id="tel" type="text" class="big__input sec_inp" value="" />
+                      <label class="animated second__label" for="tel">Телефон</label>
+
+                  </div>
+                  <div class="input__box">
+
+                      <input name="email" id="email" type="text" class="big__input th_inp" value="" />
+                      <label class="animated third__label" for="email">E-mail</label>
+
+                  </div>
+              </div>
+              <div class="send__box">
+                  <div class="checkbox">
+                      <label class="custom-checkbox">
+                          <input type="checkbox" value="value-1">
+                          <span>Нажимая на кнопку, даю согласие на обработку
+                              <a href="">персональных данных</a></span>
+                        </label>
+
+                  </div>
+                  <a class="send__button" onclick="sendMail()">Записаться</a>
+              </div>
+          </div>
+         <div class="close_form" onclick="addClassByClick()">
+
+         </div>
+      </div>
+  </div>
+
+
+  <div class="success_send">
+
+      <div class="send__body">
+          <div class="close_form second_popup" onclick="closeForm()">
+
+          </div>
+      <h2>Собщение отправлено</h2>
+      <p>Спасибо, ваше сообщение отправлено, в ближайшее
+          время с вами свяжутся наши менеджеры для уточнения
+          всех деталей</p>
+          <div class="form__footer">
+              <a class="close_btn" href="" onclick="closeForm()">ЗАКРЫТЬ ОКНО</a>
+              <a href="#" class="logo">
+                  <img src="./img/logo.svg" alt="logo">
+                </a>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="payment_form">
+
+    <div class="send__body pay">
+        <div class="close_form second_popup" onclick="closePayForm()">
+
+        </div>
+    <h2>Оплатите онлайн</h2>
+    <div class="input__box">
+
+      <input name="fio" id="fio_sec" type="text" class="big__input first_inp-pay" value="" />
+      <label class="animated first__label-pay" for="fio_sec">Введите ФИО</label>
+
+  </div>
+  <div class="input__box">
+
+    <input name="fio" id="number" type="text" class="big__input sec_inp-pay" value="" />
+    <label class="animated second__label-pay" for="number">Номер договора</label>
+
+  </div>
+  <div class="input__box">
+
+    <input name="fio" id="sum" type="text" class="big__input th_inp-pay" value="" />
+    <label class="animated third__label-pay" for="sum">Сумма оплаты, ₽</label>
+
+  </div>
+  <div class="send__box">
+    <div class="checkbox">
+        <label class="custom-checkbox">
+            <input type="checkbox" value="value-1">
+            <span>Нажимая на кнопку, даю согласие на обработку
+                <a href="">персональных данных</a></span>
+          </label>
+
+    </div>
+
+  </div>
+        <div class="form__footer">
+            <a class="close_btn" href="">ОПЛАТИТЬ</a>
+            <a href="#" class="logo">
+                <img src="./img/logo.svg" alt="logo">
+              </a>
+        </div>
+    </div>
+  </div>
+  </body>
+  <script>
+      function showByClick(){
+  $(".forms").toggleClass("form__open")
+  }
+  function showPayByClick(){
+  $(".payment_form").toggleClass("pay__open")
+  }
+  var input = $(".first_inp");
+  input.focusin(function() {
+      $('.first__label').addClass("motion");
+  });
+  input.focusout(function() {
+      $('.first__label').removeClass("motion");
+  });
+  var input_sec = $(".sec_inp");
+  input_sec.focusin(function() {
+      $('.second__label').addClass("motion");
+  });
+  input_sec.focusout(function() {
+      $('.second__label').removeClass("motion");
+  });
+  var input_th = $(".th_inp");
+  input_th.focusin(function() {
+      $('.third__label').addClass("motion");
+  });
+  input_th.focusout(function() {
+      $('.third__label').removeClass("motion");
+  });
+  var input = $(".first_inp-pay");
+  input.focusin(function() {
+      $('.first__label-pay').addClass("motion");
+  });
+  input.focusout(function() {
+      $('.first__label-pay').removeClass("motion") ;
+  });
+  var input_sec = $(".sec_inp-pay");
+  input_sec.focusin(function() {
+      $('.second__label-pay').addClass("motion");
+  });
+  input_sec.focusout(function() {
+      $('.second__label-pay').removeClass("motion");
+  });
+  var input_th = $(".th_inp-pay");
+  input_th.focusin(function() {
+      $('.third__label-pay').addClass("motion");
+  });
+  input_th.focusout(function() {
+      $('.third__label-pay').removeClass("motion");
+  });
+  function addClassByClick(){
+  $(".forms").removeClass("form__open")
+  }
+  function sendMail(){
+  $(".forms").addClass("hide_form");
+  $(".success_send").addClass("show");
+
+  }
+  function closeForm(){
+  $(".forms").addClass("hide_form");
+  $(".success_send").removeClass("show");
+
+  }
+  function closePayForm(){
+    $(".payment_form").removeClass("pay__open")
+
+  }
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+
+  </html>
+
+    <!-- @include('html/h1.html') пример include -->
+  </div>
+</body>
+
+</html>

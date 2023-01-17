@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html', {
+    'title': 'Врачи'
+  })
+<script src="./js/pageLoader.js"></script>
+
+<body>
+
+<div  id="child" class="preloader__child">
+
+  <div class="load-3">
+
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+</div>
+    <div class="wrapper doctors">
+      <header class="header header__no-anim">
+        <div class="header__wrapper">
+          <div class="header__burger">
+            <a href="./index.html" class="logo">
+              <img src="./img/logo-header.svg" alt="logo" />
+            </a>
+          </div>
+          <div class="header__navigation">
+            <ul class="navigation__wrap">
+              <li class="navigation-li">
+                <a href="service.html"> Услуги </a>
+              </li>
+              <li class="navigation-li">
+                <a href="company.html"> Клиника </a>
+              </li>
+              <li class="navigation-li">
+                <a href="news.html"> Акции </a>
+              </li>
+              <li class="navigation-li">
+                <a href="result.html"> Результаты <br />до и после </a>
+              </li>
+              <li class="navigation-li">
+                <a href="contact.html"> Контакты </a>
+              </li>
+            </ul>
+            <div class="header__contact">
+              <div class="phone">
+                <object
+                  class="header-svg"
+                  type="image/svg+xml"
+                  data="./img/phone-icon.svg"
+                >
+                  <img src="./img/phone-icon.svg" />
+                </object>
+                <a href="tel:+7 (495) 477-58-09">+7 (495) 477-58-09</a>
+              </div>
+              <div class="address">
+                <object
+                  class="header-svg"
+                  type="image/svg+xml"
+                  data="./img/metro-icon.svg"
+                >
+                  <img src="./img/metro-icon.svg" />
+                </object>
+                <p>Менделеевская</p>
+              </div>
+              <div class="phone-mob">
+                <a href="tel:+7 (495) 477-58-09">
+                  <img src="./img/phone-icon-mob.svg" alt="phone" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header__payment">
+            <a href="#" class="payment"> Оплата онлайн </a>
+            <a href="#">
+              <div class="email">
+                <img src="./img/email.svg" alt="email" />
+              </div>
+            </a>
+            <div class="burger__menu">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="head-page">
+          <div class="container">
+            <ul class="breadcrumbs">
+              <li>
+                <a href="./index.html">Главная</a>
+              </li>
+              <li>Врачи</li>
+            </ul>
+            <h1 class="page__hedtext">Врачи</h1>
+          </div>
+        </section>
+
+        <section class="tabs doctors__tabs">
+          <div class="container">
+            <div class="tabs__wrap  tabs__wrap-doctors">
+              <div class="tabs__trigger active">Все врачи</div>
+              <div class="tabs__trigger">Ортопеды</div>
+              <div class="tabs__trigger">Ортодонты</div>
+              <div class="tabs__trigger">Терапевты</div>
+              <div class="tabs__trigger">Хирурги</div>
+              <div class="tabs__trigger">Гнатологи</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="doctors">
+          <div class="container">
+            <div class="doctors__wrap">
+              <div class="doctors__card _anim-items _no-anim doctors__card-item">
+                <div class="card-up__background">
+                  <div class="doctors__image">
+                    <img
+                      src="./img/personal/doctor-two.png"
+                      alt="1"
+                    />
+                  </div>
+                </div>
+                <div class="doctors__description">
+                  <p class="doctors__name">Анна Оганисян</p>
+                  <a class="button" href="#"> Записаться на прием </a>
+                </div>
+              </div>
+
+              <div class="doctors__card _anim-items _no-anim doctors__card-item">
+                <div class="card-up__background">
+                  <div class="doctors__image">
+                    <img
+                      src="./img/personal/doctor-14.png"
+                      alt="1"
+                    />
+                  </div>
+                </div>
+                <div class="doctors__description">
+                  <p class="doctors__name">Анатолий Ленкевич</p>
+                  <a class="button" href="#"> Записаться на прием </a>
+                </div>
+              </div>
+
+              <div class="doctors__card _anim-items _no-anim doctors__card-item">
+                <div class="card-up__background">
+                  <div class="doctors__image">
+                    <img
+                      src="./img/personal/doctor-three.png"
+                      alt="3"
+                    />
+                  </div>
+                </div>
+                <div class="doctors__description">
+                  <p class="doctors__name">Виктор Ермаков</p>
+                  <a class="button" href="#"> Записаться на прием </a>
+                </div>
+              </div>
+
+              <div class="doctors__card _anim-items _no-anim doctors__card-item">
+                <div class="card-up__background">
+                  <div class="doctors__image">
+                    <img
+                      src="./img/personal/doctor-four.png"
+                      alt="4"
+                    />
+                  </div>
+                </div>
+                <div class="doctors__description">
+                  <p class="doctors__name">Сергей Гусаков</p>
+                  <a class="button" href="#"> Записаться на прием </a>
+                </div>
+              </div>
+
+              <div class="doctors__card _anim-items _no-anim doctors__card-item">
+                <div class="card-up__background">
+                  <div class="doctors__image">
+                    <img
+                      src="./img/personal/doctor-13.png"
+                      alt="5"
+                    />
+                  </div>
+                </div>
+                <div class="doctors__description">
+                  <p class="doctors__name">Анна Молчанова</p>
+                  <a class="button" href="#"> Записаться на прием </a>
+                </div>
+              </div>
+
+              <div class="doctors__card _anim-items _no-anim doctors__card-item">
+                <div class="card-up__background">
+                  <div class="doctors__image">
+                    <img
+                      src="./img/personal/doctor-seven.png"
+                      alt="6"
+                    />
+                  </div>
+                </div>
+                <div class="doctors__description">
+                  <p class="doctors__name">Юнус Ахмурзаев</p>
+                  <a class="button" href="#"> Записаться на прием </a>
+                </div>
+              </div>
+
+              <div class="doctors__card _anim-items _no-anim doctors__card-item">
+                <div class="card-up__background">
+                  <div class="doctors__image">
+                    <img
+                      src="./img/personal/doctor-five.png"
+                      alt="7"
+                    />
+                  </div>
+                </div>
+                <div class="doctors__description">
+                  <p class="doctors__name">Олег Байбеков</p>
+                  <a class="button" href="#"> Записаться на прием</a>
+                </div>
+              </div>
+
+              <div class="doctors__card _anim-items _no-anim doctors__card-item">
+                <div class="card-up__background">
+                  <div class="doctors__image">
+                    <img
+                      src="./img/personal/doctor-six.png"
+                      alt="8"
+                    />
+                  </div>
+                </div>
+                <div class="doctors__description">
+                  <p class="doctors__name">Марьяна Барагунова</p>
+                  <a class="button" href="#"> Записаться на прием </a>
+                </div>
+              </div>
+
+              <div class="doctors__card _anim-items _no-anim doctors__card-item">
+                <div class="card-up__background">
+                  <div class="doctors__image">
+                    <img
+                      src="./img/personal/doctor-12.png"
+                      alt="9"
+                    />
+                  </div>
+                </div>
+                <div class="doctors__description">
+                  <p class="doctors__name">Вероника Костюкова</p>
+                  <a class="button" href="#"> Записаться на прием </a>
+                </div>
+              </div>
+
+              <div class="doctors__card _anim-items _no-anim doctors__card-item">
+                <div class="card-up__background">
+                  <div class="doctors__image">
+                    <img
+                      src="./img/personal/doctor-15.png"
+                      alt="9"
+                    />
+                  </div>
+                </div>
+                <div class="doctors__description">
+                  <p class="doctors__name">Алан Нигколов</p>
+                  <a class="button" href="#"> Записаться на прием</a>
+                </div>
+              </div>
+
+              <div class="doctors__card _anim-items _no-anim doctors__card-item">
+                <div class="card-up__background">
+                  <div class="doctors__image">
+                    <img
+                      src="./img/personal/doctor-eight.png"
+                      alt="10"
+                    />
+                  </div>
+                </div>
+                <div class="doctors__description">
+                  <p class="doctors__name">Семён Фейзуллаев</p>
+                  <a class="button" href="#"> Записаться на прием </a>
+                </div>
+              </div>
+
+              <div class="doctors__card _anim-items _no-anim doctors__card-item">
+                <div class="card-up__background">
+                  <div class="doctors__image">
+                    <img
+                      src="./img/personal/doctor-nine.png"
+                      alt="5"
+                    />
+                  </div>
+                </div>
+                <div class="doctors__description">
+                  <p class="doctors__name">Наталья Кабичкина</p>
+                  <a class="button" href="#"> Записаться на прием </a>
+                </div>
+              </div>
+
+              <div class="doctors__card _anim-items _no-anim doctors__card-item">
+                <div class="card-up__background">
+                  <div class="doctors__image">
+                    <img
+                      src="./img/personal/doctor-ten.png"
+                      alt="9"
+                    />
+                  </div>
+                </div>
+                <div class="doctors__description">
+                  <p class="doctors__name">Елена Тарасенко</p>
+                  <a class="button" href="#"> Записаться на прием </a>
+                </div>
+              </div>
+
+              <div class="doctors__card _anim-items _no-anim doctors__card-item">
+                <div class="card-up__background">
+                  <div class="doctors__image">
+                    <img
+                      src="./img/personal/doctor-11.png"
+                      alt="9"
+                    />
+                  </div>
+                </div>
+                <div class="doctors__description">
+                  <p class="doctors__name">Гамид Алиев</p>
+                  <a class="button" href="#"> Записаться на прием </a>
+                </div>
+              </div>
+            </div>
+            <img src="./img/bg/circle.svg" class="doctors-circle" />
+            <img src="./img/bg/burger__circle-rot.svg"  class="doctors-circle-row" />
+          </div>
+        </section>
+
+        <section class="section-reviews">
+            <div class="reviews">
+            <div class="container">
+              <div class="services__headtext-bg">
+
+                  <h2
+                    class="services__headtext _anim-items _no-anim"
+                  >
+                    Отзывы
+                  </h2>
+
+              </div>
+              <div class="reviews__slaider swiper-container _anim-items _no-anim">
+                <div class="swiper-wrapper about-us__wrapper">
+                  <div class="swiper-slide about-us__slide">
+                    <div class="video-wrap">
+                      <video class="reviews-video video-one">
+                        <source src="one.mp4" type="video/mp4" />
+                      </video>
+                      <div class="video-icon play-one">
+                        <div class="icon-wrap">
+                          <img class="icon-play" src="./img/play.svg" />
+                          <img
+                            class="icon-play-hover"
+                            src="./img/play-hover.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide about-us__slide">
+                    <div class="video-wrap">
+                      <video class="reviews-video video-two">
+                        <source src="two.mov" type="video/mp4" />
+                      </video>
+                      <div class="video-icon">
+                        <div class="icon-wrap play-two">
+                          <img class="icon-play" src="./img/play.svg" />
+                          <img
+                            class="icon-play-hover"
+                            src="./img/play-hover.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide about-us__slide">
+                    <div class="video-wrap">
+                      <video class="reviews-video video-three">
+                        <source
+                          src="three.mov"
+                          type="video/mp4"
+                        />
+                      </video>
+                      <div class="video-icon">
+                        <div class="icon-wrap play-three">
+                          <img class="icon-play" src="./img/play.svg" />
+                          <img
+                            class="icon-play-hover"
+                            src="./img/play-hover.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide about-us__slide">
+                    <div class="video-wrap">
+                      <video class="reviews-video video-four">
+                        <source
+                          src="four.mov"
+                          type="video/mp4"
+                        />
+                      </video>
+                      <div class="video-icon">
+                        <div class="icon-wrap play-four">
+                          <img class="icon-play" src="./img/play.svg" />
+                          <img
+                            class="icon-play-hover"
+                            src="./img/play-hover.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide about-us__slide">
+                    <div class="video-wrap">
+                      <video class="reviews-video video-five">
+                        <source
+                          src="five.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                      <div class="video-icon">
+                        <div class="icon-wrap play-five">
+                          <img class="icon-play" src="./img/play.svg" />
+                          <img
+                            class="icon-play-hover"
+                            src="./img/play-hover.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide about-us__slide">
+                    <div class="video-wrap">
+                      <video class="reviews-video video-six">
+                        <source src="six.mp4" type="video/mp4" />
+                      </video>
+                      <div class="video-icon play-six">
+                        <div class="icon-wrap">
+                          <img class="icon-play" src="./img/play.svg" />
+                          <img
+                            class="icon-play-hover"
+                            src="./img/play-hover.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide about-us__slide">
+                    <div class="video-wrap">
+                      <video class="reviews-video video-seven">
+                        <source
+                          src="seven.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                      <div class="video-icon">
+                        <div class="icon-wrap play-seven">
+                          <img class="icon-play" src="./img/play.svg" />
+                          <img
+                            class="icon-play-hover"
+                            src="./img/play-hover.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide about-us__slide">
+                    <div class="video-wrap">
+                      <video class="reviews-video video-eight">
+                        <source
+                          src="eight.mov"
+                          type="video/mp4"
+                        />
+                      </video>
+                      <div class="video-icon">
+                        <div class="icon-wrap play-eight">
+                          <img class="icon-play" src="./img/play.svg" />
+                          <img
+                            class="icon-play-hover"
+                            src="./img/play-hover.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide about-us__slide">
+                    <div class="video-wrap">
+                      <video class="reviews-video video-nine">
+                        <source
+                          src="nine.mov"
+                          type="video/mp4"
+                        />
+                      </video>
+                      <div class="video-icon">
+                        <div class="icon-wrap play-nine">
+                          <img class="icon-play" src="./img/play.svg" />
+                          <img
+                            class="icon-play-hover"
+                            src="./img/play-hover.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide about-us__slide">
+                    <div class="video-wrap">
+                      <video class="reviews-video video-ten">
+                        <source src="ten.mov" type="video/mp4" />
+                      </video>
+                      <div class="video-icon">
+                        <div class="icon-wrap play-ten">
+                          <img class="icon-play" src="./img/play.svg" />
+                          <img
+                            class="icon-play-hover"
+                            src="./img/play-hover.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-arrow-wrap">
+                  <div class="swiper-arrow-prev">
+                    <img src="./img/aboutUs/prev.svg" />
+                    <img class="hover__arrow" src="./img/aboutUs/arrow-back_hover.svg">
+                  </div>
+                  <div class="swiper-arrow-next">
+                    <img src="./img/aboutUs/next.svg" />
+                    <img class="hover__arrow" src="./img/aboutUs/arrow-next_hover.svg">
+                  </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <img src="./img/bg/circle.svg" class="reviews-circle">
+        </section>
+      </main>
+
+      @include('partials/footer.html')
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/doctorCircleAnim.js"></script>
+    <script src="js/slaider.js"></script>
+    <script src="js/videoRev.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
