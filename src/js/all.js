@@ -18,7 +18,7 @@ const accordion = () => {
 }
 accordion();
 // anchor
-function anchor() {
+/*function anchor() {
     let anchors = document.querySelectorAll('a[href*="#"]');
     for (let anchor of anchors) {
         anchor.addEventListener('click', function (event) {
@@ -31,7 +31,19 @@ function anchor() {
         })
     }
 }
-anchor()
+anchor() */
+
+var elements = document.getElementsByClassName("popUp__nav-li");
+
+var removeBurger = function() {
+    document.querySelector(".menu__popUp").classList.remove('_actived');
+    document.querySelector("body").classList.remove('_lock');
+    document.querySelector(".burger__menu").classList.remove('_active'); 
+};
+
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click', removeBurger, false);
+}
 
 
 function sticky() {

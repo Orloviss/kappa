@@ -135,7 +135,10 @@
       <section class="services__single-page ">
         <div class="container">
           <div class="services__wrap">
+            <div class="service__block">
+            <a class="anchor__link" name="elainers"></a>
             <div class="services__card  card__dec  service-single _anim-items _no-anim services__first-card">
+            
               <img class="card__image" src="./img/Aligners.png" alt="Элайнеры" />
               <div class="card__content">
                 <h3 class="content__headtext">Элайнеры</h3>
@@ -198,6 +201,7 @@
             </div>
             </div>
             <div class="services__card accordion accordion-tab _anim-items _no-anim accordion-tab">
+          
               <div class="trigger">
                 <div class="trigger__wrap">
                   <img class="card__image-mob" src="./img/Aligners.png" alt="Элайнеры" />
@@ -261,7 +265,9 @@
                 <a class="button" href="#"> Записаться на прием </a>
               </div>
             </div>
-
+          </div>
+          <div class="service__block">
+            <a class="anchor__link" name="breckets"></a>
             <div class="services__card card__dec service-single _anim-items _no-anim">
               <img class="card__image" src="./img/braces.png" alt="Брекеты" />
               <div class="card__content">
@@ -301,7 +307,7 @@
               <div class="trigger">
                 <div class="trigger__wrap">
                   <img class="card__image-mob" src="./img/braces.png" alt="Брекеты" />
-                  <h3 class="content__headtext">Элайнеры</h3>
+                  <h3 class="content__headtext">Брекеты</h3>
                 </div>
                 <div class="trigger__plus"></div>
               </div>
@@ -336,7 +342,9 @@
                 <a class="button" href="#"> Записаться на прием </a>
               </div>
             </div>
-
+          </div>
+            <div class="service__block">
+            <a class="anchor__link" name="vinirs"></a>
             <div class="services__card card__dec _anim-items _no-anim service-single">
               <img class="card__image" src="./img/veneers.png" alt="Виниры" />
               <div class="card__content">
@@ -422,7 +430,9 @@
                 <a class="button" href="#"> Записаться на прием </a>
               </div>
             </div>
-
+          </div>
+            <div class="service__block">
+            <a class="anchor__link" name="therapy"></a>
             <div class="services__card card__dec _anim-items _no-anim service-single">
               <img class="card__image" src="./img/Periodontology.png" alt=" Терапия" />
               <div class="card__content">
@@ -488,7 +498,9 @@
                 <a class="button" href="#"> Записаться на прием </a>
               </div>
             </div>
-
+          </div>
+            <div class="service__block">
+            <a class="anchor__link" name="orto"></a>
             <div class="services__card card__dec _anim-items _no-anim service-single">
               <img class="card__image" src="./img/Surgical.png" alt="Хирургическая стоматология" />
               <div class="card__content">
@@ -586,7 +598,9 @@
                 <a class="button" href="#"> Записаться на прием </a>
               </div>
             </div>
-
+          </div>
+            <div class="service__block">
+            <a class="anchor__link" name="gnatologia"></a>
             <div class="services__card card__dec _anim-items _no-anim service-single">
               <img class="card__image" src="./img/serv6.png" alt="Пародонтология" />
               <div class="card__content">
@@ -728,7 +742,22 @@
 
 
   </div>
-
+<style>
+  .anchor__link {
+  display: block;
+  position: relative;
+  top: -100px !important;
+  visibility: hidden;
+}
+@media screen and (max-width: 768px) {
+  .anchor__link {
+  display: block;
+  position: relative;
+  top: -80px !important;
+  visibility: hidden;
+}
+}
+</style>
   <script src="js/jquery.spincrement.min.js"></script>
   <script src="js/animate.js"></script>
   <script src="js/counter.js "></script>
