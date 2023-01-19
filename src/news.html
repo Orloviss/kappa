@@ -122,7 +122,8 @@
           <div class="container">
             <div class="news__row-wrap">
                 <div class="news__row">
-                    <div class="headnews">
+                    <div class="news__card ">
+                      <div class="headnews">
                       <div class="headnews__img">
                         <img src="./img/news/Headnews.png" alt="headnews" />
                         <div class="headnews__content">
@@ -137,10 +138,10 @@
                             <a href="#"> Подробнее </a>
                           </div>
                         </div>
-                      </div>
-                    </div>
-
-                    <div class="news__card row-one__card">
+                      </div></div>
+                    </div> 
+                    
+                    <div class="news__card ">
                       <div class="card__col">
                         <div class="card__wrap">
                           <img src="./img/news/news__car.png" />
@@ -158,9 +159,7 @@
                       </div>
                     </div>
 
-                  </div>
-
-                  <div class="news__row row-two">
+               
                           <div class="news__card">
                               <div class="card__col">
                                 <div class="card__wrap">
@@ -214,9 +213,6 @@
                                 </div>
                               </div>
                           </div>
-                  </div>
-
-                  <div class="news__row row-two">
                       <div class="news__card">
                           <div class="card__col">
                             <div class="card__wrap">
@@ -294,9 +290,48 @@
 
 
 
-
     </div>
+<script>
+ Data = new Date();
+Year = Data.getFullYear();
+Month = Data.getMonth();
+Day = Data.getDate();
+DayWeek = Data.getDay()
+switch (DayWeek)
+{
+  case 0: fDayWeek="понеделник"; break;
+  case 1: fDayWeek="вторник"; break;
+  case 2: fDayWeek="среда"; break;
+  case 3: fDayWeek="четверг"; break;
+  case 4: fDayWeek="пятница"; break;
+  case 5: fDayWeek="суббота"; break;
+  case 6: fDayWeek="воскресенье"; break;
+}
+switch (Month)
+{
+  case 0: fMonth="января"; break;
+  case 1: fMonth="февраля"; break;
+  case 2: fMonth="марта"; break;
+  case 3: fMonth="апреля"; break;
+  case 4: fMonth="мае"; break;
+  case 5: fMonth="июня"; break;
+  case 6: fMonth="июля"; break;
+  case 7: fMonth="августа"; break;
+  case 8: fMonth="сентября"; break;
+  case 9: fMonth="октября"; break;
+  case 10: fMonth="ноября"; break;
+  case 11: fMonth="декабря"; break;
+}
 
+
+Data = new Date();
+Hour = Data.getHours();
+Minutes = Data.getMinutes();
+Seconds = Data.getSeconds();
+document.querySelector('.date__year').innerHTML = (Day + " " + fMonth + " " + Year + " г."  )
+document.querySelector('.date__week').innerHTML = (fDayWeek + ", " + Hour + ":" + Minutes )
+
+</script>
     <script src="js/animate.js"></script>
     <script src="js/newsCircleAnim.js"></script>
     <script src="js/main.js"></script>
